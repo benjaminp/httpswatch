@@ -24,7 +24,6 @@
   <body>
     <h1>HTTPSWatch</h1>
     <p>HTTPSWatch tracks the HTTPS support of prominent websites. Click to show details about a site&rsquo;s HTTPS support. See the <a href="#about">About section</a> for more information.
-    <p>Last updated at <time>{{ update_time }}</time>.
 
     {% for cat in data.categories %}
     <section id="{{ cat.linkname }}">
@@ -76,7 +75,7 @@
     </section>
 
     <footer>
-      Created by <a href="http://www.benjamin-peterson.org">Benjamin Peterson</a>.
+      Created by <a href="http://www.benjamin-peterson.org">Benjamin Peterson</a>. Last updated <time>{{ update_time }}</time>.
     </footer>
   </body>
 </html>
