@@ -214,4 +214,6 @@ def main():
     with open("index.html", "w", encoding="utf-8") as fp:
         fp.write(tmp.render(data=data, update_time=update_time))
 
-main()
+
+if __name__ == "__main__":
+    main()
