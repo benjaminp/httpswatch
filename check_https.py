@@ -135,10 +135,10 @@ def check_one_site(site):
                 url = resp.getheader("Location")
                 resp.close()
                 if url.startswith("https://"):
-                    http_redirect.succeed("HTTP site redirects to HTTPS.")
+                    http_redirect.fail("HTTP site redirects to HTTPS.")
                     break
             else:
-                http_redirect.fail("HTTP site doesn't redirect to HTTPS.")
+                http_redirect.succeed("HTTP site doesn't redirect to HTTPS.")
                 mediocre = True
                 break
     except HTTPException:
