@@ -34,6 +34,7 @@ class Check:
         self.icon = "bad"
         self.description = desc
 
+
 def check_one_site(site):
     domain = site["domain"]
     log.info("Checking {}".format(domain))
@@ -148,6 +149,7 @@ def check_one_site(site):
 
     site["status"] = "mediocre" if mediocre else "good"
 
+
 def worker(q):
     while True:
         try:
@@ -158,6 +160,7 @@ def worker(q):
             check_one_site(site)
         except Exception:
             log.exception("{} failed!".format(site["domain"]))
+
 
 def check_sites():
     # Read list of sites.
@@ -192,10 +195,12 @@ def check_sites():
 
     return data
 
+
 def encode_check(o):
     if not isinstance(o, Check):
         raise TypeError
     return o.__dict__
+
 
 def main():
     if "--cached" in sys.argv:
