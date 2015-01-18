@@ -1,13 +1,12 @@
 import collections
+import concurrent.futures
 import logging
 import json
-import queue
 import random
 import re
 import socket
 import ssl
 import sys
-import threading
 import time
 
 from http.client import HTTPConnection, HTTPSConnection, HTTPException
@@ -150,39 +149,22 @@ def check_one_site(site):
     site["status"] = "mediocre" if mediocre else "good"
 
 
-def worker(q):
-    while True:
-        try:
-            site = q.get_nowait()
-        except queue.Empty:
-            return
-        try:
-            check_one_site(site)
-        except Exception:
-            log.exception("{} failed!".format(site["domain"]))
-
-
 def check_sites():
     # Read list of sites.
     with open("sites.json", encoding="utf-8") as fp:
         data = json.load(fp)
 
-    # Some poor man's concurrency.
-    q = queue.Queue()
-    for cat in data["categories"]:
-        for site in cat["sites"]:
-            q.put(site)
-    n = q.qsize()
-    threads = []
-    for i in range(PARALLELISM):
-        t = threading.Thread(target=worker, args=(q,))
-        threads.append(t)
-        t.start()
-    while not q.empty():
-        print("{}/{}".format(n - q.qsize(), n))
-        time.sleep(1)
-    for t in threads:
-        t.join()
+    futures = []
+    executor = concurrent.futures.ThreadPoolExecutor(max_workers=PARALLELISM)
+    with executor:
+        for cat in data["categories"]:
+            for site in cat["sites"]:
+                futures.append(executor.submit(check_one_site, site))
+        while True:
+            done, not_done = concurrent.futures.wait(futures, timeout=1)
+            print("{}/{}".format(len(done), len(done) + len(not_done)))
+            if not not_done:
+                break
 
     total_status = collections.Counter()
     for cat in data["categories"]:
