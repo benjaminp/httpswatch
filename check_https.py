@@ -52,6 +52,8 @@ def check_one_site(site):
     sock.settimeout(10)
     context = ssl.SSLContext(ssl.PROTOCOL_SSLv23)
 
+    context.options |= ssl.OP_NO_SSLv2 | ssl.OP_NO_SSLv3
+
     # Some platforms (OS X) do not have OP_NO_COMPRESSION
     if hasattr(ssl, "OP_NO_COMPRESSION"):
         context.options |= ssl.OP_NO_COMPRESSION
