@@ -51,7 +51,11 @@ def check_one_site(site):
     sock = socket.socket(info[0], info[1], info[2])
     sock.settimeout(10)
     context = ssl.SSLContext(ssl.PROTOCOL_SSLv23)
-    context.options |= ssl.OP_NO_COMPRESSION
+
+    # Some platforms (OS X) do not have OP_NO_COMPRESSION
+    if hasattr(ssl, "OP_NO_COMPRESSION"):
+        context.options |= ssl.OP_NO_COMPRESSION
+
     context.verify_mode = ssl.CERT_REQUIRED
     context.check_hostname = True
     context.load_verify_locations("moz-certs.pem")
