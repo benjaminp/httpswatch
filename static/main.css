@@ -1,0 +1,156 @@
+@font-face {
+    font-family: Charter;
+    src: url("/static/fonts/charter_regular-webfont.eot");
+    src: url("/static/fonts/charter_regular-webfont.eot?#iefix") format("embedded-opentype"),
+         url("/static/fonts/charter_regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Charter;
+    src: url("/static/fonts/charter_italic-webfont.eot");
+    src: url("/static/fonts/charter_italic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("/static/fonts/charter_italic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Charter;
+    src: url("/static/fonts/charter_bold-webfont.eot");
+    src: url("/static/fonts/charter_bold-webfont.eot?#iefix") format("embedded-opentype"),
+         url("/static/fonts/charter_bold-webfont.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('/static/fonts/glyphicons-halflings-regular.eot');
+    src: url('/static/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/glyphicons-halflings-regular.woff') format('woff'),
+         url('/static/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+         url('/static/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-ok-circle::before {
+    content: "\e089";
+}
+.glyphicon-ban-circle::before {
+    content: "\e090";
+}
+.glyphicon-plus-sign::before {
+    content: "\e081";
+}
+.glyphicon-minus-sign::before {
+    content: "\e082";
+}
+
+ul, ol {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Charter, serif;
+    font-size: 14pt;
+    width: 750px;
+}
+code {
+    font-family: Consolas, monospace;
+}
+.cat-counts {
+    font-size: 80%;
+    float: right;
+    display: inline-block;
+}
+.cat-name-link {
+    visibility: hidden;
+    text-decoration: none;
+    font-size: 0.8em;
+    padding: 0px 4px;
+    color: #00B0E4;
+}
+.cat-name-link:active {
+    color: #0072AA;
+}
+.cat-name:hover > .cat-name-link {
+    visibility: visible;
+}
+.site-entry {
+    border-style: solid;
+    border-color: #E0E0E0;
+    border-width: 0px 1px 1px 1px;
+    padding: 1.1rem 1.25rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.site-entry:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-width: 1px;
+}
+.site-entry:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.site-status-summary {
+    cursor: pointer;
+}
+.site-details-expander::before {
+    content: "\e081";
+    font-size: 11pt;
+}
+.site-entry.details-open .site-details-expander::before {
+    content: "\e082";
+}
+.site-name {
+    font-weight: bold;
+}
+.site-grade {
+    float: right;
+}
+.site-grade-good {
+    color: green;
+}
+.site-grade-mediocre {
+    color: #BF8300;
+}
+.site-grade-bad {
+    color: red;
+}
+.site-status-details {
+    display: none;
+    font-size: 12pt;
+}
+.site-entry.details-open > .site-status-details {
+    display: block;
+}
+.site-check-list {
+    padding: 16px 0px 16px 30px;
+    list-style-type: none;
+}
+.site-check-good {
+    color: green;
+}
+.site-check-bad {
+    color: red;
+}
+footer {
+    padding-top: 20px;
+    font-size: 80%;
+}

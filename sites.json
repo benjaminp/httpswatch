@@ -1,0 +1,313 @@
+{
+    "categories": [
+        {
+            "name": "Linux Distributions",
+            "linkname": "distributions",
+            "sites": [
+                {
+                    "name": "Arch",
+                    "domain": "www.archlinux.org"
+                },
+                {
+                    "name": "CentOS",
+                    "domain": "www.centos.org"
+                },
+                {
+                    "name": "Debian",
+                    "domain": "www.debian.org"
+                },
+                {
+                    "name": "Fedora",
+                    "domain": "getfedora.org"
+                },
+                {
+                    "name": "Gentoo",
+                    "domain": "www.gentoo.org"
+                },
+                {
+                    "name": "Ubuntu",
+                    "domain": "www.ubuntu.com"
+                }
+            ]
+        },
+        {
+            "name": "Newspapers",
+            "linkname": "newspapers",
+            "sites": [
+                {
+                    "name": "Chicago Sun-Times",
+                    "domain": "www.suntimes.com"
+                },
+                {
+                    "name": "Chicago Tribune",
+                    "domain": "www.chicagotribune.com"
+                },
+                {
+                    "name": "Daily News",
+                    "domain": "www.nydailynews.com"
+                },
+                {
+                    "name": "The Denver Post",
+                    "domain": "www.denverpost.com"
+                },
+                {
+                    "name": "The Guardian",
+                    "domain": "www.theguardian.com"
+                },
+                {
+                    "name": "Los Angeles Times",
+                    "domain": "www.latimes.com"
+                },
+                {
+                    "name": "The New York Post",
+                    "domain": "www.nypost.com"
+                },
+                {
+                    "name": "The New York Times",
+                    "domain": "www.nytimes.com"
+                },
+                {
+                    "name": "Der Spiegel",
+                    "domain": "www.spiegel.de"
+                },
+                {
+                    "name": "USA Today",
+                    "domain": "www.usatoday.com"
+                },
+                {
+                    "name": "The Wall Street Journal",
+                    "domain": "www.wsj.com"
+                },
+                {
+                    "name": "Washington Post",
+                    "domain": "www.washingtonpost.com"
+                }
+            ]
+        },
+        {
+            "name": "News",
+            "linkname": "news",
+            "sites": [
+                {
+                    "name": "ABC News",
+                    "domain": "abcnews.go.com"
+                },
+                {
+                    "name": "BBC",
+                    "domain": "www.bbc.com"
+                },
+                {
+                    "name": "CBS Sports",
+                    "domain": "www.cbssports.com"
+                },
+                {
+                    "name": "CNN",
+                    "domain": "www.cnn.com"
+                },
+                {
+                    "name": "Daily Mail",
+                    "domain": "www.dailymail.co.uk"
+                },
+                {
+                    "name": "ESPN",
+                    "domain": "espn.go.com"
+                },
+                {
+                    "name": "Forbes",
+                    "domain": "www.forbes.com"
+                },
+                {
+                    "name": "Fox News",
+                    "domain": "www.foxnews.com"
+                },
+                {
+                    "name": "NBC News",
+                    "domain": "www.nbcnews.com"
+                },
+                {
+                    "name": "NPR",
+                    "domain": "www.npr.org"
+                },
+                {
+                    "name": "Time Magazine",
+                    "domain": "time.com"
+                },
+                {
+                    "name": "TMZ",
+                    "domain": "www.tmz.com"
+                }
+            ]
+        },
+        {
+            "name": "Programming Languages",
+            "linkname": "programming-languages",
+            "sites": [
+                {
+                    "name": "Clojure",
+                    "domain": "clojure.org"
+                },
+                {
+                    "name": "D",
+                    "domain": "dlang.org"
+                },
+                {
+                    "name": "Erlang",
+                    "domain": "www.erlang.org"
+                },
+                {
+                    "name": "Go",
+                    "domain": "golang.org"
+                },
+                {
+                    "name": "Haskell",
+                    "domain": "www.haskell.org"
+                },
+                {
+                    "name": "Julia",
+                    "domain": "julialang.org"
+                },
+                {
+                    "name": "Lua",
+                    "domain": "www.lua.org"
+                },
+                {
+                    "name": "Perl",
+                    "domain": "www.perl.org"
+                },
+                {
+                    "name": "PHP",
+                    "domain": "www.php.net"
+                },
+                {
+                    "name": "Python",
+                    "domain": "www.python.org"
+                },
+                {
+                    "name": "R",
+                    "domain": "www.r-project.org"
+                },
+                {
+                    "name": "Ruby",
+                    "domain": "www.ruby-lang.org"
+                },
+                {
+                    "name": "Rust",
+                    "domain": "www.rust-lang.org"
+                },
+                {
+                    "name": "Scala",
+                    "domain": "www.scala-lang.org"
+                },
+                {
+                    "name": "Schemers",
+                    "domain": "schemers.org"
+                }
+
+            ]
+        },
+        {
+            "name": "Universities",
+            "linkname": "universities",
+            "sites": [
+                {
+                    "name": "Brown",
+                    "domain": "www.brown.edu"
+                },
+                {
+                    "name": "Columbia",
+                    "domain": "www.columbia.edu"
+                },
+                {
+                    "name": "Cornell",
+                    "domain": "www.cornell.edu"
+                },
+                {
+                    "name": "Dartmouth",
+                    "domain": "dartmouth.edu"
+                },
+                {
+                    "name": "Harvard",
+                    "domain": "www.harvard.edu"
+                },
+                {
+                    "name": "MIT",
+                    "domain": "web.mit.edu"
+                },
+                {
+                    "name": "Princeton",
+                    "domain": "www.princeton.edu"
+                },
+                {
+                    "name": "Stanford",
+                    "domain": "www.stanford.edu"
+                },
+                {
+                    "name": "University of Chicago",
+                    "domain": "www.uchicago.edu"
+                },
+                {
+                    "name": "University of Pennsylvania",
+                    "domain": "www.upenn.edu"
+                },
+                {
+                    "name": "Yale",
+                    "domain": "www.yale.edu"
+                }
+            ]
+        },
+        {
+            "name": "US Government",
+            "linkname": "usgov",
+            "sites": [
+                {
+                    "name": "National Weather Service",
+                    "domain": "www.weather.gov"
+                },
+                {
+                    "name": "Internal Revenue Service",
+                    "domain": "www.irs.gov"
+                },
+                {
+                    "name": "HealthCare.gov",
+                    "domain": "www.healthcare.gov"
+                },
+                {
+                    "name": "USAJOBS",
+                    "domain": "www.usajobs.gov"
+                },
+                {
+                    "name": "Citizenship and Immigration Services",
+                    "domain": "www.uscis.gov"
+                },
+                {
+                    "name": "Social Security Administration",
+                    "domain": "www.ssa.gov"
+                },
+                {
+                    "name": "NASA",
+                    "domain": "www.nasa.gov"
+                },
+                {
+                    "name": "National Oceanic and Atmospheric Administration",
+                    "domain": "www.noaa.gov"
+                },
+                {
+                    "name": "Federal Trade Commission",
+                    "domain": "www.ftc.gov"
+                },
+                {
+                    "name": "Office of Personnel Management",
+                    "domain": "www.opm.gov"
+                },
+                {
+                    "name": "EPA",
+                    "domain": "www.epa.gov"
+                },
+                {
+                    "name": "Bureau of Labor Statistics",
+                    "domain": "www.bls.gov"
+                }
+            ]
+        }
+    ]
+}
