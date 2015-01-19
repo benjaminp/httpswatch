@@ -109,58 +109,58 @@
             ]
         },
         {
-           "name": "Social Media",
-           "linkname": "socialmedia",
-           "sites": [
-              {
-                "name": "LinkedIn",
-                "domain": "www.linkedin.com"
-              },
-              {
-                "name": "Facebook",
-                "domain": "www.facebook.com"
-              },
-              {
-                "name": "Twitter",
-                "domain": "www.twitter.com"
-              },
-              {
-                "name": "Pintrest",
-                "domain": "www.pinterest.com"
-              },
-              {
-                "name": "Tumblr",
-                "domain": "www.tumblr.com"
-              },
-              {
-                "name": "Instagram",
-                "domain": "www.instagram.com"
-              },
-              {
-                "name": "Vine",
-                "domain": "www.vine.com"
-              },
-              {
-                "name": "Vimeo",
-                "domain": "www.vimeo.com"
-              },
-              {
-                "name": "Match.com",
-                "domain": "www.match.com"
-              },
-              {
-                "name": "OkCupid",
-                "domain": "www.okcupid.com"
-              }
-           ]
+            "name": "Social Media",
+            "linkname": "socialmedia",
+            "sites": [
+                {
+                    "name": "LinkedIn",
+                    "domain": "www.linkedin.com"
+                },
+                {
+                    "name": "Facebook",
+                    "domain": "www.facebook.com"
+                },
+                {
+                    "name": "Twitter",
+                    "domain": "www.twitter.com"
+                },
+                {
+                    "name": "Pintrest",
+                    "domain": "www.pinterest.com"
+                },
+                {
+                    "name": "Tumblr",
+                    "domain": "www.tumblr.com"
+                },
+                {
+                    "name": "Instagram",
+                    "domain": "www.instagram.com"
+                },
+                {
+                    "name": "Vine",
+                    "domain": "www.vine.com"
+                },
+                {
+                    "name": "Vimeo",
+                    "domain": "www.vimeo.com"
+                },
+                {
+                    "name": "Match.com",
+                    "domain": "www.match.com"
+                },
+                {
+                    "name": "OkCupid",
+                    "domain": "www.okcupid.com"
+                }
+            ]
         },
         {
             "name": "E-Commerce Sites",
             "linkname": "commerce",
             "sites": [
                 {
-                  "name": "Apple",
-                  "domain": "store.apple.com"
+                    "name": "Apple",
+                    "domain": "store.apple.com"
                 },
                 {
                     "name": "Amazon",
@@ -187,40 +187,40 @@
                     "domain": "www.homedepot.com"
                 },
                 {
-                   "name": "Barnes & Noble",
-                   "domain": "www.barnesandnoble.com"
+                    "name": "Barnes & Noble",
+                    "domain": "www.barnesandnoble.com"
                 }
             ]
         },
         {
-           "name": "Travel",
-           "linkname": "travel",
-           "sites": [
-              {
-                "name": "Southwest",
-                "domain": "www.southwest.com"
-              },
-              {
-                "name": "Delta",
-                "domain": "www.delta.com"
-              },
-              {
-                "name": "American Airlines",
-                "domain": "www.aa.com"
-              },
-              {
-                "name": "Kayak",
-                "domain": "www.kayak.com"
-              },
-              {
-                "name": "Travelocity",
-                "domain": "www.travelocity.com"
-              },
-              {
-                "name": "Expedia",
-                "domain": "www.expedia.com"
-              }
-           ]
+            "name": "Travel",
+            "linkname": "travel",
+            "sites": [
+                {
+                    "name": "Southwest",
+                    "domain": "www.southwest.com"
+                },
+                {
+                    "name": "Delta",
+                    "domain": "www.delta.com"
+                },
+                {
+                    "name": "American Airlines",
+                    "domain": "www.aa.com"
+                },
+                {
+                    "name": "Kayak",
+                    "domain": "www.kayak.com"
+                },
+                {
+                    "name": "Travelocity",
+                    "domain": "www.travelocity.com"
+                },
+                {
+                    "name": "Expedia",
+                    "domain": "www.expedia.com"
+                }
+            ]
         },
         {
             "name": "Publishing Platforms",
