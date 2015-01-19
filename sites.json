@@ -137,6 +137,14 @@
                     "domain": "instagram.com"
                 },
                 {
+                    "name": "Reddit",
+                    "domain": "www.reddit.com"
+                },
+                {
+                    "name": "YouTube",
+                    "domain": "www.youtube.com"
+                },
+                {
                     "name": "Vine",
                     "domain": "vine.co"
                 },
