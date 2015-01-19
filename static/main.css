@@ -141,7 +141,8 @@ code {
     display: block;
 }
 .site-check-list {
-    padding: 16px 0px 16px 30px;
+    padding-left: 30px;
+    padding-top: 16px;
     list-style-type: none;
 }
 .site-check-good {
