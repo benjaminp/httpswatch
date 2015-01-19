@@ -82,9 +82,17 @@ code {
 .nav-list > li:last-child::after {
     content: "";
 }
+.cat-header {
+    font-size: 1.5em;
+}
+.cat-name {
+    display: inline-block;
+    font-size: 100%;
+}
 .cat-counts {
     font-size: 80%;
     float: right;
+    margin: 23px 0;
     display: inline-block;
 }
 .cat-name-link {
@@ -97,7 +105,7 @@ code {
 .cat-name-link:active {
     color: #0072AA;
 }
-.cat-name:hover > .cat-name-link {
+.cat-header:hover > .cat-name-link {
     visibility: visible;
 }
 .site-entry {
