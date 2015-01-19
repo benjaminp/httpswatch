@@ -175,6 +175,10 @@
                     "domain": "www.amazon.com"
                 },
                 {
+                    "name": "Best Buy",
+                    "domain": "www.bestbuy.com"
+                },
+                {
                     "name": "eBay",
                     "domain": "www.ebay.com"
                 },
