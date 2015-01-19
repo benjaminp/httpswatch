@@ -95,16 +95,23 @@ def check_one_site(site):
     http = HTTPSConnection(domain, context=context)
     http.sock = secure_sock
     try:
-        http.request("GET", "/")
-        resp = http.getresponse()
-        if resp.status in (301, 302, 303, 307):
-            redirect_to_http = resp.getheader("Location").startswith("http://")
-            if redirect_to_http:
-                https_load.fail("The HTTPS site redirects to HTTP.")
+        url = "/"
+        # Follow all redirects.
+        while True:
+            http.request("GET", url)
+            resp = http.getresponse()
+            if resp.status in (301, 302, 303, 307):
+                url = resp.getheader("Location")
+                resp.read()
+                resp.close()
+                if url.startswith("http://"):
+                    https_load.fail("The HTTPS site redirects to HTTP.")
+                    return
+            elif resp.status != 200:
+                https_load.fail("The HTTPS site returns an error code on request.")
                 return
-        elif resp.status != 200:
-            https_load.fail("The HTTPS site returns an error code on request.")
-            return
+            else:
+                break
         good_sts = Check()
         checks.append(good_sts)
         sts = resp.getheader("Strict-Transport-Security")
