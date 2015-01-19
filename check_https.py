@@ -156,6 +156,8 @@ def check_one_site(site):
                 if url.startswith("https://"):
                     http_redirect.succeed("HTTP site redirects to HTTPS.")
                     break
+                if not url.startswith("/"):
+                    url = "/" + url
             else:
                 http_redirect.fail("HTTP site doesn't redirect to HTTPS.")
                 mediocre = True
