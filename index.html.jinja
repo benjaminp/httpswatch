@@ -36,6 +36,14 @@
     <h1>HTTPSWatch</h1>
     <p>HTTPSWatch tracks the HTTPS support of prominent websites. Click to show details about a site&rsquo;s HTTPS support. See the <a href="#about">About section</a> for more information.
 
+    <nav class="main-toc">
+      <ul class="nav-list">
+      {% for cat in data.categories %}
+        <li><a href="#{{ cat.linkname }}">{{ cat.name|e }}</a>
+      {% endfor %}
+      </ul>
+    </nav>
+
     {% for cat in data.categories %}
     <section id="{{ cat.linkname }}">
       <h2 class="cat-name">

@@ -73,6 +73,15 @@ body {
 code {
     font-family: Consolas, monospace;
 }
+.nav-list > li {
+    display: inline-block;
+}
+.nav-list > li::after {
+    content: "||";
+}
+.nav-list > li:last-child::after {
+    content: "";
+}
 .cat-counts {
     font-size: 80%;
     float: right;
