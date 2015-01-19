@@ -72,10 +72,6 @@ def check_one_site(site):
     except socket.timeout:
         good_connection.fail("<code>connect()</code> to port 443 times out.")
         return
-    except OSError as e:
-        error_name = errno.errorcode[e.errno]
-        good_connection.fail("<code>connect()</code> returns with error {}.".format(error_name))
-        return
     except ssl.SSLError as e:
         if e.reason == "CERTIFICATE_VERIFY_FAILED":
             desc = "Certificate not trusted by Mozilla cert store."
@@ -85,6 +81,10 @@ def check_one_site(site):
         return
     except ssl.CertificateError:
         good_connection.fail("Certificate hostname verification fails.")
+        return
+    except OSError as e:
+        error_name = errno.errorcode[e.errno]
+        good_connection.fail("<code>connect()</code> returns with error {}.".format(error_name))
         return
     good_connection.succeed("A verified TLS connection can be established. "
                             "(<a href=\"https://www.ssllabs.com/ssltest/analyze.html?d={}\">SSL Labs report</a>)".format(domain))
