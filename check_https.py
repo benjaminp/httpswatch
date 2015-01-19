@@ -11,6 +11,7 @@ import ssl
 import time
 
 from http.client import HTTPConnection, HTTPSConnection, HTTPException
+from urllib.parse import urlsplit
 
 import jinja2
 
@@ -145,18 +146,22 @@ def check_one_site(site):
     checks.append(http_redirect)
     http = HTTPConnection(domain)
     try:
-        url = "/"
+        path = "/"
         # Follow all redirects.
         while True:
-            http.request("GET", url, headers={"User-Agent": USER_AGENT})
+            http.request("GET", path, headers={"User-Agent": USER_AGENT})
             resp = http.getresponse()
             if resp.status in (301, 302, 303, 307):
-                url = resp.getheader("Location")
+                url = urlsplit(resp.getheader("Location"))
                 resp.close()
-                if url.startswith("https://"):
+                if url.scheme == "https":
                     http_redirect.succeed("HTTP site redirects to HTTPS.")
                     break
-                if not url.startswith("/"):
+                if url.netloc != domain:
+                    http_redirect.fail("HTTP site redirects to a different domain.")
+                    break
+                path = url.path
+                if not path.startswith("/"):
                     url = "/" + url
             else:
                 http_redirect.fail("HTTP site doesn't redirect to HTTPS.")
