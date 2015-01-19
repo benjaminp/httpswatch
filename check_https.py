@@ -157,7 +157,7 @@ def check_one_site(site):
                 if url.scheme == "https":
                     http_redirect.succeed("HTTP site redirects to HTTPS.")
                     break
-                if url.netloc != domain:
+                if url.netloc and url.netloc != domain:
                     http_redirect.fail("HTTP site redirects to a different domain.")
                     break
                 path = url.path
