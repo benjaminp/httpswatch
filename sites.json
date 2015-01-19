@@ -1,36 +1,6 @@
 {
     "categories": [
         {
-            "name": "Linux Distributions",
-            "linkname": "distributions",
-            "sites": [
-                {
-                    "name": "Arch",
-                    "domain": "www.archlinux.org"
-                },
-                {
-                    "name": "CentOS",
-                    "domain": "www.centos.org"
-                },
-                {
-                    "name": "Debian",
-                    "domain": "www.debian.org"
-                },
-                {
-                    "name": "Fedora",
-                    "domain": "getfedora.org"
-                },
-                {
-                    "name": "Gentoo",
-                    "domain": "www.gentoo.org"
-                },
-                {
-                    "name": "Ubuntu",
-                    "domain": "www.ubuntu.com"
-                }
-            ]
-        },
-        {
             "name": "Newspapers",
             "linkname": "newspapers",
             "sites": [
@@ -139,80 +109,13 @@
             ]
         },
         {
-            "name": "Programming Languages",
-            "linkname": "programming-languages",
-            "sites": [
-                {
-                    "name": "Clojure",
-                    "domain": "clojure.org"
-                },
-                {
-                    "name": "D",
-                    "domain": "dlang.org"
-                },
-                {
-                    "name": "Erlang",
-                    "domain": "www.erlang.org"
-                },
-                {
-                    "name": "Go",
-                    "domain": "golang.org"
-                },
-                {
-                    "name": "Haskell",
-                    "domain": "www.haskell.org"
-                },
-                {
-                    "name": "Julia",
-                    "domain": "julialang.org"
-                },
-                {
-                    "name": "Lua",
-                    "domain": "www.lua.org"
-                },
-                {
-                    "name": "Perl",
-                    "domain": "www.perl.org"
-                },
-                {
-                    "name": "PHP",
-                    "domain": "www.php.net"
-                },
-                {
-                    "name": "Python",
-                    "domain": "www.python.org"
-                },
-                {
-                    "name": "R",
-                    "domain": "www.r-project.org"
-                },
-                {
-                    "name": "Ruby",
-                    "domain": "www.ruby-lang.org"
-                },
-                {
-                    "name": "Rust",
-                    "domain": "www.rust-lang.org"
-                },
-                {
-                    "name": "Scala",
-                    "domain": "www.scala-lang.org"
-                },
-                {
-                    "name": "Schemers",
-                    "domain": "schemers.org"
-                }
-
-            ]
-        },
-        {
             "name": "Publishing Platforms",
             "linkname": "publishing-platforms",
             "sites": [
                 {
                     "name": "Blogger",
                     "domain": "www.blogger.com"
-                }, 
+                },
                 {
                     "name": "Medium",
                     "domain": "medium.com"
@@ -229,7 +132,7 @@
                     "name": "WordPress",
                     "domain": "wordpress.com"
                 }
-            ]            
+            ]
         },
         {
             "name": "Universities",
@@ -333,6 +236,103 @@
                     "name": "Bureau of Labor Statistics",
                     "domain": "www.bls.gov"
                 }
+            ]
+        },
+        {
+            "name": "Linux Distributions",
+            "linkname": "distributions",
+            "sites": [
+                {
+                    "name": "Arch",
+                    "domain": "www.archlinux.org"
+                },
+                {
+                    "name": "CentOS",
+                    "domain": "www.centos.org"
+                },
+                {
+                    "name": "Debian",
+                    "domain": "www.debian.org"
+                },
+                {
+                    "name": "Fedora",
+                    "domain": "getfedora.org"
+                },
+                {
+                    "name": "Gentoo",
+                    "domain": "www.gentoo.org"
+                },
+                {
+                    "name": "Ubuntu",
+                    "domain": "www.ubuntu.com"
+                }
+            ]
+        },
+        {
+            "name": "Programming Languages",
+            "linkname": "programming-languages",
+            "sites": [
+                {
+                    "name": "Clojure",
+                    "domain": "clojure.org"
+                },
+                {
+                    "name": "D",
+                    "domain": "dlang.org"
+                },
+                {
+                    "name": "Erlang",
+                    "domain": "www.erlang.org"
+                },
+                {
+                    "name": "Go",
+                    "domain": "golang.org"
+                },
+                {
+                    "name": "Haskell",
+                    "domain": "www.haskell.org"
+                },
+                {
+                    "name": "Julia",
+                    "domain": "julialang.org"
+                },
+                {
+                    "name": "Lua",
+                    "domain": "www.lua.org"
+                },
+                {
+                    "name": "Perl",
+                    "domain": "www.perl.org"
+                },
+                {
+                    "name": "PHP",
+                    "domain": "www.php.net"
+                },
+                {
+                    "name": "Python",
+                    "domain": "www.python.org"
+                },
+                {
+                    "name": "R",
+                    "domain": "www.r-project.org"
+                },
+                {
+                    "name": "Ruby",
+                    "domain": "www.ruby-lang.org"
+                },
+                {
+                    "name": "Rust",
+                    "domain": "www.rust-lang.org"
+                },
+                {
+                    "name": "Scala",
+                    "domain": "www.scala-lang.org"
+                },
+                {
+                    "name": "Schemers",
+                    "domain": "schemers.org"
+                }
+
             ]
         }
     ]

@@ -13,7 +13,7 @@ from http.client import HTTPConnection, HTTPSConnection, HTTPException
 
 import jinja2
 
-PARALLELISM = 8
+PARALLELISM = 16
 
 log = logging.getLogger("check_https")
 
