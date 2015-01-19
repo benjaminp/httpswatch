@@ -1,3 +1,4 @@
+import argparse
 import collections
 import concurrent.futures
 import errno
@@ -164,9 +165,9 @@ def check_one_site(site):
     site["status"] = "mediocre" if mediocre else "good"
 
 
-def check_sites():
+def check_sites(sites_file):
     # Read list of sites.
-    with open("sites.json", encoding="utf-8") as fp:
+    with open(sites_file, encoding="utf-8") as fp:
         data = json.load(fp)
 
     futures = []
@@ -203,11 +204,17 @@ def encode_check(o):
 
 
 def main():
-    if "--cached" in sys.argv:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--cached", action="store_true")
+    parser.add_argument("sites", default="sites.json", nargs="?")
+
+    args = parser.parse_args()
+
+    if args.cached:
         with open("cache.json", "r", encoding="utf-8") as fp:
             data = json.load(fp)
     else:
-        data = check_sites()
+        data = check_sites(args.sites)
         with open("cache.json", "w", encoding="utf-8") as fp:
             json.dump(data, fp, default=encode_check)
 
