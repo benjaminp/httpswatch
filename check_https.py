@@ -8,7 +8,6 @@ import random
 import re
 import socket
 import ssl
-import sys
 import time
 
 from http.client import HTTPConnection, HTTPSConnection, HTTPException
