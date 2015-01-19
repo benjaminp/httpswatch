@@ -15,6 +15,7 @@ from http.client import HTTPConnection, HTTPSConnection, HTTPException
 import jinja2
 
 PARALLELISM = 16
+USER_AGENT = "HTTPSWatch Bot (https://httpswatch.com)"
 
 log = logging.getLogger("check_https")
 
@@ -98,7 +99,7 @@ def check_one_site(site):
         url = "/"
         # Follow all redirects.
         while True:
-            http.request("GET", url)
+            http.request("GET", url, headers={"User-Agent": USER_AGENT})
             resp = http.getresponse()
             if resp.status in (301, 302, 303, 307):
                 url = resp.getheader("Location")
@@ -143,7 +144,7 @@ def check_one_site(site):
         url = "/"
         # Follow all redirects.
         while True:
-            http.request("GET", url)
+            http.request("GET", url, headers={"User-Agent": USER_AGENT})
             resp = http.getresponse()
             if resp.status in (301, 302, 303, 307):
                 url = resp.getheader("Location")
