@@ -167,6 +167,9 @@ def check_sites():
             print("{}/{}".format(len(done), len(done) + len(not_done)))
             if not not_done:
                 break
+        for f in futures:
+            # This will raise an exception if check_one_site did.
+            f.result()
 
     total_status = collections.Counter()
     for cat in data["categories"]:
