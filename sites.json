@@ -395,6 +395,10 @@
                     "domain": "dlang.org"
                 },
                 {
+                    "name": "Dart",
+                    "domain": "www.dartlang.org"
+                },
+                {
                     "name": "Erlang",
                     "domain": "www.erlang.org"
                 },
