@@ -133,6 +133,10 @@ def check_one_site(site):
     except socket.timeout:
         https_load.fail("Requesting HTTPS page times out.")
         return
+    except OSError as e:
+        err_msg = errno.errorcode[e.errno]
+        https_load.fail("Encountered error ({}) while loading HTTPS site.".format(err_msg))
+        return
     finally:
         http.close()
     https_load.succeed("A page can be successfully fetched over HTTPS.")
@@ -158,6 +162,11 @@ def check_one_site(site):
                 break
     except HTTPException:
         http_redirect.fail("Encountered HTTP error while loading HTTP site.")
+        return
+    except OSError as e:
+        err_msg = errno.errorcode[e.errno]
+        http_redirect.fail("Encountered error ({}) while loading HTTP site.".format(err_msg))
+        return
     finally:
         http.close()
 
