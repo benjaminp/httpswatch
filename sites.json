@@ -206,6 +206,32 @@
             ]
         },
         {
+            "name": "Publishing Platforms",
+            "linkname": "publishing-platforms",
+            "sites": [
+                {
+                    "name": "Blogger",
+                    "domain": "www.blogger.com"
+                }, 
+                {
+                    "name": "Medium",
+                    "domain": "medium.com"
+                },
+                {
+                    "name": "Squarespace",
+                    "domain": "squarespace.com"
+                },
+                {
+                    "name": "Tumblr",
+                    "domain": "www.tumblr.com"
+                },
+                {
+                    "name": "WordPress",
+                    "domain": "wordpress.com"
+                }
+            ]            
+        },
+        {
             "name": "Universities",
             "linkname": "universities",
             "sites": [
