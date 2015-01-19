@@ -1,5 +1,6 @@
 import collections
 import concurrent.futures
+import errno
 import logging
 import json
 import random
@@ -69,6 +70,10 @@ def check_one_site(site):
         return
     except socket.timeout:
         good_connection.fail("<code>connect()</code> to port 443 times out.")
+        return
+    except OSError as e:
+        error_name = errno.errorcode[e.errno]
+        good_connection.fail("<code>connect()</code> returns with error {}.".format(error_name))
         return
     except ssl.SSLError as e:
         if e.reason == "CERTIFICATE_VERIFY_FAILED":
