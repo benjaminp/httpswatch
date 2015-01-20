@@ -245,7 +245,6 @@ def encode_check(o):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--cached", action="store_true")
-    parser.add_argument("sites", default="sites.json", nargs="?")
 
     args = parser.parse_args()
 
