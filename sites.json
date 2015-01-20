@@ -37,6 +37,10 @@
                     "domain": "www.nytimes.com"
                 },
                 {
+                    "name": "POLITICO",
+                    "domain": "www.politico.com"
+                },
+                {
                     "name": "Der Spiegel",
                     "domain": "www.spiegel.de"
                 },
