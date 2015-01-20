@@ -227,14 +227,11 @@ def check_sites(sites_file):
             # This will raise an exception if check_one_site did.
             f.result()
 
-    total_status = collections.Counter()
     for cat in data["categories"]:
         cat_status = collections.Counter()
         for site in cat["sites"]:
             cat_status[site["status"]] += 1
         cat["counts"] = cat_status
-        total_status.update(cat_status)
-    data["counts"] = total_status
 
     return data
 
