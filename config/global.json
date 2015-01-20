@@ -97,6 +97,36 @@
             ]
         },
         {
+            "name": "Cloud Storage",
+            "linkname": "storage",
+            "sites": [
+                {
+                    "name": "Box",
+                    "domain": "www.box.com"
+                },
+                {
+                    "name": "Dropbox",
+                    "domain": "www.dropbox.com"
+                },
+                {
+                    "name": "Google Drive",
+                    "domain": "drive.google.com"
+                },
+                {
+                    "name": "iCloud",
+                    "domain": "www.icloud.com"
+                },
+                {
+                    "name": "OneDrive",
+                    "domain": "onedrive.live.com"
+                },
+                {
+                    "name": "Tarsnap",
+                    "domain": "www.tarsnap.com"
+                }
+            ]
+        },
+        {
             "name": "Publishing Platforms",
             "linkname": "publishing-platforms",
             "sites": [
