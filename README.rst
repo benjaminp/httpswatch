@@ -11,4 +11,7 @@ Jinja2 templates from the ``templates/`` directory.
 If you edit the HTML, please do not wrap HTML lines. (Paragraphs should be on
 one line.)
 
+Once ``check_https.py`` has been run, you can run ``testing_server.py`` to view
+the website at ``localhost:8000``.
+
 .. _HTTPSWatch project: https://httpswatch.com
