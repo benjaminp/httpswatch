@@ -118,7 +118,6 @@ body {
 }
 .nav-list > li::after {
     content: "||";
-    padding: 0 .1em;
 }
 .nav-list > li:last-child::after {
     content: "";
