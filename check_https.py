@@ -37,6 +37,38 @@ class Check:
         self.description = desc
 
 
+class Not200(Exception):
+
+    def __init__(self, status):
+        super(Exception, self).__init__()
+        self.status = status
+
+
+def fetch_through_redirects(http, stop=None):
+    path = "/"
+    url = None
+    while True:
+        http.request("GET", path, headers={"User-Agent": USER_AGENT})
+        resp = http.getresponse()
+        if resp.status in (301, 302, 303, 307):
+            url = urlsplit(resp.getheader("Location"))
+            if stop is not None and stop(url):
+                break
+            resp.read()
+            resp.close()
+            if url.netloc and url.netloc != http.host:
+                # Probably should actually handle this...
+                raise ValueError("Site redirects to a different domain.")
+            path = url.path
+            if not path.startswith("/"):
+                path = "/" + path
+            continue
+        if resp.status != 200:
+            raise Not200(resp.status)
+        break
+    return url, resp
+
+
 def check_one_site(site):
     domain = site["domain"]
     log.info("Checking {}".format(domain))
@@ -97,23 +129,12 @@ def check_one_site(site):
     http = HTTPSConnection(domain, context=context)
     http.sock = secure_sock
     try:
-        url = "/"
-        # Follow all redirects.
-        while True:
-            http.request("GET", url, headers={"User-Agent": USER_AGENT})
-            resp = http.getresponse()
-            if resp.status in (301, 302, 303, 307):
-                url = resp.getheader("Location")
-                resp.read()
-                resp.close()
-                if url.startswith("http://"):
-                    https_load.fail("The HTTPS site redirects to HTTP.")
-                    return
-            elif resp.status != 200:
-                https_load.fail("The HTTPS site returns an error code on request.")
-                return
-            else:
-                break
+        def stop_on_http_or_domain_change(url):
+            return url.scheme == "http" or (url.netloc and url.netloc != domain)
+        final, resp = fetch_through_redirects(http, stop_on_http_or_domain_change)
+        if final is not None and final.scheme == "http":
+            https_load.fail("The HTTPS site redirects to HTTP.")
+            return
         good_sts = Check()
         checks.append(good_sts)
         sts = resp.getheader("Strict-Transport-Security")
@@ -134,6 +155,9 @@ def check_one_site(site):
     except socket.timeout:
         https_load.fail("Requesting HTTPS page times out.")
         return
+    except Not200 as e:
+        https_load.fail("The HTTPS site returns an error status ({}) on request.".format(e.status))
+        return
     except OSError as e:
         err_msg = errno.errorcode[e.errno]
         https_load.fail("Encountered error ({}) while loading HTTPS site.".format(err_msg))
@@ -146,29 +170,19 @@ def check_one_site(site):
     checks.append(http_redirect)
     http = HTTPConnection(domain)
     try:
-        path = "/"
-        # Follow all redirects.
-        while True:
-            http.request("GET", path, headers={"User-Agent": USER_AGENT})
-            resp = http.getresponse()
-            if resp.status in (301, 302, 303, 307):
-                url = urlsplit(resp.getheader("Location"))
-                resp.close()
-                if url.scheme == "https":
-                    http_redirect.succeed("HTTP site redirects to HTTPS.")
-                    break
-                if url.netloc and url.netloc != domain:
-                    http_redirect.fail("HTTP site redirects to a different domain.")
-                    break
-                path = url.path
-                if not path.startswith("/"):
-                    url = "/" + url
-            else:
-                http_redirect.fail("HTTP site doesn't redirect to HTTPS.")
-                mediocre = True
-                break
+        def stop_on_https(url):
+            return url.scheme == "https"
+        final, resp = fetch_through_redirects(http, stop_on_https)
+        if final is not None and final.scheme == "https":
+            http_redirect.succeed("HTTP site redirects to HTTPS.")
+        else:
+            http_redirect.fail("HTTP site doesn't redirect to HTTPS.")
+            mediocre = True
     except HTTPException:
         http_redirect.fail("Encountered HTTP error while loading HTTP site.")
+        return
+    except Not200 as e:
+        http_redirect.fail("The HTTP site returns an error status ({}) on request.".format(e.status))
         return
     except OSError as e:
         err_msg = errno.errorcode[e.errno]
