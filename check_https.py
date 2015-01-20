@@ -207,17 +207,20 @@ def check_one_site(site):
     site["status"] = "mediocre" if mediocre else "good"
 
 
-def check_sites(sites_file):
-    # Read list of sites.
-    with open(sites_file, encoding="utf-8") as fp:
-        data = json.load(fp)
-
+def regenerate_everything():
+    with open("config/meta.json", "r", encoding="utf-8") as fp:
+        meta = json.load(fp)
     futures = []
     executor = concurrent.futures.ThreadPoolExecutor(max_workers=PARALLELISM)
-    with executor:
-        for cat in data["categories"]:
+    for listing in meta["listings"]:
+        if "external" in listing:
+            continue
+        with open("config/{}.json".format(listing["shortname"]), encoding="utf-8") as fp:
+            listing["data"] = json.load(fp)
+        for cat in listing["data"]["categories"]:
             for site in cat["sites"]:
                 futures.append(executor.submit(check_one_site, site))
+    with executor:
         while True:
             done, not_done = concurrent.futures.wait(futures, timeout=1)
             print("{}/{}".format(len(done), len(done) + len(not_done)))
@@ -227,13 +230,16 @@ def check_sites(sites_file):
             # This will raise an exception if check_one_site did.
             f.result()
 
-    for cat in data["categories"]:
-        cat_status = collections.Counter()
-        for site in cat["sites"]:
-            cat_status[site["status"]] += 1
-        cat["counts"] = cat_status
+    for listing in meta["listings"]:
+        if "external" in listing:
+            continue
+        for cat in listing["data"]["categories"]:
+            cat_status = collections.Counter()
+            for site in cat["sites"]:
+                cat_status[site["status"]] += 1
+            cat["counts"] = cat_status
 
-    return data
+    return meta
 
 
 def encode_check(o):
@@ -252,12 +258,7 @@ def main():
         with open("cache.json", "r", encoding="utf-8") as fp:
             meta = json.load(fp)
     else:
-        with open("config/meta.json", "r", encoding="utf-8") as fp:
-            meta = json.load(fp)
-        for listing in meta["listings"]:
-            if "external" in listing:
-                continue
-            listing["data"] = check_sites("config/{}.json".format(listing["shortname"]))
+        meta = regenerate_everything()
         with open("cache.json", "w", encoding="utf-8") as fp:
             json.dump(meta, fp, default=encode_check)
 
