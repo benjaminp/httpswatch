@@ -1,6 +1,10 @@
 {
-    "default_page": "us",
+    "default_page": "global",
     "listings": [
+        {
+            "name": "Global",
+            "shortname": "global"
+        },
         {
             "name": "United States",
             "shortname": "us"

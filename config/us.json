@@ -113,102 +113,6 @@
             ]
         },
         {
-            "name": "Social Media",
-            "linkname": "socialmedia",
-            "sites": [
-                {
-                    "name": "LinkedIn",
-                    "domain": "www.linkedin.com"
-                },
-                {
-                    "name": "Facebook",
-                    "domain": "www.facebook.com"
-                },
-                {
-                    "name": "Twitter",
-                    "domain": "twitter.com"
-                },
-                {
-                    "name": "Pintrest",
-                    "domain": "www.pinterest.com"
-                },
-                {
-                    "name": "Tumblr",
-                    "domain": "www.tumblr.com"
-                },
-                {
-                    "name": "Instagram",
-                    "domain": "instagram.com"
-                },
-                {
-                    "name": "Reddit",
-                    "domain": "www.reddit.com"
-                },
-                {
-                    "name": "YouTube",
-                    "domain": "www.youtube.com"
-                },
-                {
-                    "name": "Vine",
-                    "domain": "vine.co"
-                },
-                {
-                    "name": "Vimeo",
-                    "domain": "vimeo.com"
-                },
-                {
-                    "name": "Match.com",
-                    "domain": "www.match.com"
-                },
-                {
-                    "name": "OkCupid",
-                    "domain": "www.okcupid.com"
-                }
-            ]
-        },
-        {
-            "name": "Commerce",
-            "linkname": "commerce",
-            "sites": [
-                {
-                    "name": "Apple",
-                    "domain": "store.apple.com"
-                },
-                {
-                    "name": "Amazon",
-                    "domain": "www.amazon.com"
-                },
-                {
-                    "name": "Best Buy",
-                    "domain": "www.bestbuy.com"
-                },
-                {
-                    "name": "eBay",
-                    "domain": "www.ebay.com"
-                },
-                {
-                    "name": "Target",
-                    "domain": "www.target.com"
-                },
-                {
-                    "name": "Walmart",
-                    "domain": "www.walmart.com"
-                },
-                {
-                    "name": "CVS",
-                    "domain": "www.cvs.com"
-                },
-                {
-                    "name": "Home Depot",
-                    "domain": "www.homedepot.com"
-                },
-                {
-                    "name": "Barnes & Noble",
-                    "domain": "www.barnesandnoble.com"
-                }
-            ]
-        },
-        {
             "name": "Travel",
             "linkname": "travel",
             "sites": [
@@ -235,32 +139,6 @@
                 {
                     "name": "Expedia",
                     "domain": "www.expedia.com"
-                }
-            ]
-        },
-        {
-            "name": "Publishing Platforms",
-            "linkname": "publishing-platforms",
-            "sites": [
-                {
-                    "name": "Blogger",
-                    "domain": "www.blogger.com"
-                },
-                {
-                    "name": "Medium",
-                    "domain": "medium.com"
-                },
-                {
-                    "name": "Squarespace",
-                    "domain": "squarespace.com"
-                },
-                {
-                    "name": "Tumblr",
-                    "domain": "www.tumblr.com"
-                },
-                {
-                    "name": "WordPress",
-                    "domain": "wordpress.com"
                 }
             ]
         },
