@@ -98,7 +98,24 @@
                     "name": "Schemers",
                     "domain": "schemers.org"
                 }
-
+            ]
+        },
+        {
+            "name": "HTTPSWatch Meta",
+            "linkname": "httpswatch-meta",
+            "sites": [
+                {
+                    "name": "HTTPSWatch United States",
+                    "domain": "httpswatch.com"
+                },
+                {
+                    "name": "HTTPSWatch Australia",
+                    "domain": "httpswatchau.net"
+                },
+                {
+                    "name": "HTTPSWatch New Zealand",
+                    "domain": "httpswatch.nz"
+                }
             ]
         }
     ]
