@@ -5,6 +5,7 @@ import concurrent.futures
 import errno
 import logging
 import json
+import os
 import random
 import re
 import shutil
@@ -269,6 +270,10 @@ def main():
     env.globals["analytics"] = ANALYTICS
     env.globals["update_time"] = time.strftime("%Y-%m-%d %H:%MZ", time.gmtime())
     env.globals["meta"] = meta
+    try:
+        os.mkdir("out")
+    except FileExistsError:
+        pass
     with open("out/about.html", "w", encoding="utf-8") as fp:
         fp.write(env.get_template("about.html.jinja").render())
     listing_tmp = env.get_template("listing.html.jinja")

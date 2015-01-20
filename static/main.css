@@ -98,7 +98,6 @@ header {
     content: "|";
     font-size: 120%;
     margin: 0;
-    padding: 0 3px 0 0;
 }
 .header-nav-list > li:last-child::after {
     content: "";
@@ -118,7 +117,6 @@ body {
 }
 .nav-list > li::after {
     content: "||";
-    padding: 0 .1em;
 }
 .nav-list > li:last-child::after {
     content: "";
@@ -210,7 +208,6 @@ body {
     color: red;
 }
 footer {
-    width: 750px;
     padding-top: 20px;
     font-size: 80%;
 }
