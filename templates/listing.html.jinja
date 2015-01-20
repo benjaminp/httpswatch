@@ -1,0 +1,66 @@
+{% extends "base.html.jinja" %}
+{% block extra_head %}
+<script type="text/javascript">
+(function () {
+function toggleOpen(e) {
+    if (e.target.tagName === "A")
+        return;
+    this.parentNode.classList.toggle("details-open");
+}
+window.addEventListener("load", function onLoad() {
+    var elms = document.getElementsByClassName("site-status-summary");
+    for (var i = 0; i < elms.length; i++) {
+        elms[i].addEventListener("click", toggleOpen);
+    }
+})
+})();
+</script>
+{% endblock %}
+
+{% block body %}
+
+<h1>HTTPSWatch</h1>
+<p>HTTPSWatch tracks the HTTPS support of prominent websites. Click to show details about a site&rsquo;s HTTPS support. See the <a href="/about">About page</a> for more information.
+
+<nav class="main-toc">
+  <ul class="nav-list">
+  {% for cat in listing.data.categories %}
+    <li><a href="#{{ cat.linkname }}">{{ cat.name|e }}</a>
+  {% endfor %}
+  </ul>
+</nav>
+
+{% for cat in listing.data.categories %}
+<section id="{{ cat.linkname }}">
+  <div class="cat-header">
+    <h2 class="cat-name">{{ cat.name|e }}</h2>
+    <a class="cat-name-link" title="Link to this category" href="#{{ cat.linkname }}">¶</a>
+    <div class="cat-counts">
+      <span class="site-grade-bad">{{ cat.counts.bad|default(0) }}</span>/<span class="site-grade-mediocre">{{ cat.counts.mediocre|default(0) }}</span>/<span class="site-grade-good">{{ cat.counts.good|default(0) }}</span>
+    </div>
+  </div>
+  <div class="site-category">
+  {% for site in cat.sites %}
+    <div class="site-entry">
+      <div class="site-status-summary">
+        <span class="glyphicon site-details-expander"></span>
+        <span class="site-name">{{ site.name|e }}</span>
+        <span class="site-domain">(<a href="https://{{ site.domain }}">{{ site.domain }}</a>)</span>
+        <span class="site-grade site-grade-{{ site.status }}">{{ site.status|title }}</span>
+      </div>
+      <div class="site-status-details">
+        <ul class="site-check-list">
+        {% for check in site.checks %}
+          <li class="site-check-item">
+            {% if check.icon == "bad" %}<span class="glyphicon glyphicon-ban-circle site-check-bad"></span>{% else %}<span class="glyphicon glyphicon-ok-circle site-check-good"></span>{% endif %}
+            {{ check.description }}
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</section>
+{% endfor %}
+
+{% endblock %}

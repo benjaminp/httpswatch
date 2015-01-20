@@ -7,6 +7,7 @@ import logging
 import json
 import random
 import re
+import shutil
 import socket
 import ssl
 import time
@@ -18,6 +19,16 @@ import jinja2
 
 PARALLELISM = 16
 USER_AGENT = "HTTPSWatch Bot (https://httpswatch.com)"
+ANALYTICS = """<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-342043-4', 'auto');
+ga('send', 'pageview');
+</script>
+"""
 
 log = logging.getLogger("check_https")
 
@@ -242,19 +253,33 @@ def main():
 
     if args.cached:
         with open("cache.json", "r", encoding="utf-8") as fp:
-            data = json.load(fp)
+            meta = json.load(fp)
     else:
-        data = check_sites(args.sites)
+        with open("config/meta.json", "r", encoding="utf-8") as fp:
+            meta = json.load(fp)
+        for listing in meta["listings"]:
+            if "external" in listing:
+                continue
+            listing["data"] = check_sites("config/{}.json".format(listing["shortname"]))
         with open("cache.json", "w", encoding="utf-8") as fp:
-            json.dump(data, fp, default=encode_check)
+            json.dump(meta, fp, default=encode_check)
 
     # Write out results.
-    env = jinja2.Environment()
-    with open("index.html.jinja", encoding="utf-8") as fp:
-        tmp = env.from_string(fp.read())
-    update_time = time.strftime("%Y-%m-%d %H:%MZ", time.gmtime())
-    with open("index.html", "w", encoding="utf-8") as fp:
-        fp.write(tmp.render(data=data, update_time=update_time))
+    env = jinja2.Environment(loader=jinja2.FileSystemLoader("templates"))
+    env.globals["analytics"] = ANALYTICS
+    env.globals["update_time"] = time.strftime("%Y-%m-%d %H:%MZ", time.gmtime())
+    env.globals["meta"] = meta
+    with open("out/about.html", "w", encoding="utf-8") as fp:
+        fp.write(env.get_template("about.html.jinja").render())
+    listing_tmp = env.get_template("listing.html.jinja")
+    for listing in meta["listings"]:
+        if "external" in listing:
+            continue
+        out_fn = "out/{}.html".format(listing["shortname"])
+        with open(out_fn, "w", encoding="utf-8") as fp:
+            fp.write(listing_tmp.render(listing=listing))
+        if meta["default_page"] == listing["shortname"]:
+            shutil.copy(out_fn, "out/index.html")
 
 
 if __name__ == "__main__":
