@@ -113,6 +113,52 @@
             ]
         },
         {
+            "name": "Banking",
+            "linkname": "banking",
+            "sites": [
+                {
+                    "name": "Chase",
+                    "domain": "www.chase.com"
+                },
+                {
+                    "name": "Bank of America",
+                    "domain": "www.bankofamerica.com"
+                },
+                {
+                    "name": "Citi",
+                    "domain": "online.citibank.com"
+                },
+                {
+                    "name": "Wells Fargo",
+                    "domain": "www.wellsfargo.com"
+                },
+                {
+                    "name": "Bank of New York Mellon",
+                    "domain": "www.bnymellon.com"
+                },
+                {
+                    "name": "U.S. Bancorp",
+                    "domain": "www.usbank.com"
+                },
+                {
+                    "name": "HSBC",
+                    "domain": "www.hsbc.com"
+                },
+                {
+                    "name": "PNC",
+                    "domain": "www.pnc.com"
+                },
+                {
+                    "name": "Capital One",
+                    "domain": "www.capitalone.com"
+                },
+                {
+                    "name": "TD Bank",
+                    "domain": "www.tdbank.com"
+                }
+            ]
+        },
+        {
             "name": "Travel",
             "linkname": "travel",
             "sites": [
