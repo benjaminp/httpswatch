@@ -6,7 +6,8 @@
             "sites": [
                 {
                     "name": "Chicago Sun-Times",
-                    "domain": "www.suntimes.com"
+                    "domain": "www.suntimes.com",
+                    "twitter": "Suntimes"
                 },
                 {
                     "name": "Chicago Tribune",
