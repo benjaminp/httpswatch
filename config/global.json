@@ -36,27 +36,33 @@
                 },
                 {
                     "name": "Reddit",
-                    "domain": "www.reddit.com"
+                    "domain": "www.reddit.com",
+                    "twitter": "reddit"
                 },
                 {
                     "name": "YouTube",
-                    "domain": "www.youtube.com"
+                    "domain": "www.youtube.com",
+                    "twitter": "YouTube"
                 },
                 {
                     "name": "Vine",
-                    "domain": "vine.co"
+                    "domain": "vine.co",
+                    "twitter": "vine"
                 },
                 {
                     "name": "Vimeo",
-                    "domain": "vimeo.com"
+                    "domain": "vimeo.com",
+                    "twitter": "vimeo"
                 },
                 {
                     "name": "Match.com",
-                    "domain": "www.match.com"
+                    "domain": "www.match.com",
+                    "twitter": "match"
                 },
                 {
                     "name": "OkCupid",
-                    "domain": "www.okcupid.com"
+                    "domain": "www.okcupid.com",
+                    "twitter": "okcupid"
                 }
             ]
         },
