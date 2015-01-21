@@ -25,11 +25,6 @@
                     "twitter": "Pinterest"
                 },
                 {
-                    "name": "Tumblr",
-                    "domain": "www.tumblr.com",
-                    "twitter": "tumblr"
-                },
-                {
                     "name": "Instagram",
                     "domain": "instagram.com",
                     "twitter": "instagram"
@@ -151,23 +146,28 @@
             "sites": [
                 {
                     "name": "Blogger",
-                    "domain": "www.blogger.com"
+                    "domain": "www.blogger.com",
+                    "twitter": "Blogger"
                 },
                 {
                     "name": "Medium",
-                    "domain": "medium.com"
+                    "domain": "medium.com",
+                    "twitter": "Medium"
                 },
                 {
                     "name": "Squarespace",
-                    "domain": "squarespace.com"
+                    "domain": "squarespace.com",
+                    "twitter": "Squarespace"
                 },
                 {
                     "name": "Tumblr",
-                    "domain": "www.tumblr.com"
+                    "domain": "www.tumblr.com",
+                    "twitter": "tumblr"
                 },
                 {
                     "name": "WordPress",
-                    "domain": "wordpress.com"
+                    "domain": "wordpress.com",
+                    "twitter": "WordPress"
                 }
             ]
         }
