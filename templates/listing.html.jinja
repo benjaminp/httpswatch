@@ -56,11 +56,18 @@ window.addEventListener("load", function onLoad() {
             {{ check.description }}
         {% endfor %}
         </ul>
+        <div class="tweet-button-container">
         {% if site.twitter is defined %}
+        {% if site.status == "good" %}
+        Thank {{ site.name|e }} for providing high quality HTTPS:
+        {% else %}
+        Tell {{ site.name|e }} they should improve their HTTPS support:
+        {% endif %}
           <a class="twitter-share-button" href="https://twitter.com/share" data-url="https://httpswatch.com/#twitter-{{ site.twitter }}" data-text=". @{{ site.twitter }} {% if site.status == 'good' %}Thanks for protecting your users with great HTTPS!{% else %}Why don't you protect your users with great HTTPS?{% endif %} #httpswatch" data-count="horizontal">
             Tweet @{{ site.twitter }}
           </a>
         {% endif %}
+        </div>
       </div>
     </div>
   {% endfor %}

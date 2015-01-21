@@ -207,6 +207,15 @@ body {
 .site-check-bad {
     color: red;
 }
+.tweet-button-container {
+    margin: 18px 0 0 10px;
+    padding-top: 10px;
+    border-top: 1px solid #E0E0E0;
+    font-style: italic;
+}
+.twitter-tweet-button {
+    vertical-align: text-bottom;
+}
 footer {
     padding-top: 20px;
     font-size: 80%;
