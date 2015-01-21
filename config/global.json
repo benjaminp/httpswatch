@@ -6,27 +6,33 @@
             "sites": [
                 {
                     "name": "LinkedIn",
-                    "domain": "www.linkedin.com"
+                    "domain": "www.linkedin.com",
+                    "twitter": "LinkedIn"
                 },
                 {
                     "name": "Facebook",
-                    "domain": "www.facebook.com"
+                    "domain": "www.facebook.com",
+                    "twitter": "facebook"
                 },
                 {
                     "name": "Twitter",
-                    "domain": "twitter.com"
+                    "domain": "twitter.com",
+                    "twitter": "twitter"
                 },
                 {
                     "name": "Pintrest",
-                    "domain": "www.pinterest.com"
+                    "domain": "www.pinterest.com",
+                    "twitter": "Pinterest"
                 },
                 {
                     "name": "Tumblr",
-                    "domain": "www.tumblr.com"
+                    "domain": "www.tumblr.com",
+                    "twitter": "tumblr"
                 },
                 {
                     "name": "Instagram",
-                    "domain": "instagram.com"
+                    "domain": "instagram.com",
+                    "twitter": "instagram"
                 },
                 {
                     "name": "Reddit",
