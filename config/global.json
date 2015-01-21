@@ -116,15 +116,18 @@
             "sites": [
                 {
                     "name": "Box",
-                    "domain": "www.box.com"
+                    "domain": "www.box.com",
+                    "twitter": "boxhq"
                 },
                 {
                     "name": "Dropbox",
-                    "domain": "www.dropbox.com"
+                    "domain": "www.dropbox.com",
+                    "twitter": "dropbox"
                 },
                 {
                     "name": "Google Drive",
-                    "domain": "drive.google.com"
+                    "domain": "drive.google.com",
+                    "twitter": "googledrive"
                 },
                 {
                     "name": "iCloud",
@@ -132,11 +135,13 @@
                 },
                 {
                     "name": "OneDrive",
-                    "domain": "onedrive.live.com"
+                    "domain": "onedrive.live.com",
+                    "twitter": "onedrive"
                 },
                 {
                     "name": "Tarsnap",
-                    "domain": "www.tarsnap.com"
+                    "domain": "www.tarsnap.com",
+                    "twitter": "tarsnap"
                 }
             ]
         },
