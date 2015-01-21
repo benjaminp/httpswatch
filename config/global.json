@@ -76,31 +76,38 @@
                 },
                 {
                     "name": "Amazon",
-                    "domain": "www.amazon.com"
+                    "domain": "www.amazon.com",
+                    "twitter": "amazon"
                 },
                 {
                     "name": "Best Buy",
-                    "domain": "www.bestbuy.com"
+                    "domain": "www.bestbuy.com",
+                    "twitter": "BestBuy"
                 },
                 {
                     "name": "eBay",
-                    "domain": "www.ebay.com"
+                    "domain": "www.ebay.com",
+                    "twitter": "eBay"
                 },
                 {
                     "name": "Target",
-                    "domain": "www.target.com"
+                    "domain": "www.target.com",
+                    "twitter": "Target"
                 },
                 {
                     "name": "Walmart",
-                    "domain": "www.walmart.com"
+                    "domain": "www.walmart.com",
+                    "twitter": "Walmart"
                 },
                 {
                     "name": "CVS",
-                    "domain": "www.cvs.com"
+                    "domain": "www.cvs.com",
+                    "twitter": "cvshealth"
                 },
                 {
                     "name": "Home Depot",
-                    "domain": "www.homedepot.com"
+                    "domain": "www.homedepot.com",
+                    "twitter": "HomeDepot"
                 },
                 {
                     "name": "Barnes & Noble",
