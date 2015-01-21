@@ -63,7 +63,7 @@ window.addEventListener("load", function onLoad() {
         {% else %}
         Tell {{ site.name|e }} they should improve their HTTPS support:
         {% endif %}
-          <a class="twitter-share-button" href="https://twitter.com/share" data-url="https://httpswatch.com/#twitter-{{ site.twitter }}" data-text="Hey @{{ site.twitter }} {% if site.status == 'good' %}Thanks for protecting your users with great HTTPS!{% else %}Why don't you protect your users with great HTTPS?{% endif %} #httpswatch" data-count="horizontal">
+          <a class="twitter-share-button" href="https://twitter.com/share" data-url="https://httpswatch.com/{{ listing.shortname }}#twitter-{{ site.twitter }}" data-text="Hey @{{ site.twitter }} {% if site.status == 'good' %}Thanks for protecting your users with great HTTPS!{% else %}Why don't you protect your users with great HTTPS?{% endif %} #httpswatch" data-count="horizontal">
             Tweet @{{ site.twitter }}
           </a>
         {% endif %}
