@@ -96,6 +96,32 @@
                 }
             ]
         },
+        {   
+            "name": "Health",
+            "linkname": "health",
+            "sites": [
+                {
+                    "name": "Drugs.com",
+                    "domain": "www.drugs.com"
+                },
+                {
+                    "name": "Everyday Health",
+                    "domain": "www.everydayhealth.com"
+                },
+                {
+                    "name": "Healthline",
+                    "domain": "www.healthline.com"
+                },
+                {
+                    "name": "Livestrong",
+                    "domain": "www.livestrong.com"
+                },
+                {
+                    "name": "WebMD",
+                    "domain": "www.webmd.com"
+                },
+            ]
+        },
         {
             "name": "Cloud Storage",
             "linkname": "storage",
