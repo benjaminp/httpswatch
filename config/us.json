@@ -6,55 +6,68 @@
             "sites": [
                 {
                     "name": "Chicago Sun-Times",
-                    "domain": "www.suntimes.com"
+                    "domain": "www.suntimes.com",
+                    "twitter": "Suntimes"
                 },
                 {
                     "name": "Chicago Tribune",
-                    "domain": "www.chicagotribune.com"
+                    "domain": "www.chicagotribune.com",
+                    "twitter": "chicagotribune"
                 },
                 {
                     "name": "Daily News",
-                    "domain": "www.nydailynews.com"
+                    "domain": "www.nydailynews.com",
+                    "twitter": "NYDailyNews"
                 },
                 {
                     "name": "The Denver Post",
-                    "domain": "www.denverpost.com"
+                    "domain": "www.denverpost.com",
+                    "twitter": "denverpost"
                 },
                 {
                     "name": "The Guardian",
-                    "domain": "www.theguardian.com"
+                    "domain": "www.theguardian.com",
+                    "twitter": "guardian"
                 },
                 {
                     "name": "Los Angeles Times",
-                    "domain": "www.latimes.com"
+                    "domain": "www.latimes.com",
+                    "twitter": "latimes"
                 },
                 {
                     "name": "The New York Post",
-                    "domain": "www.nypost.com"
+                    "domain": "www.nypost.com",
+                    "twitter": "nypost"
                 },
                 {
                     "name": "The New York Times",
-                    "domain": "www.nytimes.com"
+                    "domain": "www.nytimes.com",
+                    "twitter": "nytimes"
                 },
                 {
                     "name": "POLITICO",
-                    "domain": "www.politico.com"
+                    "domain": "www.politico.com",
+                    "twitter": "politico"
                 },
                 {
                     "name": "Der Spiegel",
-                    "domain": "www.spiegel.de"
+                    "domain": "www.spiegel.de",
+                    "twitter": "SPIEGEL_English"
                 },
                 {
                     "name": "USA Today",
-                    "domain": "www.usatoday.com"
+                    "domain": "www.usatoday.com",
+                    "twitter": "USATODAY"
                 },
                 {
                     "name": "The Wall Street Journal",
-                    "domain": "www.wsj.com"
+                    "domain": "www.wsj.com",
+                    "twitter": "wsj"
                 },
                 {
                     "name": "Washington Post",
-                    "domain": "www.washingtonpost.com"
+                    "domain": "www.washingtonpost.com",
+                    "twitter": "washingtonpost"
                 }
             ]
         },

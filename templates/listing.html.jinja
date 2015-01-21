@@ -41,7 +41,7 @@ window.addEventListener("load", function onLoad() {
   </div>
   <div class="site-category">
   {% for site in cat.sites %}
-    <div class="site-entry">
+    <div class="site-entry" {% if site.twitter %}id="twitter-{{ site.twitter }}"{% endif %}>
       <div class="site-status-summary">
         <span class="glyphicon site-details-expander"></span>
         <span class="site-name">{{ site.name|e }}</span>
@@ -56,6 +56,11 @@ window.addEventListener("load", function onLoad() {
             {{ check.description }}
         {% endfor %}
         </ul>
+        {% if site.twitter %}
+          <a class="twitter-share-button" href="https://twitter.com/share" data-url="https://httpswatch.com/#twitter-{{ site.twitter }}" data-text=". @{{ site.twitter }} {% if site.status == 'good' %}Thanks for protecting your users with great HTTPS!{% else %}Why don't you protect your users with great HTTPS?{% endif %} #httpswatch" data-count="horizontal">
+            Tweet @{{ site.twitter }}
+          </a>
+        {% endif %}
       </div>
     </div>
   {% endfor %}
@@ -63,4 +68,7 @@ window.addEventListener("load", function onLoad() {
 </section>
 {% endfor %}
 
+<script>
+window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+</script>
 {% endblock %}
