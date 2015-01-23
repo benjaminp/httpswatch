@@ -70,8 +70,7 @@ def fetch_through_redirects(http, stop=None):
             resp.read()
             resp.close()
             if url.netloc and url.netloc != http.host:
-                # Probably should actually handle this...
-                raise ValueError("Site redirects to a different domain.")
+                raise ValueError("{} redirects to a different domain.".format(url.netloc))
             path = url.path
             if not path.startswith("/"):
                 path = "/" + path
