@@ -98,7 +98,38 @@
                     "name": "Schemers",
                     "domain": "schemers.org"
                 }
-
+            ]
+        },
+        {
+            "name": "Security",
+            "linkname": "security",
+            "sites": [
+                {
+                    "name": "HTTPSWatch United States",
+                    "domain": "httpswatch.com"
+                },
+                {
+                    "name": "HTTPSWatch Australia",
+                    "domain": "httpswatchau.net"
+                },
+                {
+                    "name": "HTTPSWatch New Zealand",
+                    "domain": "httpswatch.nz"
+                },
+                {
+                    "name": "SSL Labs",
+                    "domain": "www.ssllabs.com"
+                },
+                {
+                    "name": "OWASP",
+                    "domain": "owasp.org",
+                    "twitter": "owasp"
+                },
+                {
+                    "name": "CERT",
+                    "domain": "www.cert.org",
+                    "twitter": "certcc"
+                }
             ]
         }
     ]
