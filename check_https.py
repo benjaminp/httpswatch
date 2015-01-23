@@ -19,7 +19,7 @@ from urllib.parse import urlsplit
 import jinja2
 
 PARALLELISM = 16
-USER_AGENT = "HTTPSWatch Bot (https://httpswatch.com)"
+USER_AGENT = "Mozilla/5.0 Firefox/35.0 compatible HTTPSWatch Bot https://httpswatch.com"
 ANALYTICS = """<script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
