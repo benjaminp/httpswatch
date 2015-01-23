@@ -1,6 +1,40 @@
 {
     "categories": [
         {
+            "name": "Search",
+            "linkname": "search",
+            "sites": [
+                {
+                    "name": "Baidu",
+                    "domain": "www.baidu.com"
+                },
+                {
+                    "name": "DuckDuckGo",
+                    "domain": "duckduckgo.com",
+                    "twitter": "duckduckgo"
+                },
+                {
+                    "name": "Google",
+                    "domain": "www.google.com",
+                    "twitter": "google"
+                },
+                {
+                    "name": "SoHu",
+                    "domain": "www.sohu.com"
+                },
+                {
+                    "name": "Yandex",
+                    "domain": "www.yandex.ru",
+                    "twitter": "yandexcom"
+                },
+                {
+                    "name": "Yahoo!",
+                    "domain": "www.yahoo.com",
+                    "twitter": "YahooCare"
+                }
+            ]
+        },
+        {
             "name": "Social Media",
             "linkname": "socialmedia",
             "sites": [
