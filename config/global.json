@@ -119,6 +119,10 @@
                     "twitter": "eBay"
                 },
                 {
+                    "name": "craigslist",
+                    "domain": "www.craigslist.org"
+                },
+                {
                     "name": "Target",
                     "domain": "www.target.com",
                     "twitter": "Target"
