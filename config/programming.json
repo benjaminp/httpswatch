@@ -98,7 +98,6 @@
                     "name": "Schemers",
                     "domain": "schemers.org"
                 }
-
             ]
         },
         {
@@ -120,8 +119,8 @@
                 {
                     "name": "Dream in Code",
                     "domain": "www.dreamincode.net"
-                },
+                }
             ]
-        },
+        }
     ]
 }
