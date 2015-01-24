@@ -18,6 +18,8 @@ from urllib.parse import urlsplit
 
 import jinja2
 
+from lxml import etree, html
+
 PARALLELISM = 16
 USER_AGENT = "Mozilla/5.0 Firefox/35.0 compatible HTTPSWatch Bot https://httpswatch.com"
 ANALYTICS = """<script>
@@ -30,6 +32,10 @@ ga('create', 'UA-342043-4', 'auto');
 ga('send', 'pageview');
 </script>
 """
+META_XPATH = etree.XPath(
+    "//meta[not(ancestor::noscript) and re:test(@http-equiv, \"^refresh$\", \"i\")]",
+    namespaces={"re": "http://exslt.org/regular-expressions"}
+)
 
 log = logging.getLogger("check_https")
 
@@ -63,11 +69,20 @@ def fetch_through_redirects(http, stop=None):
     while True:
         http.request("GET", path, headers={"User-Agent": USER_AGENT})
         resp = http.getresponse()
-        if resp.status in (301, 302, 303, 307):
-            url = urlsplit(resp.getheader("Location"))
+        new_location = None
+        if resp.status == 200:
+            tree = html.parse(resp)
+            for meta in META_XPATH(tree):
+                m = re.match("0;\s*url=['\"](.+?)['\"]", meta.get("content"))
+                if m is not None:
+                    new_location = m.groups()[0]
+        elif resp.status in (301, 302, 303, 307):
+            resp.read()
+            new_location = resp.getheader("Location")
+        if new_location is not None:
+            url = urlsplit(new_location)
             if stop is not None and stop(url):
                 break
-            resp.read()
             resp.close()
             if url.netloc and url.netloc != http.host:
                 raise ValueError("{} redirects to a different domain.".format(url.netloc))
