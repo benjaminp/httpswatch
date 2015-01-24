@@ -98,7 +98,28 @@
                     "name": "Schemers",
                     "domain": "schemers.org"
                 }
-
+            ]
+        },
+        {
+            "name": "Social programming sites",
+            "linkname": "social-programming",
+            "sites": [
+                {
+                    "name": "GitHub",
+                    "domain": "github.com"
+                },
+                {
+                    "name": "StackOverflow",
+                    "domain": "stackoverflow.com"
+                },
+                {
+                    "name": "StackExchange",
+                    "domain": "stackexchange.com"
+                },
+                {
+                    "name": "Dream in Code",
+                    "domain": "www.dreamincode.net"
+                }
             ]
         }
     ]
