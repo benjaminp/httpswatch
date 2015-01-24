@@ -36,6 +36,13 @@ META_XPATH = etree.XPath(
     "//meta[not(ancestor::noscript) and re:test(@http-equiv, \"^refresh$\", \"i\")]",
     namespaces={"re": "http://exslt.org/regular-expressions"}
 )
+MIXED_CONTENT_XPATH = etree.XPath(
+    """
+    //link[@ref="stylesheet" and starts-with(@href, "http://")] |
+    //script[starts-with(@src, "http://")] |
+    //img[not(ancestor::noscript) and starts-with(@src, "http://")]
+    """
+)
 
 log = logging.getLogger("check_https")
 
@@ -66,6 +73,7 @@ class Not200(Exception):
 def fetch_through_redirects(http, stop=None):
     path = "/"
     url = None
+    tree = None
     while True:
         http.request("GET", path, headers={"User-Agent": USER_AGENT})
         resp = http.getresponse()
@@ -93,7 +101,12 @@ def fetch_through_redirects(http, stop=None):
         if resp.status != 200:
             raise Not200(resp.status)
         break
-    return url, resp
+    return url, resp, tree
+
+
+def has_mixed_content(tree):
+    s = MIXED_CONTENT_XPATH(tree)
+    return len(s) >= 1
 
 
 def check_one_site(site):
@@ -158,9 +171,13 @@ def check_one_site(site):
     try:
         def stop_on_http_or_domain_change(url):
             return url.scheme == "http" or (url.netloc and url.netloc != domain)
-        final, resp = fetch_through_redirects(http, stop_on_http_or_domain_change)
+        final, resp, tree = fetch_through_redirects(http, stop_on_http_or_domain_change)
         if final is not None and final.scheme == "http":
             https_load.fail("The HTTPS site redirects to HTTP.")
+            return
+        if tree is not None and has_mixed_content(tree):
+            print(domain)
+            https_load.fail("HTML page loaded over HTTPS has mixed content.")
             return
         good_sts = Check()
         checks.append(good_sts)
@@ -199,7 +216,7 @@ def check_one_site(site):
     try:
         def stop_on_https(url):
             return url.scheme == "https"
-        final, resp = fetch_through_redirects(http, stop_on_https)
+        final, resp, tree = fetch_through_redirects(http, stop_on_https)
         if final is not None and final.scheme == "https":
             http_redirect.succeed("HTTP site redirects to HTTPS.")
         else:
