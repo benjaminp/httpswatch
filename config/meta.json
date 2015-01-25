@@ -18,6 +18,10 @@
             "external": "https://httpswatch.nz/"
         },
         {
+          "name": "Sweden",
+          "shortname": "se"
+        },
+        {
             "name": "Programming",
             "shortname": "programming"
         }
