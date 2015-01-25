@@ -6,23 +6,28 @@
             "sites": [
                 {
                     "name": "Dagens Nyheter",
-                    "domain": "www.dn.se"
+                    "domain": "www.dn.se",
+                    "twitter": "dagensnyheter"
                 },
                 {
                     "name": "Svenska Dagbladet",
-                    "domain": "www.svd.se"
+                    "domain": "www.svd.se",
+                    "twitter": "svd"
                 },
                 {
                     "name": "Aftonbladet",
-                    "domain": "www.aftonbladet.se"
+                    "domain": "www.aftonbladet.se",
+                    "twitter": "aftonbladet"
                 },
                 {
                     "name": "Expressen",
-                    "domain": "www.expressen.se"
+                    "domain": "www.expressen.se",
+                    "twitter": "expressen"
                 },
                 {
                     "name": "Axess",
-                    "domain": "www.axess.se"
+                    "domain": "www.axess.se",
+                    "twitter": "pjaxess"
                 }
             ]
         },
@@ -32,15 +37,18 @@
             "sites": [
                 {
                     "name": "Sveriges Television",
-                    "domain": "www.svt.se"
+                    "domain": "www.svt.se",
+                    "twitter": "svt"
                 },
                 {
                     "name": "Sveriges Radio",
-                    "domain": "sverigesradio.se"
+                    "domain": "sverigesradio.se",
+                    "twitter": "sverigesradio"
                 },
                 {
                     "name": "TV4",
-                    "domain": "www.tv4.se"
+                    "domain": "www.tv4.se",
+                    "twitter": "tv4"
                 }
             ]
         },
@@ -50,31 +58,38 @@
             "sites": [
                 {
                     "name": "SEB",
-                    "domain": "seb.se"
+                    "domain": "seb.se",
+                    "twitter": "sebsverige"
                 },
                 {
                     "name": "Swedbank",
-                    "domain": "www.swedbank.se"
+                    "domain": "www.swedbank.se",
+                    "twitter": "swedbank"
                 },
                 {
                     "name": "Nordea",
-                    "domain": "www.nordea.se"
+                    "domain": "www.nordea.se",
+                    "twitter": "nordea_se"
                 },
                 {
                     "name": "Handelsbanken",
-                    "domain": "www.handelsbanken.se"
+                    "domain": "www.handelsbanken.se",
+                    "twitter": "handelsbanken"
                 },
                 {
                     "name": "Avanza",
-                    "domain": "www.avanza.se"
+                    "domain": "www.avanza.se",
+                    "twitter": "avanzabank"
                 },
                 {
                     "name": "Skandiabanken",
-                    "domain": "www.skandiabanken.se"
+                    "domain": "www.skandiabanken.se",
+                    "twitter": "skandiabanken"
                 },
                 {
                     "name": "ICA Banken",
-                    "domain": "www.icabanken.se"
+                    "domain": "www.icabanken.se",
+                    "twitter": "icabankenwebb"
                 }
             ]
         },
@@ -84,15 +99,18 @@
             "sites": [
                 {
                     "name": "SAS",
-                    "domain": "www.sas.se"
+                    "domain": "www.sas.se",
+                    "twitter": "sas"
                 },
                 {
                     "name": "Malmö Aviation",
-                    "domain": "www.malmoaviation.se"
+                    "domain": "www.malmoaviation.se",
+                    "twitter": "malmoaviation"
                 },
                 {
                     "name": "Norwegian",
-                    "domain": "www.norwegian.com"
+                    "domain": "www.norwegian.com",
+                    "twitter": "fly_norwegian"
                 }
             ]
         },
@@ -102,37 +120,44 @@
             "sites": [
                 {
                     "name": "Handelshögskolan",
-                    "domain": "www.hhs.se"
+                    "domain": "www.hhs.se",
+                    "twitter": "handels_sse"
                 },
                 {
                     "name": "Uppsala Universitet",
-                    "domain": "www.uu.se"
+                    "domain": "www.uu.se",
+                    "twitter": "uppsalauni"
                 },
                 {
                     "name": "Lund Universitet",
-                    "domain": "www.lu.se"
+                    "domain": "www.lu.se",
+                    "twitter": "lundsuni"
                 },
                 {
                     "name": "Karolinska Institutet",
-                    "domain": "ki.se"
+                    "domain": "ki.se",
+                    "twitter": "karolinskainst"
                 },
                 {
                     "name": "Stockholms Universitet",
-                    "domain": "www.su.se"
+                    "domain": "www.su.se",
+                    "twitter": "stockholms_univ"
                 },
                 {
                     "name": "KTH",
-                    "domain": "www.kth.se"
+                    "domain": "www.kth.se",
+                    "twitter": "kthuniversity"
                 }
             ]
         },
         {
-            "name": "Riksdag, Regering & Myndigheter",
+            "name": "Government & Public Sector",
             "linkname": "segov",
             "sites": [
                 {
                     "name": "Riksdagen",
-                    "domain": "www.riksdagen.se"
+                    "domain": "www.riksdagen.se",
+                    "twitter": "sverigesriksdag"
                 },
                 {
                     "name": "Regeringen",
@@ -140,23 +165,50 @@
                 },
                 {
                     "name": "Skatteverket",
-                    "domain": "www.skatteverket.se"
+                    "domain": "www.skatteverket.se",
+                    "twitter": "skatteverket"
                 },
                 {
                     "name": "Bolagsverket",
-                    "domain": "bolagsverket.se"
+                    "domain": "bolagsverket.se",
+                    "twitter": "bolagsverket"
                 },
                 {
                     "name": "Försäkringskassan",
-                    "domain": "www.forsakringskassan.se"
+                    "domain": "www.forsakringskassan.se",
+                    "twitter": "fkassan"
                 },
                 {
                     "name": "Försvarsmakten",
-                    "domain": "www.forsvarsmakten.se"
+                    "domain": "www.forsvarsmakten.se",
+                    "twitter": "forsvarsmakten"
                 },
                 {
                     "name": "Polisen",
-                    "domain": "polisen.se"
+                    "domain": "polisen.se",
+                    "twitter": "polisen_riks"
+                }
+            ]
+        },
+        {
+            "name": "Tech Companies",
+            "linkname": "tech",
+            "sites": [
+                {
+                    "name": "Spotify",
+                    "domain": "www.spotify.com"
+                },
+                {
+                    "name": "Klarna",
+                    "domain": "klarna.com"
+                },
+                {
+                    "name": "Skovik",
+                    "domain": "skovik.com"
+                },
+                {
+                    "name": "Tictail",
+                    "domain": "tictail.com"
                 }
             ]
         }
