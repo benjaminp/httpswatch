@@ -1,164 +1,164 @@
 {
-  "categories": [
-    {
-      "name": "Newspapers",
-      "linkname": "newspapers",
-      "sites": [
+    "categories": [
         {
-          "name": "Dagens Nyheter",
-          "domain": "www.dn.se"
+            "name": "Newspapers",
+            "linkname": "newspapers",
+            "sites": [
+                {
+                    "name": "Dagens Nyheter",
+                    "domain": "www.dn.se"
+                },
+                {
+                    "name": "Svenska Dagbladet",
+                    "domain": "www.svd.se"
+                },
+                {
+                    "name": "Aftonbladet",
+                    "domain": "www.aftonbladet.se"
+                },
+                {
+                    "name": "Expressen",
+                    "domain": "www.expressen.se"
+                },
+                {
+                    "name": "Axess",
+                    "domain": "www.axess.se"
+                }
+            ]
         },
         {
-          "name": "Svenska Dagbladet",
-          "domain": "www.svd.se"
+            "name": "News",
+            "linkname": "news",
+            "sites": [
+                {
+                    "name": "Sveriges Television",
+                    "domain": "www.svt.se"
+                },
+                {
+                    "name": "Sveriges Radio",
+                    "domain": "sverigesradio.se"
+                },
+                {
+                    "name": "TV4",
+                    "domain": "www.tv4.se"
+                }
+            ]
         },
         {
-          "name": "Aftonbladet",
-          "domain": "www.aftonbladet.se"
+            "name": "Banks",
+            "linkname": "banking",
+            "sites": [
+                {
+                    "name": "SEB",
+                    "domain": "seb.se"
+                },
+                {
+                    "name": "Swedbank",
+                    "domain": "www.swedbank.se"
+                },
+                {
+                    "name": "Nordea",
+                    "domain": "www.nordea.se"
+                },
+                {
+                    "name": "Handelsbanken",
+                    "domain": "www.handelsbanken.se"
+                },
+                {
+                    "name": "Avanza",
+                    "domain": "www.avanza.se"
+                },
+                {
+                    "name": "Skandiabanken",
+                    "domain": "www.skandiabanken.se"
+                },
+                {
+                    "name": "ICA Banken",
+                    "domain": "www.icabanken.se"
+                }
+            ]
         },
         {
-          "name": "Expressen",
-          "domain": "www.expressen.se"
+            "name": "Travel",
+            "linkname": "travel",
+            "sites": [
+                {
+                    "name": "SAS",
+                    "domain": "www.sas.se"
+                },
+                {
+                    "name": "Malmö Aviation",
+                    "domain": "www.malmoaviation.se"
+                },
+                {
+                    "name": "Norwegian",
+                    "domain": "www.norwegian.com"
+                }
+            ]
         },
         {
-          "name": "Axess",
-          "domain": "www.axess.se"
+            "name": "Universities",
+            "linkname": "universities",
+            "sites": [
+                {
+                    "name": "Handelshögskolan",
+                    "domain": "www.hhs.se"
+                },
+                {
+                    "name": "Uppsala Universitet",
+                    "domain": "www.uu.se"
+                },
+                {
+                    "name": "Lund Universitet",
+                    "domain": "www.lu.se"
+                },
+                {
+                    "name": "Karolinska Institutet",
+                    "domain": "ki.se"
+                },
+                {
+                    "name": "Stockholms Universitet",
+                    "domain": "www.su.se"
+                },
+                {
+                    "name": "KTH",
+                    "domain": "www.kth.se"
+                }
+            ]
+        },
+        {
+            "name": "Riksdag, Regering & Myndigheter",
+            "linkname": "segov",
+            "sites": [
+                {
+                    "name": "Riksdagen",
+                    "domain": "www.riksdagen.se"
+                },
+                {
+                    "name": "Regeringen",
+                    "domain": "www.regeringen.se"
+                },
+                {
+                    "name": "Skatteverket",
+                    "domain": "www.skatteverket.se"
+                },
+                {
+                    "name": "Bolagsverket",
+                    "domain": "bolagsverket.se"
+                },
+                {
+                    "name": "Försäkringskassan",
+                    "domain": "www.forsakringskassan.se"
+                },
+                {
+                    "name": "Försvarsmakten",
+                    "domain": "www.forsvarsmakten.se"
+                },
+                {
+                    "name": "Polisen",
+                    "domain": "polisen.se"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "name": "News",
-      "linkname": "news",
-      "sites": [
-        {
-          "name": "Sveriges Television",
-          "domain": "www.svt.se"
-        },
-        {
-          "name": "Sveriges Radio",
-          "domain": "sverigesradio.se"
-        },
-        {
-          "name": "TV4",
-          "domain": "www.tv4.se"
-        }
-      ]
-    },
-    {
-      "name": "Banks",
-      "linkname": "banking",
-      "sites": [
-        {
-          "name": "SEB",
-          "domain": "seb.se"
-        },
-        {
-          "name": "Swedbank",
-          "domain": "www.swedbank.se"
-        },
-        {
-          "name": "Nordea",
-          "domain": "www.nordea.se"
-        },
-        {
-          "name": "Handelsbanken",
-          "domain": "www.handelsbanken.se"
-        },
-        {
-          "name": "Avanza",
-          "domain": "www.avanza.se"
-        },
-        {
-          "name": "Skandiabanken",
-          "domain": "www.skandiabanken.se"
-        },
-        {
-          "name": "ICA Banken",
-          "domain": "www.icabanken.se"
-        }
-      ]
-    },
-    {
-      "name": "Travel",
-      "linkname": "travel",
-      "sites": [
-        {
-          "name": "SAS",
-          "domain": "www.sas.se"
-        },
-        {
-          "name": "Malmö Aviation",
-          "domain": "www.malmoaviation.se"
-        },
-        {
-          "name": "Norwegian",
-          "domain": "www.norwegian.com"
-        }
-      ]
-    },
-    {
-      "name": "Universities",
-      "linkname": "universities",
-      "sites": [
-        {
-          "name": "Handelshögskolan",
-          "domain": "www.hhs.se"
-        },
-        {
-          "name": "Uppsala Universitet",
-          "domain": "www.uu.se"
-        },
-        {
-          "name": "Lund Universitet",
-          "domain": "www.lu.se"
-        },
-        {
-          "name": "Karolinska Institutet",
-          "domain": "ki.se"
-        },
-        {
-          "name": "Stockholms Universitet",
-          "domain": "www.su.se"
-        },
-        {
-          "name": "KTH",
-          "domain": "www.kth.se"
-        }
-      ]
-    },
-    {
-      "name": "Riksdag, Regering & Myndigheter",
-      "linkname": "segov",
-      "sites": [
-        {
-          "name": "Riksdagen",
-          "domain": "www.riksdagen.se"
-        },
-        {
-          "name": "Regeringen",
-          "domain": "www.regeringen.se"
-        },
-        {
-          "name": "Skatteverket",
-          "domain": "www.skatteverket.se"
-        },
-        {
-          "name": "Bolagsverket",
-          "domain": "bolagsverket.se"
-        },
-        {
-          "name": "Försäkringskassan",
-          "domain": "www.forsakringskassan.se"
-        },
-        {
-          "name": "Försvarsmakten",
-          "domain": "www.forsvarsmakten.se"
-        },
-        {
-          "name": "Polisen",
-          "domain": "polisen.se"
-        }
-      ]
-    }
-  ]
+    ]
 }
