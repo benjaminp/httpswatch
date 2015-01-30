@@ -92,6 +92,11 @@
                     "name": "OkCupid",
                     "domain": "www.okcupid.com",
                     "twitter": "okcupid"
+                },
+                {
+                    "name": "Disqus",
+                    "domain": "disqus.com",
+                    "twitter": "disqus"
                 }
             ]
         },
