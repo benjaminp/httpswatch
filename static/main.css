@@ -112,6 +112,9 @@ body {
     margin-right: auto;
     width: 750px;
 }
+.simple-list {
+    margin-left: 60px;
+}
 .nav-list > li {
     display: inline-block;
 }
