@@ -181,7 +181,7 @@ def check_one_site(site):
             https_load.fail("The HTTPS site redirects to HTTP.")
             return
         if tree is not None and has_mixed_content(tree):
-            https_load.fail("HTML page loaded over HTTPS has mixed content.")
+            https_load.fail("The HTML page loaded over HTTPS has mixed content.")
             return
         good_sts = Check()
         checks.append(good_sts)
