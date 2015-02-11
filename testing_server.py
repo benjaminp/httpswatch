@@ -8,6 +8,8 @@ class TestingRequestHandler(httpserver.SimpleHTTPRequestHandler):
 
     def translate_path(self, path):
         if not path.startswith("/static/"):
+            if path == "/":
+                path = "/global"
             path = "/out" + path + ".html"
         return super(TestingRequestHandler, self).translate_path(path)
 
