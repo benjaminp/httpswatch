@@ -216,11 +216,10 @@ def check_http_page(info):
     http_redirect = info.new_check()
     try:
         resp, tree = fetch_through_redirects("http://{}".format(info.domain))
-        if resp.url.startswith("https://"):
-            info.http_redirects_to_https = True
+        info.http_redirects_to_https = resp.url.startswith("https://")
+        if info.http_redirects_to_https:
             http_redirect.succeed("HTTP site redirects to HTTPS.")
         else:
-            info.http_redirects_to_https = False
             http_redirect.fail("HTTP site doesn't redirect to HTTPS.")
     except requests.Timeout:
         http_redirect.fail("The HTTP site times out.")
