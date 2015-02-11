@@ -192,9 +192,8 @@ def check_https_page(info):
         if sts is not None:
             m = re.search("max-age=(\d+)", sts)
             if m is not None:
-                age = int(m.group(1))
-                info.sts = age
-                if age >= 2592000:
+                info.sts = int(m.group(1))
+                if info.sts >= 2592000:
                     good_sts.succeed("<code>Strict-Transport-Security</code> header is set with a long <code>max-age</code> directive.")
                 else:
                     good_sts.fail("<code>Strict-Transport-Security</code> header is set but the <code>max-age</code> is less than 30 days.")
