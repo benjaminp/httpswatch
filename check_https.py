@@ -96,11 +96,14 @@ def fetch_through_redirects(url):
             verify="moz-certs.pem",
             headers={"User-Agent": USER_AGENT},
             timeout=10,
+            stream=True,
         )
         try:
             if resp.status_code != 200:
                 raise Not200(resp.status_code)
-            tree = html.fromstring(resp.content)
+            # Convince urllib3 to decode gzipped pages.
+            resp.raw.decode_content = True
+            tree = html.parse(resp.raw)
         finally:
             resp.close()
         # Check for sneaky <meta> redirects.
