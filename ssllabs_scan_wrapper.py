@@ -23,6 +23,7 @@ def main():
         for cat in listing["data"]["categories"]:
             for site in cat["sites"]:
                 domains.append(site["domain"])
+
     p = subprocess.Popen([args.sslscan_binary, "--grade", "--usecache"] + domains, stdout=subprocess.PIPE)
     stdout = p.communicate()[0].decode("ascii").strip()
     results = {}
@@ -31,6 +32,7 @@ def main():
         m = r.match(l)
         g = m.groups()
         results[g[0]] = g[1]
+
     with open(args.output_file, "w", encoding="utf-8") as fp:
         json.dump(results, fp)
 
