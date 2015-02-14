@@ -225,6 +225,9 @@ def check_http_page(info):
     except requests.Timeout:
         http_redirect.fail("The HTTP site times out.")
         return
+    except requests.ConnectionError:
+        http_redirect.fail("Nothing is listening on port 80)
+        return
     except Not200 as e:
         http_redirect.fail("The HTTP site returns an error status ({}) on request.".format(e.status))
         return
