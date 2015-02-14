@@ -209,6 +209,9 @@ def check_https_page(info):
     except Not200 as e:
         https_load.fail("The HTTPS site returns an error status ({}) on request.".format(e.status))
         return
+    except requests.ConnectionError:
+        http_redirect.fail("Connection error when connecting to the HTTPS site.")
+        return
     info.can_load_https_page = True
     https_load.succeed("A page can be successfully fetched over HTTPS.")
 
