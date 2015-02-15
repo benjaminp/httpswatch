@@ -13,6 +13,13 @@ window.addEventListener("load", function onLoad() {
     for (var i = 0; i < elms.length; i++) {
         elms[i].addEventListener("click", toggleOpen);
     }
+
+    if (location.hash.slice(0, 6) === "#site-") {
+        var e = document.getElementById(location.hash.slice(1));
+        if (e !== null) {
+            e.classList.toggle("details-open");
+        }
+    }
 })
 })();
 </script>
@@ -42,7 +49,7 @@ window.addEventListener("load", function onLoad() {
   </div>
   <div class="site-category">
   {% for site in cat.sites %}
-    <div class="site-entry" {% if site.twitter %}id="twitter-{{ site.twitter }}"{% endif %}>
+    <div class="site-entry" {% if site.twitter %}id="site-{{ site.twitter }}"{% endif %}>
       <div class="site-status-summary">
         <span class="glyphicon site-details-expander"></span>
         <span class="site-name">{{ site.name|e }}</span>
@@ -64,7 +71,7 @@ window.addEventListener("load", function onLoad() {
         {% else %}
         Tell {{ site.name|e }} they should improve their HTTPS support:
         {% endif %}
-          <a class="twitter-share-button" href="https://twitter.com/share" data-url="https://httpswatch.com/{{ listing.shortname }}#twitter-{{ site.twitter }}" data-text="Hey @{{ site.twitter }} {% if site.status == 'good' %}Thanks for protecting your users with great HTTPS!{% else %}Why don't you protect your users with great HTTPS?{% endif %} #httpswatch" data-count="horizontal">
+          <a class="twitter-share-button" href="https://twitter.com/share" data-url="https://httpswatch.com/{{ listing.shortname }}#site-{{ site.twitter }}" data-text="Hey @{{ site.twitter }} {% if site.status == 'good' %}Thanks for protecting your users with great HTTPS!{% else %}Why don't you protect your users with great HTTPS?{% endif %} #httpswatch" data-count="horizontal">
             Tweet @{{ site.twitter }}
           </a>
         </div>
