@@ -64,6 +64,11 @@ window.addEventListener("load", function onLoad() {
             {{ check.description }}
         {% endfor %}
         </ul>
+        {% if site.comment is defined %}
+        <div class="site-comment">
+          {{ site.comment }}
+        </div>
+        {% endif %}
         {% if site.twitter is defined %}
         <div class="tweet-button-container">
         {% if site.status == "good" %}

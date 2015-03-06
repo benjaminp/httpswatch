@@ -210,8 +210,12 @@ body {
 .site-check-bad {
     color: red;
 }
+.site-comment {
+    margin: 10px 0 0 10px;
+    font-style: italic;
+}
 .tweet-button-container {
-    margin: 18px 0 0 10px;
+    margin: 16px 0 0 10px;
     padding-top: 10px;
     border-top: 1px solid #E0E0E0;
     font-style: italic;
