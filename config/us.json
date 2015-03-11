@@ -309,7 +309,8 @@
                 },
                 {
                     "name": "The White House",
-                    "domain": "www.whitehouse.gov"
+                    "domain": "www.whitehouse.gov",
+                    "twitter": "WHWeb"
                 }
             ]
         }
