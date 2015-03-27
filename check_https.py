@@ -189,6 +189,7 @@ def check_https_page(info):
         if info.https_redirects_to_http:
             https_load.fail("The HTTPS site redirects to HTTP.")
             return
+        info.can_load_https_page = True
         info.mixed_content = tree is not None and has_mixed_content(tree)
         if info.mixed_content:
             https_load.fail("The HTML page loaded over HTTPS has mixed content.")
@@ -216,7 +217,6 @@ def check_https_page(info):
     except requests.ConnectionError:
         https_load.fail("Connection error when connecting to the HTTPS site.")
         return
-    info.can_load_https_page = True
     https_load.succeed("A page can be successfully fetched over HTTPS.")
 
 
