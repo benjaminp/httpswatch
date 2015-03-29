@@ -66,9 +66,6 @@ class SiteInfo:
 
 class Check:
 
-    def __init__(self):
-        pass
-
     def succeed(self, desc):
         self.failed = False
         self.icon = "good"
