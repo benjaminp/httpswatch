@@ -59,6 +59,10 @@
                     "domain": "www.gentoo.org"
                 },
                 {
+                    "name": "Slackware",
+                    "domain": "www.slackware.com"
+                },
+                {
                     "name": "Ubuntu",
                     "domain": "www.ubuntu.com"
                 }
