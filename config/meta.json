@@ -22,6 +22,10 @@
             "shortname": "se"
         },
         {
+            "name": "Canada",
+            "external": "https://httpswatch.ca/"
+        },
+        {
             "name": "Programming",
             "shortname": "programming"
         }
