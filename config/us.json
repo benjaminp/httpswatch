@@ -192,6 +192,11 @@
                     "domain": "www.aa.com"
                 },
                 {
+                    "name": "United Airlines",
+                    "domain": "www.united.com",
+                    "twitter": "United"
+                },
+                {
                     "name": "Kayak",
                     "domain": "www.kayak.com"
                 },
