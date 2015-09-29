@@ -172,6 +172,10 @@
                 {
                     "name": "TD Bank",
                     "domain": "www.tdbank.com"
+                },
+                {
+                    "name": "BB&T",
+                    "domain": "www.bbt.com"
                 }
             ]
         },
