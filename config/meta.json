@@ -14,6 +14,10 @@
             "external": "https://httpswatch.com.au/"
         },
         {
+            "name": "Austria",
+            "shortname": "at"
+        },
+        {
             "name": "New Zealand",
             "external": "https://httpswatch.nz/"
         },
