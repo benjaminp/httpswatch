@@ -967,7 +967,7 @@
         }]
     }, {
         "name": "Fachhochschulen",
-        "fachhochschulen": "neu",
+        "linkname": "fachhochschulen",
         "sites": [{
             "name": "FH CAMPUS 02",
             "domain": "www.campus02.at"
@@ -1028,6 +1028,431 @@
         }, {
             "name": "FH Gesundheitsberufe OÖ",
             "domain": "www.fh-gesundheitsberufe.at"
+        }]
+    }, {
+        "name": "Nationalratsabgeordnete (Dez 2015, Q: meinparlament.at)",
+        "linkname": "nationalratsabgeordnete",
+        "sites": [{
+            "name": "Mag. Niko Alm (neos)",
+            "domain": "blog.alm.at"
+        }, {
+            "name": "Konrad Antoni (SPÖ)",
+            "domain": "www.konrad-antoni.at"
+        }, {
+            "name": "Petra Bayr, M.A. (SPÖ)",
+            "domain": "www.petrabayr.at"
+        }, {
+            "name": "Mag.a Ruth Becher (SPÖ)",
+            "domain": "www.ruth-becher.at"
+        }, {
+            "name": "Mag.a Christiane Brunner (Grüne)",
+            "domain": "www.christiane-brunner.com"
+        }, {
+            "name": "Harry Rudolf Buchmayr (SPÖ)",
+            "domain": "buchmayr.wordpress.com"
+        }, {
+            "name": "Dr. Josef Cap (SPÖ)",
+            "domain": "www.josefcap.at"
+        }, {
+            "name": "DI Gerhard Deimek (FPÖ)",
+            "domain": "www.deimek.at"
+        }, {
+            "name": "ÖkR Franz Eßl (ÖVP)",
+            "domain": "www.franz-essl.at"
+        }, {
+            "name": "Mag. Dr. Klaus Uwe Feichtinger (SPÖ)",
+            "domain": "www.klaus-feichtinger.at"
+        }, {
+            "name": "Angela Fichtinger (ÖVP)",
+            "domain": "www.angela-fichtinger.at"
+        }, {
+            "name": "Dr. Marcus Franz (ÖVP)",
+            "domain": "internist-franz.at"
+        }, {
+            "name": "Hermann Gahr (ÖVP)",
+            "domain": "www.gahr.at"
+        }, {
+            "name": "Andrea Gessl-Ranftl (SPÖ)",
+            "domain": "www.andrea-gessl-ranftl.at"
+        }, {
+            "name": "Ing. Mag. Werner Groiß (ÖVP)",
+            "domain": "www.werner-groiss.at"
+        }, {
+            "name": "Dr. Rainer Hable, M.Sc. (neos)",
+            "domain": "www.rainerhable.eu"
+        }, {
+            "name": "Christian Hafenecker, M.A. (FPÖ)",
+            "domain": "neu.hafenecker.at"
+        }, {
+            "name": "Elisabeth Hakel (SPÖ)",
+            "domain": "www.hakel.at"
+        }, {
+            "name": "Mag. Andreas Hanger (ÖVP)",
+            "domain": "www.andreas-hanger.at"
+        }, {
+            "name": "Peter Haubner (ÖVP)",
+            "domain": "www.peterhaubner.at"
+        }, {
+            "name": "Prof. Mag. Gerald Hauser (FPÖ)",
+            "domain": "www.gerald-hauser.at"
+        }, {
+            "name": "Johann Hechtl (SPÖ)",
+            "domain": "www.johannhechtl.spoe.at"
+        }, {
+            "name": "Johann Hell (SPÖ)",
+            "domain": "www.johannhell.at"
+        }, {
+            "name": "Eva-Maria Himmelbauer, BSc (ÖVP)",
+            "domain": "www.ehimmelbauer.at"
+        }, {
+            "name": "Ing. Christian Höbart (FPÖ)",
+            "domain": "www.choebart.at"
+        }, {
+            "name": "Johann Höfinger (ÖVP)",
+            "domain": "www.johann-hoefinger.at"
+        }, {
+            "name": "Daniela Holzinger-Vogtenhuber, BA (SPÖ)",
+            "domain": "danielaholzinger.com"
+        }, {
+            "name": "Dr. Franz-Joseph Huainigg (ÖVP)",
+            "domain": "www.franzhuainigg.at"
+        }, {
+            "name": "KommR Brigitte Jank (ÖVP)",
+            "domain": "www.brigittejank.at"
+        }, {
+            "name": "Dr. Johannes Jarolim (SPÖ)",
+            "domain": "www.hannes-jarolim.at"
+        }, {
+            "name": "Dietmar Keck (SPÖ)",
+            "domain": "www.dietmar-keck.at"
+        }, {
+            "name": "Anneliese Kitzmüller (FPÖ)",
+            "domain": "www.anneliese-kitzmueller.at"
+        }, {
+            "name": "Ulrike Königsberger-Ludwig (SPÖ)",
+            "domain": "www.ulrike.spoe.at"
+        }, {
+            "name": "Karlheinz Kopf (ÖVP)",
+            "domain": "www.karlheinzkopf.at"
+        }, {
+            "name": "Kai Jan Krainer (SPÖ)",
+            "domain": "www.jan-krainer.at"
+        }, {
+            "name": "Hermann Krist (SPÖ)",
+            "domain": "www.hermannkrist.at"
+        }, {
+            "name": "Katharina Kucharowits (SPÖ)",
+            "domain": "www.katharina-kucharowits.at"
+        }, {
+            "name": "Philip Kucher (SPÖ)",
+            "domain": "www.philipkucher.at"
+        }, {
+            "name": "Mag. Günther Kumpitsch (FPÖ)",
+            "domain": "www.guentherkumpitsch.com"
+        }, {
+            "name": "Mag. Josef Lettenbichler (ÖVP)",
+            "domain": "www.josef-lettenbichler.at"
+        }, {
+            "name": "Dr. Reinhold Lopatka (ÖVP)",
+            "domain": "www.lopatka.at"
+        }, {
+            "name": "Sigrid Maurer (Grüne)",
+            "domain": "www.sigimaurer.at"
+        }, {
+            "name": "Elmar Mayer (SPÖ)",
+            "domain": "www.elmar-mayer.at"
+        }, {
+            "name": "Dr.in Gabriela Moser (Grüne)",
+            "domain": "www.mosermobil.at"
+        }, {
+            "name": "Josef Muchitsch (SPÖ)",
+            "domain": "www.josef-muchitsch.at"
+        }, {
+            "name": "Dr.in Eva Mückstein (Grüne)",
+            "domain": "www.mueckstein.net"
+        }, {
+            "name": "Edith Mühlberghuber (FPÖ)",
+            "domain": "www.edithmuehlberghuber.at"
+        }, {
+            "name": "Dr. Peter Pilz (Grüne)",
+            "domain": "www.peterpilz.at"
+        }, {
+            "name": "DI Dr. Wolfgang Pirklhuber (Grüne)",
+            "domain": "www.pirklhuber.at"
+        }, {
+            "name": "Rudolf Plessl (SPÖ)",
+            "domain": "www.rudolf-plessl.at"
+        }, {
+            "name": "Josef A. Riemer (FPÖ)",
+            "domain": "www.josefriemer.at"
+        }, {
+            "name": "Barbara Rosenkranz (FPÖ)",
+            "domain": "www.zurueckzurvernunft.at"
+        }, {
+            "name": "Mag.a Birgit Schatz (Grüne)",
+            "domain": "salzburg.gruene.at"
+        }, {
+            "name": "Dr. Niki Scherak (neos)",
+            "domain": "www.nikischerak.at"
+        }, {
+            "name": "Mag. Andreas Schieder (SPÖ)",
+            "domain": "www.schieder.spoe.at"
+        }, {
+            "name": "Mag. Bernd Schönegger (ÖVP)",
+            "domain": "www.bernd-schoenegger.at"
+        }, {
+            "name": "ÖkR Ing. Hermann Schultes (ÖVP)",
+            "domain": "www.hermann-schultes.at"
+        }, {
+            "name": "Johann Singer (ÖVP)",
+            "domain": "www.hans-singer.at"
+        }, {
+            "name": "Mag. Albert Steinhauser (Grüne)",
+            "domain": "www.albertsteinhauser.at"
+        }, {
+            "name": "Heinz-Christian Strache (FPÖ)",
+            "domain": "www.hcstrache.at"
+        }, {
+            "name": "Mag. Dr. Matthias Strolz (neos)",
+            "domain": "www.strolz.eu"
+        }, {
+            "name": "Gabriele Tamandl (ÖVP)",
+            "domain": "www.tamandl.net"
+        }, {
+            "name": "Bernhard Themessl (FPÖ)",
+            "domain": "www.bernhardthemessl.at"
+        }, {
+            "name": "Dr. Harald Troch (SPÖ)",
+            "domain": "www.harald-troch.at"
+        }, {
+            "name": "Mag. Dr. Georg Vetter (ÖVP)",
+            "domain": "freiheitsweblog.wordpress.com"
+        }, {
+            "name": "Ing. Markus Vogl (SPÖ)",
+            "domain": "www.markus-vogl.at"
+        }, {
+            "name": "Dr. Harald Waser (Grüne)",
+            "domain": "www.haraldwalser.at"
+        }, {
+            "name": "Ing. Hannes Weninger (SPÖ)",
+            "domain": "www.hannesweninger.at"
+        }, {
+            "name": "Tanja Windbüchler-Souschill (Grüne)",
+            "domain": "www.tanjawindbuechler.at"
+        }, {
+            "name": "Dr.in Susanne Winter",
+            "domain": "www.susannewinter.at"
+        }, {
+            "name": "August Wöginger (ÖVP)",
+            "domain": "www.woeginger.at"
+        }, {
+            "name": "Mag.a Gisela Wurm (SPÖ)",
+            "domain": "www.giselawurm.at"
+        }, {
+            "name": "Nurten Yilmaz (SPÖ)",
+            "domain": "www.wirsindnurten.at"
+        }, {
+            "name": "Wolfgang Zanger (FPÖ)",
+            "domain": "www.wolfgang-zanger.at"
+        }, {
+            "name": "Mag. Dr. Wolfgang Zinggl (Grüne)",
+            "domain": "www.wolfgangzinggl.at"
+        }]
+    }, {
+        "name": "Bundesratsabgeordnete (Dez 2015, Q: meinparlament.at)",
+        "linkname": "bundesratabgeordnete",
+        "sites": [{
+            "name": "Ing. Hans-Peter Bock (SPÖ)",
+            "domain": "www.hp-bock.com"
+        }, {
+            "name": "Peter Heger (SPÖ)",
+            "domain": "www.peter-heger.at"
+        }, {
+            "name": "Gottfried Kneifel (ÖVP)",
+            "domain": "kneifel.oevp.at"
+        }, {
+            "name": "Ing. Eduard Köck (ÖVP)",
+            "domain": "members.speeding.at"
+        }, {
+            "name": "Gerd Edgar Krusche (FPÖ)",
+            "domain": "www.gerd-krusche.com"
+        }, {
+            "name": "Mag. Michael Lindner (SPÖ)",
+            "domain": "www.einstarkesmuehlviertel.at"
+        }, {
+            "name": "Christian Poglitsch (ÖVP)",
+            "domain": "www.kindercamping.at"
+        }, {
+            "name": "Ing. Bernhard Rösch (FPÖ)",
+            "domain": "www.bernhardroesch.at"
+        }]
+    }, {
+        "name": "EU-Parlamentarier (Dez 2015, Q: meinparlament.at)",
+        "linkname": "eu-parlamentarier",
+        "sites": [{
+            "name": "Heinz K. Becker (ÖVP)",
+            "domain": "www.becker-europa.eu"
+        }, {
+            "name": "Prof. Eugen Freund (SPÖ)",
+            "domain": "www.eugenfreund.com"
+        }, {
+            "name": "Karin Kadenbach (SPÖ)",
+            "domain": "www.karinkadenbach.at"
+        }, {
+            "name": "Mag. Othmar Karas, MBL-HSG (ÖVP)",
+            "domain": "www.othmar-karas.at"
+        }, {
+            "name": "Elisabeth Köstinger (ÖVP)",
+            "domain": "www.elisabeth-koestinger.at"
+        }, {
+            "name": "Mag.a Ulrike Lunacek (Grüne)",
+            "domain": "www.ulrike-lunacek.eu"
+        }, {
+            "name": "Mag.a Dr.in Angelika Rosa Mlina, LL.M. (neos)",
+            "domain": "europa.neos.eu"
+        }, {
+            "name": "Mag.a Evelyn Regner (SPÖ)",
+            "domain": "www.evelyn-regner.at"
+        }, {
+            "name": "Michel Reimon, BSc, MBA (Grüne)",
+            "domain": "www.reimon.net"
+        }, {
+            "name": "KommR Ing. Mag. Dr. Paul Rübig (ÖVP)",
+            "domain": "www.paulruebig.eu"
+        }, {
+            "name": "Dr.in Monika Vana (Grüne)",
+            "domain": "monikavana.wordpress.com"
+        }, {
+            "name": "Univ.-Prof. Dr. Josef Weidenholzer (SPÖ)",
+            "domain": "www.weidenholzer.eu"
+        }]
+    }, {
+        "name": "Landtagsabgeordnete (Dez 2015, Q: meinparlament.at)",
+        "linkname": "landtagsabgeordnete",
+        "sites": [{
+            "name": "DI Omar Al-Rawi (SPÖ)",
+            "domain": "www.omaralrawi.net"
+        }, {
+            "name": "Karl Baron (FPÖ)",
+            "domain": "www.barontransporte.at"
+        }, {
+            "name": "Petr Baxant, BA (SPÖ)",
+            "domain": "www.pekobaxant.at"
+        }, {
+            "name": "Mag. Christoph Chorherr (Grüne)",
+            "domain": "chorherr.twoday.net"
+        }, {
+            "name": "Christian Deutsch (SPÖ)",
+            "domain": "www.christiandeutsch.at"
+        }, {
+            "name": "Mag.a Faika El-Nagashi (Grüne)",
+            "domain": "www.elnagashi.at"
+        }, {
+            "name": "David Ellensohn (Grüne)",
+            "domain": "www.davidellensohn.at"
+        }, {
+            "name": "Mag. Marcus Gremel (SPÖ)",
+            "domain": "www.marcusgremel.at"
+        }, {
+            "name": "Klaus Handler (FPÖ)",
+            "domain": "www.klaus-handler.at"
+        }, {
+            "name": "Marina Hanke, BA (SPÖ)",
+            "domain": "www.marinahanke.at"
+        }, {
+            "name": "Gerhard Haslinger (FPÖ)",
+            "domain": "www.gerhardhaslinger.at"
+        }, {
+            "name": "Birgit Hebein (Grüne)",
+            "domain": "www.birgithebein.at"
+        }, {
+            "name": "Christian Hursky (SPÖ)",
+            "domain": "www.christianhursky.at"
+        }, {
+            "name": "Prof. Harry Kopietz (SPÖ)",
+            "domain": "www.kopietz.at"
+        }, {
+            "name": "Ingrid Korosec (ÖVP)",
+            "domain": "www.ingirid-korosec.at"
+        }, {
+            "name": "Mag. Dietbert Kowarik (FPÖ)",
+            "domain": "www.dietbert.at"
+        }, {
+            "name": "Peter Kraus, BSc.",
+            "domain": "www.peter-kraus.at"
+        }, {
+            "name": "MMag.a Dr.in Gudrun Kugler, MTS (ÖVP)",
+            "domain": "www.gudrunkugler.at"
+        }, {
+            "name": "Siegi Lindenmayr (SPÖ)",
+            "domain": "www.lindenmayr.at"
+        }, {
+            "name": "Mag. Rüdiger Maresch (Grüne)",
+            "domain": "ruedigermaresch.wordpress.com"
+        }, {
+            "name": "DI Martin Margulies (Grüne)",
+            "domain": "martinmargulies.wordpress.com"
+        }, {
+            "name": "Birgit Meinhard-Schiebel (Grüne)",
+            "domain": "birgitmeinhard.wordpress.com"
+        }, {
+            "name": "Mag.a Beate Meinl-Reisinger, M.E.S. (neos)",
+            "domain": "www.beatemeinl.com"
+        }, {
+            "name": "Markus Ornig, MBA (neos)",
+            "domain": "wien.neos.eu"
+        }, {
+            "name": "Christian Oxonitsch (SPÖ)",
+            "domain": "www.oxonitsch.at"
+        }, {
+            "name": "Mag. Thomas Reindl (SPÖ)",
+            "domain": "www.thomasreindl.at"
+        }, {
+            "name": "Silvia Rubik (SPÖ)",
+            "domain": "www.silvia-rubik.at"
+        }, {
+            "name": "Prof. Mag. Dr. Gerhard Schmid (SPÖ)",
+            "domain": "www.gerhard-schmid.at"
+        }, {
+            "name": "Ursula Stenzel (FPÖ)",
+            "domain": "www.ursulastenzel.com"
+        }, {
+            "name": "Mag.a Sybille Straubinger, MBA (SPÖ)",
+            "domain": "blog.sybillestraubinger.at"
+        }, {
+            "name": "Heinz Vettermann (SPÖ)",
+            "domain": "www.vettermann.at"
+        }, {
+            "name": "Mag.a (FH) Tanja Wehsely (SPÖ)",
+            "domain": "tanjawehsely.wordpress.com"
+        }, {
+            "name": "Christoph Wiederkehr, BA (neos)",
+            "domain": "www.chriswiederkehr.at"
+        }, {
+            "name": "Ernst Woller (SPÖ)",
+            "domain": "ernstwoller.blogspot.com"
+        }]
+    }, {
+        "name": "Parteiwebseiten Nationalrat (Dez 2015)",
+        "linkname": "parteiwebseiten",
+        "sites": [{
+            "name": "SPÖ",
+            "domain": "www.spoe.at"
+        }, {
+            "name": "ÖVP",
+            "domain": "www.oevp.at"
+        }, {
+            "name": "FPÖ",
+            "domain": "www.fpoe.at"
+        }, {
+            "name": "Grüne",
+            "domain": "www.gruene.at"
+        }, {
+            "name": "neos",
+            "domain": "www.neos.eu"
+        }, {
+            "name": "Team Stronach",
+            "domain": "www.teamstronach.at"
         }]
     }]
 }
