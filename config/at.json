@@ -31,7 +31,7 @@
             "domain": "www.nachrichten.at"
         }, {
             "name": "Salzburger Nachrichten",
-            "domain": "www.salzburg.com/sn"
+            "domain": "www.salzburg.com"
         }, {
             "name": "Österreich",
             "domain": "www.oe24.at"
@@ -53,7 +53,7 @@
         "linkname": "wochenzeitungen",
         "sites": [{
             "name": "Falter",
-            "domain": "www.falter"
+            "domain": "www.falter.at"
         }, {
             "name": "Die Furche",
             "domain": "www.diefurche.at"
@@ -126,9 +126,6 @@
         }, {
             "name": "WOHIN... in Wien",
             "domain": "wohin.vienna.at"
-        }, {
-            "name": "Unterkärntner Nachrichten",
-            "domain": "www.unterkarntner.at"
         }, {
             "name": "Rosentaler Kurier (Kärnten)",
             "domain": "www.derrosentaler.at"
@@ -210,7 +207,7 @@
             "domain": "www.e-media.at"
         }, {
             "name": "FOTOobjektiv",
-            "domain": "www.fotoojektiv.at"
+            "domain": "www.fotoobjektiv.at"
         }, {
             "name": "Gewinn",
             "domain": "www.gewinn.com"
