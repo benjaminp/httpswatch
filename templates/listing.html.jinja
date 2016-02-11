@@ -1,4 +1,5 @@
 {% extends "base.html.jinja" %}
+{% block subtitle %}{{ listing.name }}{% endblock %}
 {% block extra_head %}
 <script type="text/javascript">
 (function () {
@@ -12,6 +13,13 @@ window.addEventListener("load", function onLoad() {
     for (var i = 0; i < elms.length; i++) {
         elms[i].addEventListener("click", toggleOpen);
     }
+
+    if (location.hash.slice(0, 6) === "#site-") {
+        var e = document.getElementById(location.hash.slice(1));
+        if (e !== null) {
+            e.classList.toggle("details-open");
+        }
+    }
 })
 })();
 </script>
@@ -19,7 +27,7 @@ window.addEventListener("load", function onLoad() {
 
 {% block body %}
 
-<h1>HTTPSWatch</h1>
+<h1>HTTPSWatch ({{ listing.name }})</h1>
 <p>HTTPSWatch tracks the HTTPS support of prominent websites. Click to show details about a site&rsquo;s HTTPS support. See the <a href="/about">About page</a> for more information.
 
 <nav class="main-toc">
@@ -41,11 +49,11 @@ window.addEventListener("load", function onLoad() {
   </div>
   <div class="site-category">
   {% for site in cat.sites %}
-    <div class="site-entry" {% if site.twitter %}id="twitter-{{ site.twitter }}"{% endif %}>
+    <div class="site-entry" {% if site.twitter %}id="site-{{ site.twitter }}"{% endif %}>
       <div class="site-status-summary">
         <span class="glyphicon site-details-expander"></span>
         <span class="site-name">{{ site.name|e }}</span>
-        <span class="site-domain">(<a href="https://{{ site.domain }}">{{ site.domain }}</a>)</span>
+        <span class="site-domain">(<a href="https://{{ site.domain }}" rel="nofollow">{{ site.domain }}</a>)</span>
         <span class="site-grade site-grade-{{ site.status }}">{{ site.status|title }}</span>
       </div>
       <div class="site-status-details">
@@ -56,18 +64,23 @@ window.addEventListener("load", function onLoad() {
             {{ check.description }}
         {% endfor %}
         </ul>
-        <div class="tweet-button-container">
+        {% if site.comment is defined %}
+        <div class="site-comment">
+          {{ site.comment }}
+        </div>
+        {% endif %}
         {% if site.twitter is defined %}
+        <div class="tweet-button-container">
         {% if site.status == "good" %}
         Thank {{ site.name|e }} for providing high quality HTTPS:
         {% else %}
         Tell {{ site.name|e }} they should improve their HTTPS support:
         {% endif %}
-          <a class="twitter-share-button" href="https://twitter.com/share" data-url="https://httpswatch.com/#twitter-{{ site.twitter }}" data-text="Hey @{{ site.twitter }} {% if site.status == 'good' %}Thanks for protecting your users with great HTTPS!{% else %}Why don't you protect your users with great HTTPS?{% endif %} #httpswatch" data-count="horizontal">
+          <a class="twitter-share-button" href="https://twitter.com/share" data-url="https://httpswatch.com/{{ listing.shortname }}#site-{{ site.twitter }}" data-text="Hey @{{ site.twitter }} {% if site.status == 'good' %}Thanks for protecting your users with great HTTPS!{% else %}Why don't you protect your users with great HTTPS?{% endif %} #httpswatch" data-count="horizontal">
             Tweet @{{ site.twitter }}
           </a>
-        {% endif %}
         </div>
+        {% endif %}
       </div>
     </div>
   {% endfor %}

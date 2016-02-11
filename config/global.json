@@ -1,56 +1,107 @@
 {
     "categories": [
         {
+            "name": "Search",
+            "linkname": "search",
+            "sites": [
+                {
+                    "name": "Baidu",
+                    "domain": "www.baidu.com"
+                },
+                {
+                    "name": "Bing",
+                    "domain": "www.bing.com",
+                    "twitter": "Bing"
+                },
+                {
+                    "name": "DuckDuckGo",
+                    "domain": "duckduckgo.com",
+                    "twitter": "duckduckgo"
+                },
+                {
+                    "name": "Google",
+                    "domain": "www.google.com",
+                    "twitter": "google"
+                },
+                {
+                    "name": "SoHu",
+                    "domain": "www.sohu.com"
+                },
+                {
+                    "name": "Yandex",
+                    "domain": "www.yandex.ru",
+                    "twitter": "yandexcom"
+                },
+                {
+                    "name": "Yahoo!",
+                    "domain": "www.yahoo.com",
+                    "twitter": "YahooCare"
+                }
+            ]
+        },
+        {
             "name": "Social Media",
             "linkname": "socialmedia",
             "sites": [
                 {
                     "name": "LinkedIn",
-                    "domain": "www.linkedin.com"
+                    "domain": "www.linkedin.com",
+                    "twitter": "LinkedIn"
                 },
                 {
                     "name": "Facebook",
-                    "domain": "www.facebook.com"
+                    "domain": "www.facebook.com",
+                    "twitter": "facebook"
                 },
                 {
                     "name": "Twitter",
-                    "domain": "twitter.com"
+                    "domain": "twitter.com",
+                    "twitter": "twitter"
                 },
                 {
-                    "name": "Pintrest",
-                    "domain": "www.pinterest.com"
-                },
-                {
-                    "name": "Tumblr",
-                    "domain": "www.tumblr.com"
+                    "name": "Pinterest",
+                    "domain": "www.pinterest.com",
+                    "twitter": "Pinterest"
                 },
                 {
                     "name": "Instagram",
-                    "domain": "instagram.com"
+                    "domain": "instagram.com",
+                    "twitter": "instagram"
                 },
                 {
                     "name": "Reddit",
-                    "domain": "www.reddit.com"
+                    "domain": "www.reddit.com",
+                    "twitter": "reddit"
                 },
                 {
                     "name": "YouTube",
-                    "domain": "www.youtube.com"
+                    "domain": "www.youtube.com",
+                    "twitter": "YouTube"
                 },
                 {
                     "name": "Vine",
-                    "domain": "vine.co"
+                    "domain": "vine.co",
+                    "twitter": "vine"
                 },
                 {
                     "name": "Vimeo",
-                    "domain": "vimeo.com"
+                    "domain": "vimeo.com",
+                    "twitter": "vimeo"
                 },
                 {
                     "name": "Match.com",
-                    "domain": "www.match.com"
+                    "domain": "www.match.com",
+                    "twitter": "match"
                 },
                 {
                     "name": "OkCupid",
-                    "domain": "www.okcupid.com"
+                    "domain": "www.okcupid.com",
+                    "twitter": "okcupid"
+                },
+                {
+                    "name": "Disqus",
+                    "domain": "disqus.com",
+                    "twitter": "disqus"
                 }
             ]
         },
@@ -64,31 +115,42 @@
                 },
                 {
                     "name": "Amazon",
-                    "domain": "www.amazon.com"
+                    "domain": "www.amazon.com",
+                    "twitter": "amazon"
                 },
                 {
                     "name": "Best Buy",
-                    "domain": "www.bestbuy.com"
+                    "domain": "www.bestbuy.com",
+                    "twitter": "BestBuy"
                 },
                 {
                     "name": "eBay",
-                    "domain": "www.ebay.com"
+                    "domain": "www.ebay.com",
+                    "twitter": "eBay"
+                },
+                {
+                    "name": "craigslist",
+                    "domain": "www.craigslist.org"
                 },
                 {
                     "name": "Target",
-                    "domain": "www.target.com"
+                    "domain": "www.target.com",
+                    "twitter": "Target"
                 },
                 {
                     "name": "Walmart",
-                    "domain": "www.walmart.com"
+                    "domain": "www.walmart.com",
+                    "twitter": "Walmart"
                 },
                 {
                     "name": "CVS",
-                    "domain": "www.cvs.com"
+                    "domain": "www.cvs.com",
+                    "twitter": "cvshealth"
                 },
                 {
                     "name": "Home Depot",
-                    "domain": "www.homedepot.com"
+                    "domain": "www.homedepot.com",
+                    "twitter": "HomeDepot"
                 },
                 {
                     "name": "Barnes & Noble",
@@ -128,15 +190,18 @@
             "sites": [
                 {
                     "name": "Box",
-                    "domain": "www.box.com"
+                    "domain": "www.box.com",
+                    "twitter": "boxhq"
                 },
                 {
                     "name": "Dropbox",
-                    "domain": "www.dropbox.com"
+                    "domain": "www.dropbox.com",
+                    "twitter": "dropbox"
                 },
                 {
                     "name": "Google Drive",
-                    "domain": "drive.google.com"
+                    "domain": "drive.google.com",
+                    "twitter": "googledrive"
                 },
                 {
                     "name": "iCloud",
@@ -144,11 +209,13 @@
                 },
                 {
                     "name": "OneDrive",
-                    "domain": "onedrive.live.com"
+                    "domain": "onedrive.live.com",
+                    "twitter": "onedrive"
                 },
                 {
                     "name": "Tarsnap",
-                    "domain": "www.tarsnap.com"
+                    "domain": "www.tarsnap.com",
+                    "twitter": "tarsnap"
                 }
             ]
         },
@@ -158,23 +225,28 @@
             "sites": [
                 {
                     "name": "Blogger",
-                    "domain": "www.blogger.com"
+                    "domain": "www.blogger.com",
+                    "twitter": "Blogger"
                 },
                 {
                     "name": "Medium",
-                    "domain": "medium.com"
+                    "domain": "medium.com",
+                    "twitter": "Medium"
                 },
                 {
                     "name": "Squarespace",
-                    "domain": "squarespace.com"
+                    "domain": "squarespace.com",
+                    "twitter": "Squarespace"
                 },
                 {
                     "name": "Tumblr",
-                    "domain": "www.tumblr.com"
+                    "domain": "staff.tumblr.com",
+                    "twitter": "tumblr"
                 },
                 {
                     "name": "WordPress",
-                    "domain": "wordpress.com"
+                    "domain": "wordpress.com",
+                    "twitter": "WordPress"
                 }
             ]
         }

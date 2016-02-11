@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="HTTPSWatch tracks the HTTPS support of prominent websites.">
-    <title>HTTPSWatch</title>
+    <meta name="viewport" content="width=800">
+    <title>HTTPSWatch | {% block subtitle %}{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="/static/main.css">
+    <link rel="icon" type="image/png" href="/static/favicon.png">
     {% block extra_head %}{% endblock %}
   </head>
   <body>
@@ -27,7 +29,7 @@
     <div id="content-wrapper">
       {% block body %}{% endblock %}
       <footer>
-        Created by <a href="http://www.benjamin-peterson.org">Benjamin Peterson</a>. Last updated <time>{{ update_time }}</time>.
+        Created by <a href="https://benjamin.pe">Benjamin Peterson</a>. Last updated <time>{{ update_time }}</time>.
       </footer>
     </div>
   </body>

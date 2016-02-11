@@ -14,4 +14,8 @@ one line.)
 Once ``check_https.py`` has been run, you can run ``testing_server.py`` to view
 the website at ``localhost:8000``.
 
+Project discussions takes place on the Freenode IRC channel #httpswatch. A
+`web client`_ is available.
+
 .. _HTTPSWatch project: https://httpswatch.com
+.. _web client: https://webchat.freenode.net/?channels=%23httpswatch

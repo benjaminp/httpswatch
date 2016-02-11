@@ -11,11 +11,23 @@
         },
         {
             "name": "Australia",
-            "external": "http://httpswatchau.net/"
+            "external": "https://httpswatch.com.au/"
+        },
+        {
+            "name": "Austria",
+            "shortname": "at"
         },
         {
             "name": "New Zealand",
             "external": "https://httpswatch.nz/"
+        },
+        {
+            "name": "Sweden",
+            "shortname": "se"
+        },
+        {
+            "name": "Canada",
+            "external": "https://httpswatch.ca/"
         },
         {
             "name": "Programming",

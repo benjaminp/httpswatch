@@ -13,13 +13,13 @@ import socket
 import ssl
 import time
 
-from http.client import HTTPConnection, HTTPSConnection, HTTPException
-from urllib.parse import urlsplit
-
 import jinja2
+import requests
+
+from lxml import etree, html
 
 PARALLELISM = 16
-USER_AGENT = "HTTPSWatch Bot (https://httpswatch.com)"
+USER_AGENT = "Mozilla/5.0 compatible HTTPSWatch Bot https://httpswatch.com"
 ANALYTICS = """<script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -30,14 +30,41 @@ ga('create', 'UA-342043-4', 'auto');
 ga('send', 'pageview');
 </script>
 """
+META_XPATH = etree.XPath(
+    "//meta[not(ancestor::noscript) and re:test(@http-equiv, \"^refresh$\", \"i\")]",
+    namespaces={"re": "http://exslt.org/regular-expressions"}
+)
+MIXED_CONTENT_XPATH = etree.XPath(
+    """
+    //link[@ref="stylesheet" and starts-with(@href, "http://")] |
+    //script[starts-with(@src, "http://")] |
+    //img[not(ancestor::noscript) and starts-with(@src, "http://")]
+    """
+)
 
 log = logging.getLogger("check_https")
 
 
-class Check:
+class SiteInfo:
 
     def __init__(self):
-        pass
+        self.domain = None
+        self.ssllabs_grade = None
+        self.secure_connection_works = None
+        self.can_load_https_page = None
+        self.mixed_content = None
+        self.sts = None
+        self.https_redirects_to_http = None
+        self.http_redirects_to_https = None
+        self.checks = []
+
+    def new_check(self):
+        c = Check()
+        self.checks.append(c)
+        return c
+
+
+class Check:
 
     def succeed(self, desc):
         self.failed = False
@@ -57,61 +84,64 @@ class Not200(Exception):
         self.status = status
 
 
-def fetch_through_redirects(http, stop=None):
-    path = "/"
-    url = None
+def fetch_through_redirects(url):
+    tree = None
     while True:
-        http.request("GET", path, headers={"User-Agent": USER_AGENT})
-        resp = http.getresponse()
-        if resp.status in (301, 302, 303, 307):
-            url = urlsplit(resp.getheader("Location"))
-            if stop is not None and stop(url):
-                break
-            resp.read()
+        cont = False
+        resp = requests.get(
+            url,
+            verify="moz-certs.pem",
+            headers={"User-Agent": USER_AGENT},
+            timeout=10,
+            stream=True,
+        )
+        try:
+            if resp.status_code != 200:
+                raise Not200(resp.status_code)
+            # Convince urllib3 to decode gzipped pages.
+            resp.raw.decode_content = True
+            tree = html.parse(resp.raw)
+        finally:
             resp.close()
-            if url.netloc and url.netloc != http.host:
-                # Probably should actually handle this...
-                raise ValueError("Site redirects to a different domain.")
-            path = url.path
-            if not path.startswith("/"):
-                path = "/" + path
-            continue
-        if resp.status != 200:
-            raise Not200(resp.status)
-        break
-    return url, resp
+        # Check for sneaky <meta> redirects.
+        for meta in META_XPATH(tree):
+            m = re.match("0;\s*url=['\"](.+?)['\"]", meta.get("content"))
+            if m is not None:
+                url = m.groups()[0]
+                cont = True
+                break
+        if not cont:
+            break
+    return resp, tree
 
 
-def check_one_site(site):
-    domain = site["domain"]
-    log.info("Checking {}".format(domain))
+def has_mixed_content(tree):
+    s = MIXED_CONTENT_XPATH(tree)
+    return len(s) >= 1
 
-    site["status"] = "bad"
-    site["checks"] = checks = []
-    good_connection = Check()
-    checks.append(good_connection)
+
+def check_secure_connection(info):
+    # Guilty until proven innocent.
+    info.secure_connection_works = False
+    good_connection = info.new_check()
     try:
-        addrs = socket.getaddrinfo(domain, 443, socket.AF_INET, proto=socket.IPPROTO_TCP)
+        addrs = socket.getaddrinfo(info.domain, 443, socket.AF_INET, proto=socket.IPPROTO_TCP)
     except socket.gaierror:
-        log.warning("DNS lookup for {} failed!".format(domain))
+        good_connection.fail("DNS lookup failed.")
         return
-    info = random.choice(addrs)
-    sock = socket.socket(info[0], info[1], info[2])
+    addr_info = random.choice(addrs)
+    sock = socket.socket(addr_info[0], addr_info[1], addr_info[2])
     sock.settimeout(10)
     context = ssl.SSLContext(ssl.PROTOCOL_SSLv23)
-
     context.options |= ssl.OP_NO_SSLv2 | ssl.OP_NO_SSLv3
-
     # Some platforms (OS X) do not have OP_NO_COMPRESSION
-    if hasattr(ssl, "OP_NO_COMPRESSION"):
-        context.options |= ssl.OP_NO_COMPRESSION
-
+    context.options |= getattr(ssl, "OP_NO_COMPRESSION", 0)
     context.verify_mode = ssl.CERT_REQUIRED
     context.check_hostname = True
     context.load_verify_locations("moz-certs.pem")
-    secure_sock = context.wrap_socket(sock, server_hostname=domain)
+    secure_sock = context.wrap_socket(sock, server_hostname=info.domain)
     try:
-        secure_sock.connect(info[4])
+        secure_sock.connect(addr_info[4])
     except ConnectionRefusedError:
         good_connection.fail("Nothing is listening on port 443.")
         return
@@ -132,30 +162,38 @@ def check_one_site(site):
         error_name = errno.errorcode[e.errno]
         good_connection.fail("<code>connect()</code> returns with error {}.".format(error_name))
         return
-    good_connection.succeed("A verified TLS connection can be established. "
-                            "(<a href=\"https://www.ssllabs.com/ssltest/analyze.html?d={}\">SSL Labs report</a>)".format(domain))
+    finally:
+        secure_sock.close()
+    msg = "A verified TLS connection can be established. "
+    if info.ssllabs_grade is not None:
+        grade_msg = "<a href=\"https://www.ssllabs.com/ssltest/analyze.html?d={}\">SSL Labs grade</a> is " + info.ssllabs_grade + "."
+        if info.ssllabs_grade == "F":
+            good_connection.fail(grade_msg.format(info.domain))
+            return
+        msg += grade_msg
+    else:
+        msg += "(<a href=\"https://www.ssllabs.com/ssltest/analyze.html?d={}\">SSL Labs report</a>)"
+    info.secure_connection_works = True
+    good_connection.succeed(msg.format(info.domain))
 
-    mediocre = False
 
-    https_load = Check()
-    checks.append(https_load)
-    http = HTTPSConnection(domain, context=context)
-    http.sock = secure_sock
+def check_https_page(info):
+    info.can_load_https_page = False
+    https_load = info.new_check()
     try:
-        def stop_on_http_or_domain_change(url):
-            return url.scheme == "http" or (url.netloc and url.netloc != domain)
-        final, resp = fetch_through_redirects(http, stop_on_http_or_domain_change)
-        if final is not None and final.scheme == "http":
+        resp, tree = fetch_through_redirects("https://{}".format(info.domain))
+        info.https_redirects_to_http = resp.url.startswith("http://")
+        if info.https_redirects_to_http:
             https_load.fail("The HTTPS site redirects to HTTP.")
             return
-        good_sts = Check()
-        checks.append(good_sts)
-        sts = resp.getheader("Strict-Transport-Security")
+        info.can_load_https_page = True
+        good_sts = info.new_check()
+        sts = resp.headers.get("Strict-Transport-Security")
         if sts is not None:
             m = re.search("max-age=(\d+)", sts)
             if m is not None:
-                age = int(m.group(1))
-                if age >= 2592000:
+                info.sts = int(m.group(1))
+                if info.sts >= 2592000:
                     good_sts.succeed("<code>Strict-Transport-Security</code> header is set with a long <code>max-age</code> directive.")
                 else:
                     good_sts.fail("<code>Strict-Transport-Security</code> header is set but the <code>max-age</code> is less than 30 days.")
@@ -163,53 +201,86 @@ def check_one_site(site):
                 good_sts.fail("<code>Strict-Transport-Security</code> header doesn't contain a <code>max-age</code> directive.")
         else:
             good_sts.fail("<code>Strict-Transport-Security</code> header is not set.")
-        if good_sts.failed:
-            mediocre = True
-    except socket.timeout:
+        info.mixed_content = tree is not None and has_mixed_content(tree)
+        if info.mixed_content:
+            https_load.fail("The HTML page loaded over HTTPS has mixed content.")
+            return
+    except requests.Timeout:
         https_load.fail("Requesting HTTPS page times out.")
         return
     except Not200 as e:
         https_load.fail("The HTTPS site returns an error status ({}) on request.".format(e.status))
         return
-    except OSError as e:
-        err_msg = errno.errorcode[e.errno]
-        https_load.fail("Encountered error ({}) while loading HTTPS site.".format(err_msg))
+    except requests.ConnectionError:
+        https_load.fail("Connection error when connecting to the HTTPS site.")
         return
-    finally:
-        http.close()
     https_load.succeed("A page can be successfully fetched over HTTPS.")
 
-    http_redirect = Check()
-    checks.append(http_redirect)
-    http = HTTPConnection(domain)
+
+def check_http_page(info):
+    http_redirect = info.new_check()
     try:
-        def stop_on_https(url):
-            return url.scheme == "https"
-        final, resp = fetch_through_redirects(http, stop_on_https)
-        if final is not None and final.scheme == "https":
+        resp, tree = fetch_through_redirects("http://{}".format(info.domain))
+        info.http_redirects_to_https = resp.url.startswith("https://")
+        if info.http_redirects_to_https:
             http_redirect.succeed("HTTP site redirects to HTTPS.")
         else:
             http_redirect.fail("HTTP site doesn't redirect to HTTPS.")
-            mediocre = True
-    except HTTPException:
-        http_redirect.fail("Encountered HTTP error while loading HTTP site.")
+    except requests.Timeout:
+        http_redirect.fail("The HTTP site times out.")
+        return
+    except requests.ConnectionError:
+        http_redirect.fail("Nothing is listening on port 80")
         return
     except Not200 as e:
         http_redirect.fail("The HTTP site returns an error status ({}) on request.".format(e.status))
         return
-    except OSError as e:
-        err_msg = errno.errorcode[e.errno]
-        http_redirect.fail("Encountered error ({}) while loading HTTP site.".format(err_msg))
-        return
-    finally:
-        http.close()
-
-    site["status"] = "mediocre" if mediocre else "good"
 
 
-def regenerate_everything():
+def check_site(site):
+    log.info("Checking {}".format(site["domain"]))
+    info = SiteInfo()
+    info.domain = site["domain"]
+    info.ssllabs_grade = site.get("ssllabs_grade")
+
+    check_secure_connection(info)
+    if not info.secure_connection_works:
+        log.info("Couldn't connect securely to {}, so aborting further checks.".format(info.domain))
+        return info
+
+    check_https_page(info)
+    if not info.can_load_https_page:
+        log.info("Couldn't load HTTPS page for {}, so aborting further checks.".format(info.domain))
+        return info
+
+    check_http_page(info)
+
+    return info
+
+
+def set_site_template_data_from_info(site, info):
+    site["checks"] = info.checks
+
+    if (not info.secure_connection_works or
+        not info.can_load_https_page or
+            info.https_redirects_to_http or
+            info.mixed_content):
+        status = "bad"
+    elif (not info.http_redirects_to_https or
+          info.sts is None or info.sts < 2592000):
+        status = "mediocre"
+    else:
+        status = "good"
+    site["status"] = status
+
+
+def regenerate_everything(ssllabs_grades_file):
     with open("config/meta.json", "r", encoding="utf-8") as fp:
         meta = json.load(fp)
+    ssllabs_grades = {}
+    if ssllabs_grades_file is not None:
+        with open(ssllabs_grades_file, "r", encoding="utf-8") as fp:
+            ssllabs_grades = json.load(fp)
     futures = []
     executor = concurrent.futures.ThreadPoolExecutor(max_workers=PARALLELISM)
     for listing in meta["listings"]:
@@ -219,16 +290,20 @@ def regenerate_everything():
             listing["data"] = json.load(fp)
         for cat in listing["data"]["categories"]:
             for site in cat["sites"]:
-                futures.append(executor.submit(check_one_site, site))
+                domain = site["domain"]
+                if domain in ssllabs_grades:
+                    site["ssllabs_grade"] = ssllabs_grades[domain]
+                futures.append(executor.submit(check_site, site))
     with executor:
         while True:
             done, not_done = concurrent.futures.wait(futures, timeout=1)
             print("{}/{}".format(len(done), len(done) + len(not_done)))
             if not not_done:
                 break
+        infos = {}
         for f in futures:
-            # This will raise an exception if check_one_site did.
-            f.result()
+            info = f.result()
+            infos[info.domain] = info
 
     for listing in meta["listings"]:
         if "external" in listing:
@@ -236,6 +311,8 @@ def regenerate_everything():
         for cat in listing["data"]["categories"]:
             cat_status = collections.Counter()
             for site in cat["sites"]:
+                info = infos[site["domain"]]
+                set_site_template_data_from_info(site, info)
                 cat_status[site["status"]] += 1
             cat["counts"] = cat_status
 
@@ -251,6 +328,7 @@ def encode_check(o):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--cached", action="store_true")
+    parser.add_argument("--ssllabs")
 
     args = parser.parse_args()
 
@@ -258,7 +336,7 @@ def main():
         with open("cache.json", "r", encoding="utf-8") as fp:
             meta = json.load(fp)
     else:
-        meta = regenerate_everything()
+        meta = regenerate_everything(args.ssllabs)
         with open("cache.json", "w", encoding="utf-8") as fp:
             json.dump(meta, fp, default=encode_check)
 

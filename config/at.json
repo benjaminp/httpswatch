@@ -1,0 +1,1458 @@
+{
+    "categories": [{
+        "name": "Tageszeitungen",
+        "linkname": "tageszeitungen",
+        "sites": [{
+            "name": "Der Standard",
+            "domain": "www.derstandard.at"
+        }, {
+            "name": "Die Presse",
+            "domain": "www.diepresse.com"
+        }, {
+            "name": "Heute",
+            "domain": "www.heute.at"
+        }, {
+            "name": "Kleine Zeitung",
+            "domain": "www.kleinezeitung.at"
+        }, {
+            "name": "Kronen Zeitung",
+            "domain": "www.krone.at"
+        }, {
+            "name": "Kurier",
+            "domain": "www.kurier.at"
+        }, {
+            "name": "Neue Vorarlberger Tageszeitung",
+            "domain": "www.neue.at"
+        }, {
+            "name": "Neues Volksblatt",
+            "domain": "www.volksblatt.at"
+        }, {
+            "name": "Oberösterreichische Nachrichten",
+            "domain": "www.nachrichten.at"
+        }, {
+            "name": "Salzburger Nachrichten",
+            "domain": "www.salzburg.com"
+        }, {
+            "name": "Österreich",
+            "domain": "www.oe24.at"
+        }, {
+            "name": "Tiroler Tageszeitung",
+            "domain": "www.tt.com"
+        }, {
+            "name": "Vorarlberger Nachrichten",
+            "domain": "www.vn.vol.at"
+        }, {
+            "name": "Wiener Zeitung",
+            "domain": "www.wienerzeitung.at"
+        }, {
+            "name": "WirtschaftsBlatt",
+            "domain": "www.wirtschaftsblatt.at"
+        }]
+    }, {
+        "name": "Wochenzeitungen",
+        "linkname": "wochenzeitungen",
+        "sites": [{
+            "name": "Falter",
+            "domain": "www.falter.at"
+        }, {
+            "name": "Die Furche",
+            "domain": "www.diefurche.at"
+        }, {
+            "name": "Die ganze Woche",
+            "domain": "www.ganzewoche.at"
+        }, {
+            "name": "Medianet",
+            "domain": "www.medianet.at"
+        }, {
+            "name": "Sportwoche",
+            "domain": "www.sportnet.at"
+        }, {
+            "name": "Börsenkurier",
+            "domain": "www.boersen-kurier.at"
+        }, {
+            "name": "Bezirksblatt Niederösterreich, Burgenland, Salzburg und Tirol",
+            "domain": "www.meinbezirk.at"
+        }, {
+            "name": "bz-Wiener Bezirkszeitung",
+            "domain": "www.meinbezirk.at"
+        }, {
+            "name": "Badener Zeitung",
+            "domain": "www.badenerzeitung.at"
+        }, {
+            "name": "Bezirksrundschau Oberösterreich",
+            "domain": "www.bezirksrundschau.com"
+        }, {
+            "name": "Regionalzeitung Vorarlberg",
+            "domain": "www.rzg.at"
+        }, {
+            "name": "Burgenländische Volkszeitung",
+            "domain": "www.bvz.at"
+        }, {
+            "name": "Niederösterreichische Nachrichten",
+            "domain": "www.noen.at"
+        }, {
+            "name": "Alpenpost (Salzkammergut)",
+            "domain": "www.alpenpost.at"
+        }, {
+            "name": "Badener Rundschau",
+            "domain": "www.badenerzeitung.at"
+        }, {
+            "name": "Burgenland Freizeit",
+            "domain": "http://www.bf-archiv.at/"
+        }, {
+            "name": "Oberösterreichische Bezirksrundschau",
+            "domain": "www.bezirksrundschau.com"
+        }, {
+            "name": "Tips",
+            "domain": "www.tips.at"
+        }, {
+            "name": "Pannonische Rundschau",
+            "domain": "www.pannonische-rundschau.at"
+        }, {
+            "name": "derGrazer",
+            "domain": "www.grazer.at"
+        }, {
+            "name": "derSteirer",
+            "domain": "www.der-steirer.at"
+        }, {
+            "name": "Der Ennstaler",
+            "domain": "www.derennstaler.at"
+        }, {
+            "name": "Osttiroler Bote",
+            "domain": "www.osttirolerbote.at"
+        }, {
+            "name": "Wann&Wo (Vorarlberg)",
+            "domain": "www.wannundwo.at"
+        }, {
+            "name": "WOHIN... in Wien",
+            "domain": "wohin.vienna.at"
+        }, {
+            "name": "Rosentaler Kurier (Kärnten)",
+            "domain": "www.derrosentaler.at"
+        }, {
+            "name": "Obersteirische Nachrichten",
+            "domain": "www.obersteirische.at"
+        }]
+    }, {
+        "name": "Zeitschriften und Magazine",
+        "linkname": "zeitschriften-magazine",
+        "sites": [{
+            "name": "Format",
+            "domain": "www.format.at"
+        }, {
+            "name": "NEWS",
+            "domain": "www.news.at"
+        }, {
+            "name": "Profil",
+            "domain": "www.profil.at"
+        }, {
+            "name": "TV-Media",
+            "domain": "www.tv-media.at"
+        }, {
+            "name": "SKIP - Das Kinomagazin",
+            "domain": "www.skip.at"
+        }, {
+            "name": "woman",
+            "domain": "www.woman.at"
+        }, {
+            "name": "Zur Zeit",
+            "domain": "www.zurzeit.eu"
+        }, {
+            "name": "Die Zeit",
+            "domain": "www.zeit.de"
+        }, {
+            "name": "Madonna",
+            "domain": "madonna.oe24.at"
+        }, {
+            "name": "WOHNEN",
+            "domain": "www.besser-wohnen.co.at"
+        }, {
+            "name": "Computerwelt",
+            "domain": "www.computerwelt.at"
+        }, {
+            "name": "Autorevue",
+            "domain": "www.autorevue.at"
+        }, {
+            "name": "Alles Auto",
+            "domain": "www.allesauto.at"
+        }, {
+            "name": "auto touring",
+            "domain": "www.autotouring.at"
+        }, {
+            "name": "Ballesterer fm",
+            "domain": "www.ballesterer.at"
+        }, {
+            "name": "CD Austria",
+            "domain": "www.cda-verlag.com"
+        }, {
+            "name": "Cool Jugendmagazin",
+            "domain": "www.cool-magazin.at"
+        }, {
+            "name": "Das österreichische Industriemagazin",
+            "domain": "www.industriemagazin.at"
+        }, {
+            "name": "Datum - Seiten der Zeit",
+            "domain": "www.datum.at"
+        }, {
+            "name": "Der Reitwagen",
+            "domain": "www.reitwagen.at"
+        }, {
+            "name": "DIVA",
+            "domain": "www.diva-online.at"
+        }, {
+            "name": "Drahtesel",
+            "domain": "www.drahtesel.or.at"
+        }, {
+            "name": "e-media",
+            "domain": "www.e-media.at"
+        }, {
+            "name": "FOTOobjektiv",
+            "domain": "www.fotoobjektiv.at"
+        }, {
+            "name": "Gewinn",
+            "domain": "www.gewinn.com"
+        }, {
+            "name": "miss",
+            "domain": "www.miss.at"
+        }, {
+            "name": "moments (Frauenmagazin)",
+            "domain": "www.momentsmagazin.at"
+        }, {
+            "name": "ORF nachlese",
+            "domain": "www.orf.at"
+        }, {
+            "name": "PROST",
+            "domain": "www.prost-magazin.at"
+        }, {
+            "name": "Partysan Österreich",
+            "domain": "www.partysan.at"
+        }, {
+            "name": "The Gap",
+            "domain": "www.thegap.at"
+        }, {
+            "name": "Trend",
+            "domain": "www.trend.at"
+        }, {
+            "name": "VOR Magazin",
+            "domain": "www.vormagazin.at"
+        }, {
+            "name": "WCM",
+            "domain": "www.wcm.at"
+        }, {
+            "name": "Wiener",
+            "domain": "www.wiener-online.at"
+        }, {
+            "name": "Wienerin",
+            "domain": "www.wienerin.at"
+        }, {
+            "name": "Wien live - Das Stadtmagazin",
+            "domain": "www.wienlive.at"
+        }, {
+            "name": "Yachtrevue",
+            "domain": "www.yachtrevue.at"
+        }, {
+            "name": "Golfrevue",
+            "domain": "www.golfrevue.at"
+        }]
+    }, {
+        "name": "Spezialzeitungen",
+        "linkname": "spezialzeitungen",
+        "sites": [{
+            "name": "Rupertusblatt (Salzburg)",
+            "domain": "www.rupertusblatt.at"
+        }, {
+            "name": "Kirche Bunt (St. Pölten)",
+            "domain": "www.dsp.at"
+        }, {
+            "name": "Kirchenzeitung der Diözese Linz",
+            "domain": "www.kirchenzeitung.at"
+        }, {
+            "name": "martinus (Kirchenzeitung Eisenstadt)",
+            "domain": "www.martinus.at"
+        }, {
+            "name": "Wiener Kirchenzeitung",
+            "domain": "www.dersonntag.at"
+        }, {
+            "name": "Sonntagsblatt (Graz)",
+            "domain": "www.sonntagsblatt.at"
+        }, {
+            "name": "Tiroler Sonntag",
+            "domain": "www.dibk.at"
+        }, {
+            "name": "Apropos (Salzburg)",
+            "domain": "www.apropos.or.at"
+        }, {
+            "name": "20er (Tirol)",
+            "domain": "www.20er.at"
+        }, {
+            "name": "Augustin (Wien)",
+            "domain": "www.augustin.or.at"
+        }, {
+            "name": "Kupermuckn (Linz)",
+            "domain": "www.arge-obdachlose.at"
+        }, {
+            "name": "Megaphon (Graz)",
+            "domain": "www.megaphon.at"
+        }]
+    }, {
+        "name": "Online-Zeitungen und Medien",
+        "linkname": "online-zeitungen-medien",
+        "sites": [{
+            "name": "Die Tagespresse",
+            "domain": "www.dietagespresse.com"
+        }, {
+            "name": "ORF.at",
+            "domain": "www.orf.at"
+        }, {
+            "name": "NZZ.at",
+            "domain": "www.nzz.at"
+        }, {
+            "name": "trendingtopics.at",
+            "domain": "www.trendingtopics.at"
+        }]
+    }, {
+        "name": "ÖWA Werbeträger - Einzelangebote",
+        "linkname": "oewa-werbetraeger-einzelangebote",
+        "sites": [{
+            "name": "1000ps.at",
+            "domain": "www.1000ps.at"
+        }, {
+            "name": "Aktionsfinder.at",
+            "domain": "www.aktionsfinder.at"
+        }, {
+            "name": "alphaluxury.eu",
+            "domain": "www.alphaluxury.eu"
+        }, {
+            "name": "apodirekt.at",
+            "domain": "www.apodirekt.at"
+        }, {
+            "name": "Arztsuche24.at",
+            "domain": "www.arztsuche24.at"
+        }, {
+            "name": "ATV.at",
+            "domain": "www.atv.at"
+        }, {
+            "name": "audi4ever.com",
+            "domain": "www.audi4ever.com"
+        }, {
+            "name": "ausschreibung.at",
+            "domain": "www.ausschreibung.at"
+        }, {
+            "name": "auto-motor.at",
+            "domain": "www.auto-motor.at"
+        }, {
+            "name": "automobile.at",
+            "domain": "www.automobile.at"
+        }, {
+            "name": "autonet.at",
+            "domain": "www.autonet.at"
+        }, {
+            "name": "autoplenum.at",
+            "domain": "www.autoplenum.at"
+        }, {
+            "name": "autorevue.at",
+            "domain": "www.autorevue.at"
+        }, {
+            "name": "autoscout24.at",
+            "domain": "www.autoscout24.at"
+        }, {
+            "name": "babyforum.at",
+            "domain": "www.babyforum.at"
+        }, {
+            "name": "bazar.at",
+            "domain": "www.bazar.at"
+        }, {
+            "name": "bdb.at",
+            "domain": "www.bdb.at"
+        }, {
+            "name": "be24.at",
+            "domain": "www.be24.at"
+        }, {
+            "name": "boerse-express.com",
+            "domain": "www.boerse-express.com"
+        }, {
+            "name": "bundesliga.at",
+            "domain": "www.bundesliga.at"
+        }, {
+            "name": "buschenschank.at",
+            "domain": "www.buschenschank.at"
+        }, {
+            "name": "derstandard.at",
+            "domain": "www.derstandard.at"
+        }, {
+            "name": "diepresse.com",
+            "domain": "www.diepresse.com"
+        }, {
+            "name": "dietagespresse.com",
+            "domain": "www.dietagespresse.com"
+        }, {
+            "name": "docfinder.at",
+            "domain": "www.docfinder.at"
+        }, {
+            "name": "doodle.com",
+            "domain": "www.doodle.com"
+        }, {
+            "name": "drei.at",
+            "domain": "www.drei.at"
+        }, {
+            "name": "du-bist-der-teamchef.at",
+            "domain": "www.du-bist-der-teamchef.at"
+        }, {
+            "name": "elektro.at",
+            "domain": "www.elektro.at"
+        }, {
+            "name": "elektrojournal.at",
+            "domain": "www.elektrojournal.at"
+        }, {
+            "name": "energieweb.at",
+            "domain": "www.energieweb.at"
+        }, {
+            "name": "events.at",
+            "domain": "www.events.at"
+        }, {
+            "name": "falstaff.at",
+            "domain": "www.falstaff.at"
+        }, {
+            "name": "fanreport.com",
+            "domain": "www.fanreport.com"
+        }, {
+            "name": "film.at",
+            "domain": "www.film.at"
+        }, {
+            "name": "firmenflotte.at",
+            "domain": "www.firmenflotte.at"
+        }, {
+            "name": "fitundgesund.at",
+            "domain": "www.fitundgesund.at"
+        }, {
+            "name": "fondsprofessionell.at",
+            "domain": "www.fondsprofessionell.at"
+        }, {
+            "name": "fitundgesund.at",
+            "domain": "www.fitundgesund.at"
+        }, {
+            "name": "foonds.com",
+            "domain": "www.foonds.com"
+        }, {
+            "name": "format.at",
+            "domain": "www.format.at"
+        }, {
+            "name": "fratz.at",
+            "domain": "www.fratz.at"
+        }, {
+            "name": "friendscout24.at",
+            "domain": "www.friendscout24.at"
+        }, {
+            "name": "fttr.at",
+            "domain": "www.fttr.at"
+        }, {
+            "name": "futurezone.at",
+            "domain": "www.futurezone.at"
+        }, {
+            "name": "genuss-magazin.eu",
+            "domain": "www.genuss-magazin.eu"
+        }, {
+            "name": "gesund.at",
+            "domain": "www.gesund.at"
+        }, {
+            "name": "gillout.com",
+            "domain": "www.gillout.com"
+        }, {
+            "name": "gmx.at",
+            "domain": "www.gmx.at"
+        }, {
+            "name": "gmx.net",
+            "domain": "www.gmx.net"
+        }, {
+            "name": "gofeminin.at",
+            "domain": "www.gofeminin.at"
+        }, {
+            "name": "gutekueche.at",
+            "domain": "www.gutekueche.at"
+        }, {
+            "name": "help.gv.at",
+            "domain": "www.help.gv.at"
+        }, {
+            "name": "herold.at",
+            "domain": "www.herold.at"
+        }, {
+            "name": "herold.mobi",
+            "domain": "www.herold.mobi"
+        }, {
+            "name": "heute.at",
+            "domain": "www.heute.at"
+        }, {
+            "name": "ichkoche.at",
+            "domain": "www.ichkoche.at"
+        }, {
+            "name": "ichreise.at",
+            "domain": "www.ichreise.at"
+        }, {
+            "name": "immosuchmaschine.at",
+            "domain": "www.immosuchmaschine.at"
+        }, {
+            "name": "industriemagazin.at",
+            "domain": "www.industriemagazin.at"
+        }, {
+            "name": "industrieweb.at",
+            "domain": "www.industrieweb.at"
+        }, {
+            "name": "issgesund.at",
+            "domain": "www.issgesund.at"
+        }, {
+            "name": "karriere.at",
+            "domain": "www.karriere.at"
+        }, {
+            "name": "kleinezeitung.at",
+            "domain": "www.kleinezeitung.at"
+        }, {
+            "name": "kosmo.at",
+            "domain": "www.kosmo.at"
+        }, {
+            "name": "krone.at",
+            "domain": "www.krone.at"
+        }, {
+            "name": "kronehit.at",
+            "domain": "www.kronehit.at"
+        }, {
+            "name": "kurier.at",
+            "domain": "www.kurier.at"
+        }, {
+            "name": "landwirt.com",
+            "domain": "www.landwirt.com"
+        }, {
+            "name": "ligaportal.at",
+            "domain": "www.ligaportal.com"
+        }, {
+            "name": "love.at",
+            "domain": "www.love.at"
+        }, {
+            "name": "mamilade.at",
+            "domain": "www.mamilade.at"
+        }, {
+            "name": "mann.tv",
+            "domain": "www.mann.tv"
+        }, {
+            "name": "mediamarkt.at",
+            "domain": "www.mediamarkt.at"
+        }, {
+            "name": "medizinpopulaer.at",
+            "domain": "www.medizinpopulaer.at"
+        }, {
+            "name": "megaplex.at",
+            "domain": "www.megaplex.at"
+        }, {
+            "name": "meinbezirk.at",
+            "domain": "meinbezirk.at"
+        }, {
+            "name": "metropol-kino.at",
+            "domain": "www.metropol-kino.at"
+        }, {
+            "name": "miss.at",
+            "domain": "www.miss.at"
+        }, {
+            "name": "monitor.at",
+            "domain": "www.monitor.at"
+        }, {
+            "name": "motorline.cc",
+            "domain": "www.motorline.cc"
+        }, {
+            "name": "mytopic.at",
+            "domain": "www.mytopic.at"
+        }, {
+            "name": "myvideo.at",
+            "domain": "www.myvideo.at"
+        }, {
+            "name": "nachrichten.at",
+            "domain": "www.nachrichten.at"
+        }, {
+            "name": "netdoktor.at",
+            "domain": "www.netdoktor.at"
+        }, {
+            "name": "news.at",
+            "domain": "www.news.at"
+        }, {
+            "name": "notorious-mag.com",
+            "domain": "www.notorious-mag.com"
+        }, {
+            "name": "oeamtc.at",
+            "domain": "www.oeamtc.at"
+        }, {
+            "name": "profil.at",
+            "domain": "www.profil.at"
+        }, {
+            "name": "prosieben.at",
+            "domain": "www.prosieben.at"
+        }, {
+            "name": "puls4.com",
+            "domain": "www.puls4.com"
+        }, {
+            "name": "radio.at",
+            "domain": "www.radio.at"
+        }, {
+            "name": "salzburg.com",
+            "domain": "www.salzburg.com"
+        }, {
+            "name": "salzburg24.at",
+            "domain": "www.salzburg24.at"
+        }, {
+            "name": "sat1.at",
+            "domain": "www.sat1.at"
+        }, {
+            "name": "saturn.at",
+            "domain": "www.saturn.at"
+        }, {
+            "name": "schlagerportal.com",
+            "domain": "www.schlagerportal.com"
+        }, {
+            "name": "schwanger.at",
+            "domain": "www.schwanger.at"
+        }, {
+            "name": "seitenblicke.at",
+            "domain": "www.seitenblicke.at"
+        }, {
+            "name": "servustv.com",
+            "domain": "www.servustv.com"
+        }, {
+            "name": "sixx.at",
+            "domain": "www.sixx.at"
+        }, {
+            "name": "skip.at",
+            "domain": "www.skp.at"
+        }, {
+            "name": "skysportaustria.at",
+            "domain": "www.skysportaustria.at"
+        }, {
+            "name": "sms.at",
+            "domain": "www.sms.at"
+        }, {
+            "name": "solidbau.at",
+            "domain": "www.solidbau.at"
+        }, {
+            "name": "songtexte.com",
+            "domain": "www.songtexte.com"
+        }, {
+            "name": "speising.net",
+            "domain": "www.speising.net"
+        }, {
+            "name": "sportnet.at",
+            "domain": "www.sportnet.at"
+        }, {
+            "name": "springermedizin.at",
+            "domain": "www.springermedizin.at"
+        }, {
+            "name": "supermed.at",
+            "domain": "www.supermed.at"
+        }, {
+            "name": "szene1.at",
+            "domain": "www.szene1.at"
+        }, {
+            "name": "tele.at",
+            "domain": "www.tele.at"
+        }, {
+            "name": "tennisnet.com",
+            "domain": "www.tennisnet.com"
+        }, {
+            "name": "transfermarkt.at",
+            "domain": "www.transfermarkt.at"
+        }, {
+            "name": "tripwolf.com",
+            "domain": "www.tripwolf.com"
+        }, {
+            "name": "tt.com",
+            "domain": "www.tt.com"
+        }, {
+            "name": "tupalo.at",
+            "domain": "tupalo.at"
+        }, {
+            "name": "tv-media.at",
+            "domain": "tv-media.at"
+        }, {
+            "name": "tvheute.at",
+            "domain": "www.tvheute.at"
+        }, {
+            "name": "uci-kinowelt.at",
+            "domain": "uci-kinowelt.at"
+        }, {
+            "name": "uncut.at",
+            "domain": "www.uncut.at"
+        }, {
+            "name": "usp.gv.at",
+            "domain": "www.usp.gv.at"
+        }, {
+            "name": "vice.com",
+            "domain": "www.vice.com"
+        }, {
+            "name": "vienna-marathon.com",
+            "domain": "www.vienna-marathon.com"
+        }, {
+            "name": "vienna.at",
+            "domain": "www.vienna.at"
+        }, {
+            "name": "viennaairport.com",
+            "domain": "www.viennaairport.com"
+        }, {
+            "name": "vol.at",
+            "domain": "www.vol.at"
+        }, {
+            "name": "w24.at",
+            "domain": "www.w24.at"
+        }, {
+            "name": "warda.at",
+            "domain": "www.warda.at"
+        }, {
+            "name": "weltfussball.at",
+            "domain": "www.weltfussball.at"
+        }, {
+            "name": "wetter.com",
+            "domain": "www.wetter.com"
+        }, {
+            "name": "wienerin.at",
+            "domain": "www.wienerin.at"
+        }, {
+            "name": "willhaben.at",
+            "domain": "www.willhaben.at"
+        }, {
+            "name": "wirtschaftsblatt.at",
+            "domain": "www.wirtschaftsblatt.at"
+        }, {
+            "name": "wogibtswas.at",
+            "domain": "www.wogibtswas.at"
+        }, {
+            "name": "woman.at",
+            "domain": "www.woman.at"
+        }, {
+            "name": "xing.com",
+            "domain": "www.xing.com"
+        }]
+    }, {
+        "name": "Bundesministerien",
+        "linkname": "bundesministerien",
+        "sites": [{
+            "name": "Bundeskanzleramt",
+            "domain": "www.bka.gv.at"
+        }, {
+            "name": "Bundesministerium für Arbeit, Soziales und Konsumentenschutz",
+            "domain": "www.bmask.gv.at"
+        }, {
+            "name": "Bundesministerium für Bildung und Frauen",
+            "domain": "www.bmukk.gv.at"
+        }, {
+            "name": "Bundesministerium für Europa, Integration und Äußeres",
+            "domain": "www.bmeia.gv.at"
+        }, {
+            "name": "Bundesministerium für Familien und Jugend",
+            "domain": "www.bmfj.gv.at"
+        }, {
+            "name": "Bundesministerium für Finanzen",
+            "domain": "www.bmf.gv.at"
+        }, {
+            "name": "Bundesministerium für Gesundheit",
+            "domain": "www.bmg.gv.at"
+        }, {
+            "name": "Bundesministerium für Inneres",
+            "domain": "www.bmi.gv.at"
+        }, {
+            "name": "Bundesministerium für Justiz",
+            "domain": "www.bmj.gv.at"
+        }, {
+            "name": "Bundesministerium für Landesverteidigung und Sport",
+            "domain": "www.bmlvs.gv.at"
+        }, {
+            "name": "Bundesministerium für Land- und Forstwirtschaft, Umwelt und Wasserwirtschaft",
+            "domain": "www.lebensministerium.at"
+        }, {
+            "name": "Bundesministerium für Verkehr, Innovation und Technologie",
+            "domain": "www.bmvit.gv.at"
+        }, {
+            "name": "Bundesministerium für Wissenschaft, Forschung und Wirtschaft",
+            "domain": "www.bmwfw.gv.at"
+        }]
+    }, {
+        "name": "Ausgegliederte Rechtsträger",
+        "linkname": "ausgegliederte-rechtstraeger",
+        "sites": [{
+            "name": "Münze Österreich AG",
+            "domain": "www.muenzeoesterreich.at"
+        }, {
+            "name": "Schönbrunner Tiergarten-Gesellschaft mbH",
+            "domain": "www.zoovienna.at"
+        }, {
+            "name": "Österreichische Wasserstraßen-Gesellschaft mbH",
+            "domain": "www.viadonau.org"
+        }, {
+            "name": "Schloß Schönbrunn Kultur- und BetriebsGmbH",
+            "domain": "www.schoenbrunn.at"
+        }, {
+            "name": "Bundesimmobilien GmbH",
+            "domain": "www.big.at"
+        }, {
+            "name": "Agrarmarkt Austria (AMA)",
+            "domain": "www.ama.at"
+        }, {
+            "name": "Österreichische Bundesfinanzierungsagentur (ÖBFA)",
+            "domain": "www.oebfa.at"
+        }, {
+            "name": "Österreichische Bundesbahnen (ÖBB)",
+            "domain": "www.oebb.at"
+        }, {
+            "name": "Austro Control GmbH",
+            "domain": "www.austrocontrol.at"
+        }, {
+            "name": "Arbeitsmarktservice Österreich und Arbeitsmarktservices der Länder und Gemeinden (AMS)",
+            "domain": "www.ams.at"
+        }, {
+            "name": "Monopolverwaltung GmbH",
+            "domain": "www.mvg.at"
+        }, {
+            "name": "Diplomatische Akademie",
+            "domain": "www.da-vienna.ac.at"
+        }, {
+            "name": "Post und Telekom Austria AG (PTA)",
+            "domain": "www.post.at"
+        }, {
+            "name": "Bundesrechenzentrum GMBH (BRZ GmbH)",
+            "domain": "www.brz.gv.at"
+        }, {
+            "name": "Österreichische Bundesforste AG",
+            "domain": "www.bundesforste.at"
+        }, {
+            "name": "Landwirtschaftliche Bundesversuchswirtschaft GmbH",
+            "domain": "www.bvw.at"
+        }, {
+            "name": "Österreichisches Forschungs- und Prüfzentrum Arsenal GmbH",
+            "domain": "www.oegnb.net"
+        }, {
+            "name": "Bundestheater-Holding GmbH",
+            "domain": "www.bundestheater.at"
+        }, {
+            "name": "Umweltbundesamt GmbH",
+            "domain": "www.umweltbundesamt.at"
+        }, {
+            "name": "Statistik Österreich",
+            "domain": "www.statistik.at"
+        }, {
+            "name": "Spanische Hofreitschule",
+            "domain": "www.srs.at"
+        }, {
+            "name": "Immobilienmanagementgesellschaft des Bundes mbH (IMB)",
+            "domain": "www.big.at"
+        }, {
+            "name": "Bundesbeschaffung GmbH",
+            "domain": "www.bbg.gv.at"
+        }, {
+            "name": "Insolvenz-Ausfallsgeld-Fonds Service GmbH",
+            "domain": "www.insolvenzentgelt.at"
+        }, {
+            "name": "Finanzmarktaufsichtsbehörde (FMA)",
+            "domain": "www.fma.gv.at"
+        }, {
+            "name": "Albertina",
+            "domain": "www.albertina.at"
+        }, {
+            "name": "Kunsthistorisches Museum",
+            "domain": "www.khm.at"
+        }, {
+            "name": "Österreichische Galerie Belvedere",
+            "domain": "www.belvedere.at"
+        }, {
+            "name": "MAK - Österreichisches Museum für angewandte Kunst",
+            "domain": "www.mak.at"
+        }, {
+            "name": "Museum moderner Kunst Stiftung Ludwig Wien (MUMOK)",
+            "domain": "www.mumok.at"
+        }, {
+            "name": "Naturhistorisches Museum",
+            "domain": "www.nhm-wien.ac.at"
+        }, {
+            "name": "Technisches Museum Wien",
+            "domain": "www.technischesmuseum.at"
+        }, {
+            "name": "Österreichische Nationalbibliothek",
+            "domain": "www.onb.ac.at"
+        }, {
+            "name": "Österreichische Bibliothekenverbund und Service GmbH",
+            "domain": "www.obvsg.at"
+        }, {
+            "name": "Österreichische Agentur für Gesundheit und Ernährungssicherheit GmbH",
+            "domain": "www.ages.at"
+        }, {
+            "name": "Marchfeldschlösser Revitalisierungs- und Betriebsgesellschaft mbH",
+            "domain": "www.schlosshof.at"
+        }, {
+            "name": "Austria Wirtschaftsservice GmbH",
+            "domain": "www.awsg.at"
+        }, {
+            "name": "Geologische Bundesanstalt",
+            "domain": "www.geologie.ac.at"
+        }, {
+            "name": "Zentralanstalt für Meteorologie und Geodynamik",
+            "domain": "www.zamg.ac.at"
+        }, {
+            "name": "Österreichisches Archäologisches Institut",
+            "domain": "www.oeai.at"
+        }, {
+            "name": "Institut für Österreichische Geschichtsforschung",
+            "domain": "www.geschichtsforschung.ac.at"
+        }, {
+            "name": "Patentamt ",
+            "domain": "www.patentamt.at"
+        }]
+    }, {
+        "name": "Universitäten",
+        "linkname": "universitaeten",
+        "sites": [{
+            "name": "Universität Wien",
+            "domain": "www.univie.ac.at"
+        }, {
+            "name": "Universität Graz",
+            "domain": "www.uni-graz.at"
+        }, {
+            "name": "Universität Linz",
+            "domain": "www.jku.at"
+        }, {
+            "name": "Universität Salzburg",
+            "domain": "www.uni-salzburg.at"
+        }, {
+            "name": "Universität Innsbruck",
+            "domain": "www.uibk.ac.at"
+        }, {
+            "name": "Universität Klagenfurt",
+            "domain": "www.uni-klu.ac.at"
+        }, {
+            "name": "Medizinische Universität Wien",
+            "domain": "www.meduniwien.ac.at"
+        }, {
+            "name": "Medizinische Universität Graz",
+            "domain": "www.medunigraz.at"
+        }, {
+            "name": "Medizinische Universität Innsbruck",
+            "domain": "www.i-med.ac.at"
+        }, {
+            "name": "Veterinärmedizinische Universität Wien",
+            "domain": "www.vetmeduni.ac.at"
+        }, {
+            "name": "Technische Universität Wien",
+            "domain": "www.tuwien.ac.at"
+        }, {
+            "name": "Technische Universität Graz",
+            "domain": "www.tugraz.at"
+        }, {
+            "name": "Montanuniversität Leoben",
+            "domain": "www.unileoben.ac.at"
+        }, {
+            "name": "Universität für Bodenkultur Wien",
+            "domain": "www.boku.ac.at"
+        }, {
+            "name": "Wirtschaftsuniversität Wien",
+            "domain": "www.wu.ac.at"
+        }, {
+            "name": "Universität für angewandte Kunst Wien",
+            "domain": "www.dieangewandte.at"
+        }, {
+            "name": "Universität für Musik und darstellende Kunst Wien",
+            "domain": "www.mdw.ac.at"
+        }, {
+            "name": "Universität für Musik und darstellende Kunst Graz",
+            "domain": "www.kug.ac.at"
+        }, {
+            "name": "Universität Mozarteum Salzburg",
+            "domain": "www.uni-mozarteum.at"
+        }, {
+            "name": "Universität für künstlerische und industrielle Gestaltung Linz",
+            "domain": "www.ufg.c.at"
+        }, {
+            "name": "Akademie der bildenden Künste Wien",
+            "domain": "www.akbild.ac.at"
+        }]
+    }, {
+        "name": "Fachhochschulen",
+        "linkname": "fachhochschulen",
+        "sites": [{
+            "name": "FH CAMPUS 02",
+            "domain": "www.campus02.at"
+        }, {
+            "name": "Theresianische Militärakademie",
+            "domain": "www.bundesheer.at"
+        }, {
+            "name": "FH Burgenland",
+            "domain": "www.fh-burgenland.at"
+        }, {
+            "name": "Ferdinand Porsche FernFH",
+            "domain": "www.fernfh.ac.at"
+        }, {
+            "name": "FH Campus Wien",
+            "domain": "www.fh-campuswien.ac.at"
+        }, {
+            "name": "FH des bfi Wien",
+            "domain": "www.fh-vie.ac.at"
+        }, {
+            "name": "FH JOANNEUM",
+            "domain": "www.fh-joanneum.at"
+        }, {
+            "name": "FH Kärnten",
+            "domain": "www.fh-kaernten.at"
+        }, {
+            "name": "FH Krems",
+            "domain": "www.fh-krems.ac.at"
+        }, {
+            "name": "Fachhochschule Kufstein",
+            "domain": "www.fh-kufstein.ac.at"
+        }, {
+            "name": "FH Oberösterreich",
+            "domain": "www.fh-ooe.at"
+        }, {
+            "name": "Fachhochschule Salzburg",
+            "domain": "www.fh-salzburg.ac.at"
+        }, {
+            "name": "FH St. Pölten",
+            "domain": "www.fhstp.ac.at"
+        }, {
+            "name": "FH Technikum Wien",
+            "domain": "www.technikum-wien.at"
+        }, {
+            "name": "FH Vorarlberg",
+            "domain": "www.vhv.at"
+        }, {
+            "name": "FHWien der WKW",
+            "domain": "www.fh-wien.ac.at"
+        }, {
+            "name": "FH Wiener Neustadt",
+            "domain": "www.fhwn.ac.at"
+        }, {
+            "name": "MCI Management Center Innsbruck",
+            "domain": "www.mci.edu"
+        }, {
+            "name": "Schloss Hofen Weiterbildungszentrum FH Vorarlberg",
+            "domain": "www.fhv.at"
+        }, {
+            "name": "FH Gesundheitsberufe OÖ",
+            "domain": "www.fh-gesundheitsberufe.at"
+        }]
+    }, {
+        "name": "Nationalratsabgeordnete (Dez 2015, Q: meinparlament.at)",
+        "linkname": "nationalratsabgeordnete",
+        "sites": [{
+            "name": "Mag. Niko Alm (neos)",
+            "domain": "blog.alm.at"
+        }, {
+            "name": "Konrad Antoni (SPÖ)",
+            "domain": "www.konrad-antoni.at"
+        }, {
+            "name": "Petra Bayr, M.A. (SPÖ)",
+            "domain": "www.petrabayr.at"
+        }, {
+            "name": "Mag.a Ruth Becher (SPÖ)",
+            "domain": "www.ruth-becher.at"
+        }, {
+            "name": "Mag.a Christiane Brunner (Grüne)",
+            "domain": "www.christiane-brunner.com"
+        }, {
+            "name": "Harry Rudolf Buchmayr (SPÖ)",
+            "domain": "buchmayr.wordpress.com"
+        }, {
+            "name": "Dr. Josef Cap (SPÖ)",
+            "domain": "www.josefcap.at"
+        }, {
+            "name": "DI Gerhard Deimek (FPÖ)",
+            "domain": "www.deimek.at"
+        }, {
+            "name": "ÖkR Franz Eßl (ÖVP)",
+            "domain": "www.franz-essl.at"
+        }, {
+            "name": "Mag. Dr. Klaus Uwe Feichtinger (SPÖ)",
+            "domain": "www.klaus-feichtinger.at"
+        }, {
+            "name": "Angela Fichtinger (ÖVP)",
+            "domain": "www.angela-fichtinger.at"
+        }, {
+            "name": "Dr. Marcus Franz (ÖVP)",
+            "domain": "internist-franz.at"
+        }, {
+            "name": "Hermann Gahr (ÖVP)",
+            "domain": "www.gahr.at"
+        }, {
+            "name": "Andrea Gessl-Ranftl (SPÖ)",
+            "domain": "www.andrea-gessl-ranftl.at"
+        }, {
+            "name": "Ing. Mag. Werner Groiß (ÖVP)",
+            "domain": "www.werner-groiss.at"
+        }, {
+            "name": "Dr. Rainer Hable, M.Sc. (neos)",
+            "domain": "www.rainerhable.eu"
+        }, {
+            "name": "Christian Hafenecker, M.A. (FPÖ)",
+            "domain": "neu.hafenecker.at"
+        }, {
+            "name": "Elisabeth Hakel (SPÖ)",
+            "domain": "www.hakel.at"
+        }, {
+            "name": "Mag. Andreas Hanger (ÖVP)",
+            "domain": "www.andreas-hanger.at"
+        }, {
+            "name": "Peter Haubner (ÖVP)",
+            "domain": "www.peterhaubner.at"
+        }, {
+            "name": "Prof. Mag. Gerald Hauser (FPÖ)",
+            "domain": "www.gerald-hauser.at"
+        }, {
+            "name": "Johann Hechtl (SPÖ)",
+            "domain": "www.johannhechtl.spoe.at"
+        }, {
+            "name": "Johann Hell (SPÖ)",
+            "domain": "www.johannhell.at"
+        }, {
+            "name": "Eva-Maria Himmelbauer, BSc (ÖVP)",
+            "domain": "www.ehimmelbauer.at"
+        }, {
+            "name": "Ing. Christian Höbart (FPÖ)",
+            "domain": "www.choebart.at"
+        }, {
+            "name": "Johann Höfinger (ÖVP)",
+            "domain": "www.johann-hoefinger.at"
+        }, {
+            "name": "Daniela Holzinger-Vogtenhuber, BA (SPÖ)",
+            "domain": "danielaholzinger.com"
+        }, {
+            "name": "Dr. Franz-Joseph Huainigg (ÖVP)",
+            "domain": "www.franzhuainigg.at"
+        }, {
+            "name": "KommR Brigitte Jank (ÖVP)",
+            "domain": "www.brigittejank.at"
+        }, {
+            "name": "Dr. Johannes Jarolim (SPÖ)",
+            "domain": "www.hannes-jarolim.at"
+        }, {
+            "name": "Dietmar Keck (SPÖ)",
+            "domain": "www.dietmar-keck.at"
+        }, {
+            "name": "Anneliese Kitzmüller (FPÖ)",
+            "domain": "www.anneliese-kitzmueller.at"
+        }, {
+            "name": "Ulrike Königsberger-Ludwig (SPÖ)",
+            "domain": "www.ulrike.spoe.at"
+        }, {
+            "name": "Karlheinz Kopf (ÖVP)",
+            "domain": "www.karlheinzkopf.at"
+        }, {
+            "name": "Kai Jan Krainer (SPÖ)",
+            "domain": "www.jan-krainer.at"
+        }, {
+            "name": "Hermann Krist (SPÖ)",
+            "domain": "www.hermannkrist.at"
+        }, {
+            "name": "Katharina Kucharowits (SPÖ)",
+            "domain": "www.katharina-kucharowits.at"
+        }, {
+            "name": "Philip Kucher (SPÖ)",
+            "domain": "www.philipkucher.at"
+        }, {
+            "name": "Mag. Günther Kumpitsch (FPÖ)",
+            "domain": "www.guentherkumpitsch.com"
+        }, {
+            "name": "Mag. Josef Lettenbichler (ÖVP)",
+            "domain": "www.josef-lettenbichler.at"
+        }, {
+            "name": "Dr. Reinhold Lopatka (ÖVP)",
+            "domain": "www.lopatka.at"
+        }, {
+            "name": "Sigrid Maurer (Grüne)",
+            "domain": "www.sigimaurer.at"
+        }, {
+            "name": "Elmar Mayer (SPÖ)",
+            "domain": "www.elmar-mayer.at"
+        }, {
+            "name": "Dr.in Gabriela Moser (Grüne)",
+            "domain": "www.mosermobil.at"
+        }, {
+            "name": "Josef Muchitsch (SPÖ)",
+            "domain": "www.josef-muchitsch.at"
+        }, {
+            "name": "Dr.in Eva Mückstein (Grüne)",
+            "domain": "www.mueckstein.net"
+        }, {
+            "name": "Edith Mühlberghuber (FPÖ)",
+            "domain": "www.edithmuehlberghuber.at"
+        }, {
+            "name": "Dr. Peter Pilz (Grüne)",
+            "domain": "www.peterpilz.at"
+        }, {
+            "name": "DI Dr. Wolfgang Pirklhuber (Grüne)",
+            "domain": "www.pirklhuber.at"
+        }, {
+            "name": "Rudolf Plessl (SPÖ)",
+            "domain": "www.rudolf-plessl.at"
+        }, {
+            "name": "Josef A. Riemer (FPÖ)",
+            "domain": "www.josefriemer.at"
+        }, {
+            "name": "Barbara Rosenkranz (FPÖ)",
+            "domain": "www.zurueckzurvernunft.at"
+        }, {
+            "name": "Mag.a Birgit Schatz (Grüne)",
+            "domain": "salzburg.gruene.at"
+        }, {
+            "name": "Dr. Niki Scherak (neos)",
+            "domain": "www.nikischerak.at"
+        }, {
+            "name": "Mag. Andreas Schieder (SPÖ)",
+            "domain": "www.schieder.spoe.at"
+        }, {
+            "name": "Mag. Bernd Schönegger (ÖVP)",
+            "domain": "www.bernd-schoenegger.at"
+        }, {
+            "name": "ÖkR Ing. Hermann Schultes (ÖVP)",
+            "domain": "www.hermann-schultes.at"
+        }, {
+            "name": "Johann Singer (ÖVP)",
+            "domain": "www.hans-singer.at"
+        }, {
+            "name": "Mag. Albert Steinhauser (Grüne)",
+            "domain": "www.albertsteinhauser.at"
+        }, {
+            "name": "Heinz-Christian Strache (FPÖ)",
+            "domain": "www.hcstrache.at"
+        }, {
+            "name": "Mag. Dr. Matthias Strolz (neos)",
+            "domain": "www.strolz.eu"
+        }, {
+            "name": "Gabriele Tamandl (ÖVP)",
+            "domain": "www.tamandl.net"
+        }, {
+            "name": "Bernhard Themessl (FPÖ)",
+            "domain": "www.bernhardthemessl.at"
+        }, {
+            "name": "Dr. Harald Troch (SPÖ)",
+            "domain": "www.harald-troch.at"
+        }, {
+            "name": "Mag. Dr. Georg Vetter (ÖVP)",
+            "domain": "freiheitsweblog.wordpress.com"
+        }, {
+            "name": "Ing. Markus Vogl (SPÖ)",
+            "domain": "www.markus-vogl.at"
+        }, {
+            "name": "Dr. Harald Waser (Grüne)",
+            "domain": "www.haraldwalser.at"
+        }, {
+            "name": "Ing. Hannes Weninger (SPÖ)",
+            "domain": "www.hannesweninger.at"
+        }, {
+            "name": "Tanja Windbüchler-Souschill (Grüne)",
+            "domain": "www.tanjawindbuechler.at"
+        }, {
+            "name": "Dr.in Susanne Winter",
+            "domain": "www.susannewinter.at"
+        }, {
+            "name": "August Wöginger (ÖVP)",
+            "domain": "www.woeginger.at"
+        }, {
+            "name": "Mag.a Gisela Wurm (SPÖ)",
+            "domain": "www.giselawurm.at"
+        }, {
+            "name": "Nurten Yilmaz (SPÖ)",
+            "domain": "www.wirsindnurten.at"
+        }, {
+            "name": "Wolfgang Zanger (FPÖ)",
+            "domain": "www.wolfgang-zanger.at"
+        }, {
+            "name": "Mag. Dr. Wolfgang Zinggl (Grüne)",
+            "domain": "www.wolfgangzinggl.at"
+        }]
+    }, {
+        "name": "Bundesratsabgeordnete (Dez 2015, Q: meinparlament.at)",
+        "linkname": "bundesratabgeordnete",
+        "sites": [{
+            "name": "Ing. Hans-Peter Bock (SPÖ)",
+            "domain": "www.hp-bock.com"
+        }, {
+            "name": "Peter Heger (SPÖ)",
+            "domain": "www.peter-heger.at"
+        }, {
+            "name": "Gottfried Kneifel (ÖVP)",
+            "domain": "kneifel.oevp.at"
+        }, {
+            "name": "Ing. Eduard Köck (ÖVP)",
+            "domain": "members.speeding.at"
+        }, {
+            "name": "Gerd Edgar Krusche (FPÖ)",
+            "domain": "www.gerd-krusche.com"
+        }, {
+            "name": "Mag. Michael Lindner (SPÖ)",
+            "domain": "www.einstarkesmuehlviertel.at"
+        }, {
+            "name": "Christian Poglitsch (ÖVP)",
+            "domain": "www.kindercamping.at"
+        }, {
+            "name": "Ing. Bernhard Rösch (FPÖ)",
+            "domain": "www.bernhardroesch.at"
+        }]
+    }, {
+        "name": "EU-Parlamentarier (Dez 2015, Q: meinparlament.at)",
+        "linkname": "eu-parlamentarier",
+        "sites": [{
+            "name": "Heinz K. Becker (ÖVP)",
+            "domain": "www.becker-europa.eu"
+        }, {
+            "name": "Prof. Eugen Freund (SPÖ)",
+            "domain": "www.eugenfreund.com"
+        }, {
+            "name": "Karin Kadenbach (SPÖ)",
+            "domain": "www.karinkadenbach.at"
+        }, {
+            "name": "Mag. Othmar Karas, MBL-HSG (ÖVP)",
+            "domain": "www.othmar-karas.at"
+        }, {
+            "name": "Elisabeth Köstinger (ÖVP)",
+            "domain": "www.elisabeth-koestinger.at"
+        }, {
+            "name": "Mag.a Ulrike Lunacek (Grüne)",
+            "domain": "www.ulrike-lunacek.eu"
+        }, {
+            "name": "Mag.a Dr.in Angelika Rosa Mlina, LL.M. (neos)",
+            "domain": "europa.neos.eu"
+        }, {
+            "name": "Mag.a Evelyn Regner (SPÖ)",
+            "domain": "www.evelyn-regner.at"
+        }, {
+            "name": "Michel Reimon, BSc, MBA (Grüne)",
+            "domain": "www.reimon.net"
+        }, {
+            "name": "KommR Ing. Mag. Dr. Paul Rübig (ÖVP)",
+            "domain": "www.paulruebig.eu"
+        }, {
+            "name": "Dr.in Monika Vana (Grüne)",
+            "domain": "monikavana.wordpress.com"
+        }, {
+            "name": "Univ.-Prof. Dr. Josef Weidenholzer (SPÖ)",
+            "domain": "www.weidenholzer.eu"
+        }]
+    }, {
+        "name": "Landtagsabgeordnete (Dez 2015, Q: meinparlament.at)",
+        "linkname": "landtagsabgeordnete",
+        "sites": [{
+            "name": "DI Omar Al-Rawi (SPÖ)",
+            "domain": "www.omaralrawi.net"
+        }, {
+            "name": "Karl Baron (FPÖ)",
+            "domain": "www.barontransporte.at"
+        }, {
+            "name": "Petr Baxant, BA (SPÖ)",
+            "domain": "www.pekobaxant.at"
+        }, {
+            "name": "Mag. Christoph Chorherr (Grüne)",
+            "domain": "chorherr.twoday.net"
+        }, {
+            "name": "Christian Deutsch (SPÖ)",
+            "domain": "www.christiandeutsch.at"
+        }, {
+            "name": "Mag.a Faika El-Nagashi (Grüne)",
+            "domain": "www.elnagashi.at"
+        }, {
+            "name": "David Ellensohn (Grüne)",
+            "domain": "www.davidellensohn.at"
+        }, {
+            "name": "Mag. Marcus Gremel (SPÖ)",
+            "domain": "www.marcusgremel.at"
+        }, {
+            "name": "Klaus Handler (FPÖ)",
+            "domain": "www.klaus-handler.at"
+        }, {
+            "name": "Marina Hanke, BA (SPÖ)",
+            "domain": "www.marinahanke.at"
+        }, {
+            "name": "Gerhard Haslinger (FPÖ)",
+            "domain": "www.gerhardhaslinger.at"
+        }, {
+            "name": "Birgit Hebein (Grüne)",
+            "domain": "www.birgithebein.at"
+        }, {
+            "name": "Christian Hursky (SPÖ)",
+            "domain": "www.christianhursky.at"
+        }, {
+            "name": "Prof. Harry Kopietz (SPÖ)",
+            "domain": "www.kopietz.at"
+        }, {
+            "name": "Ingrid Korosec (ÖVP)",
+            "domain": "www.ingirid-korosec.at"
+        }, {
+            "name": "Mag. Dietbert Kowarik (FPÖ)",
+            "domain": "www.dietbert.at"
+        }, {
+            "name": "Peter Kraus, BSc.",
+            "domain": "www.peter-kraus.at"
+        }, {
+            "name": "MMag.a Dr.in Gudrun Kugler, MTS (ÖVP)",
+            "domain": "www.gudrunkugler.at"
+        }, {
+            "name": "Siegi Lindenmayr (SPÖ)",
+            "domain": "www.lindenmayr.at"
+        }, {
+            "name": "Mag. Rüdiger Maresch (Grüne)",
+            "domain": "ruedigermaresch.wordpress.com"
+        }, {
+            "name": "DI Martin Margulies (Grüne)",
+            "domain": "martinmargulies.wordpress.com"
+        }, {
+            "name": "Birgit Meinhard-Schiebel (Grüne)",
+            "domain": "birgitmeinhard.wordpress.com"
+        }, {
+            "name": "Mag.a Beate Meinl-Reisinger, M.E.S. (neos)",
+            "domain": "www.beatemeinl.com"
+        }, {
+            "name": "Markus Ornig, MBA (neos)",
+            "domain": "wien.neos.eu"
+        }, {
+            "name": "Christian Oxonitsch (SPÖ)",
+            "domain": "www.oxonitsch.at"
+        }, {
+            "name": "Mag. Thomas Reindl (SPÖ)",
+            "domain": "www.thomasreindl.at"
+        }, {
+            "name": "Silvia Rubik (SPÖ)",
+            "domain": "www.silvia-rubik.at"
+        }, {
+            "name": "Prof. Mag. Dr. Gerhard Schmid (SPÖ)",
+            "domain": "www.gerhard-schmid.at"
+        }, {
+            "name": "Ursula Stenzel (FPÖ)",
+            "domain": "www.ursulastenzel.com"
+        }, {
+            "name": "Mag.a Sybille Straubinger, MBA (SPÖ)",
+            "domain": "blog.sybillestraubinger.at"
+        }, {
+            "name": "Heinz Vettermann (SPÖ)",
+            "domain": "www.vettermann.at"
+        }, {
+            "name": "Mag.a (FH) Tanja Wehsely (SPÖ)",
+            "domain": "tanjawehsely.wordpress.com"
+        }, {
+            "name": "Christoph Wiederkehr, BA (neos)",
+            "domain": "www.chriswiederkehr.at"
+        }, {
+            "name": "Ernst Woller (SPÖ)",
+            "domain": "ernstwoller.blogspot.com"
+        }]
+    }, {
+        "name": "Parteiwebseiten Nationalrat (Dez 2015)",
+        "linkname": "parteiwebseiten",
+        "sites": [{
+            "name": "SPÖ",
+            "domain": "www.spoe.at"
+        }, {
+            "name": "ÖVP",
+            "domain": "www.oevp.at"
+        }, {
+            "name": "FPÖ",
+            "domain": "www.fpoe.at"
+        }, {
+            "name": "Grüne",
+            "domain": "www.gruene.at"
+        }, {
+            "name": "neos",
+            "domain": "www.neos.eu"
+        }, {
+            "name": "Team Stronach",
+            "domain": "www.teamstronach.at"
+        }]
+    }]
+}

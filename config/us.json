@@ -84,6 +84,10 @@
                     "domain": "www.bbc.com"
                 },
                 {
+                    "name": "Buzzfeed",
+                    "domain": "www.buzzfeed.com"
+                },
+                {
                     "name": "CBS Sports",
                     "domain": "www.cbssports.com"
                 },
@@ -168,6 +172,10 @@
                 {
                     "name": "TD Bank",
                     "domain": "www.tdbank.com"
+                },
+                {
+                    "name": "BB&T",
+                    "domain": "www.bbt.com"
                 }
             ]
         },
@@ -186,6 +194,11 @@
                 {
                     "name": "American Airlines",
                     "domain": "www.aa.com"
+                },
+                {
+                    "name": "United Airlines",
+                    "domain": "www.united.com",
+                    "twitter": "United"
                 },
                 {
                     "name": "Kayak",
@@ -302,6 +315,11 @@
                 {
                     "name": "Bureau of Labor Statistics",
                     "domain": "www.bls.gov"
+                },
+                {
+                    "name": "The White House",
+                    "domain": "www.whitehouse.gov",
+                    "twitter": "WHWeb"
                 }
             ]
         }

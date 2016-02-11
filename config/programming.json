@@ -1,6 +1,40 @@
 {
     "categories": [
         {
+            "name": "Social programming",
+            "linkname": "social-programming",
+            "sites": [
+                {
+                    "name": "GitHub",
+                    "domain": "github.com"
+                },
+                {
+                    "name": "BitBucket",
+                    "domain": "bitbucket.org"
+                },
+                {
+                    "name": "GitLab",
+                    "domain": "about.gitlab.com"
+                },
+                {
+                    "name": "Gitorious",
+                    "domain": "gitorious.org"
+                },
+                {
+                    "name": "StackOverflow",
+                    "domain": "stackoverflow.com"
+                },
+                {
+                    "name": "Dream in Code",
+                    "domain": "www.dreamincode.net"
+                },
+                {
+                    "name": "Launchpad",
+                    "domain": "launchpad.net"
+                }
+            ]
+        },
+        {
             "name": "Linux Distributions",
             "linkname": "distributions",
             "sites": [
@@ -23,6 +57,10 @@
                 {
                     "name": "Gentoo",
                     "domain": "www.gentoo.org"
+                },
+                {
+                    "name": "Slackware",
+                    "domain": "www.slackware.com"
                 },
                 {
                     "name": "Ubuntu",
@@ -98,7 +136,6 @@
                     "name": "Schemers",
                     "domain": "schemers.org"
                 }
-
             ]
         }
     ]
