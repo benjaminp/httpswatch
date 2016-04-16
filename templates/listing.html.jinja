@@ -53,7 +53,7 @@ window.addEventListener("load", function onLoad() {
       <div class="site-status-summary">
         <span class="glyphicon site-details-expander"></span>
         <span class="site-name">{{ site.name|e }}</span>
-        <span class="site-domain">(<a href="https://{{ site.domain }}" rel="nofollow">{{ site.domain }}</a>)</span>
+        <span class="site-domain">(<a href="https://{{ site.domain }}" rel="nofollow" target="_blank">{{ site.domain }}</a>)</span>
         <span class="site-grade site-grade-{{ site.status }}">{{ site.status|title }}</span>
       </div>
       <div class="site-status-details">
