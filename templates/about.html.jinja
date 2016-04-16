@@ -7,6 +7,7 @@
 
 <h2>Ratings</h2>
 <p>HTTPSWatch assigns every tracked site a rating approximating the quality of its HTTPS support. If a verified TLS connection cannot be established or no page can be loaded over TLS, the site is given the <span class="site-grade-bad">Bad</span> rating. The <span class="site-grade-mediocre">Mediocre</span> rating means a TLS connection can be established but there are quality issues with the site&rsquo;s implementation of HTTPS (e.g. the HTTP site doesn&rsquo;t redirect to HTTPS or the <code>Strict-Transport-Security</code> header isn&rsquo;t set). If everything looks good, a <span class="site-grade-good">Good</span> rating is given.
+<p>Many of the sites that receive a <span class="site-grade-mediocre">Mediocre</span> rating are only missing the HTTP <code>Strict-Transport-Security</code> header and have otherwise good HTTPS. The HSTS header is a vital component of helping visitors reach a website securely. Without HSTS, it is still possible for an attacker to intercept web traffic and prevent users from connecting over HTTPS. Thus, websites will not be rated <span class="site-grade-good">Good</span> unless they include HSTS.
 
 <h2>Limitations</h2>
 <p>Some sites which HTTPSWatch rates as <span class="site-grade-mediocre">Mediocre</span> are actually unusable in a browser. This is mostly due to <a href="https://developer.mozilla.org/en-US/docs/Security/MixedContent">mixed content</a>, which HTTPSWatch doesn&rsquo;t always detect.
