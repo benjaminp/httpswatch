@@ -1,0 +1,202 @@
+{
+    "categories": [
+        {
+            "name": "Jornais",
+            "linkname": "jornais",
+            "sites": [
+                {
+                    "name": "Correio da Manhã",
+                    "domain": "www.cmjornal.xl.pt",
+                    "twitter": "cmjornal"
+                },
+                {
+                    "name": "Diário de Notícias",
+                    "domain": "www.dn.pt",
+                    "twitter": "DNpt"
+                },
+                {
+                    "name": "Jornal de Notícias",
+                    "domain": "www.jn.pt",
+                    "twitter": "JornalNoticias"
+                },
+                {
+                    "name": "Público",
+                    "domain": "www.publico.pt",
+                    "twitter": "publico"
+                },
+                {
+                    "name": "TVI24",
+                    "domain": "www.tvi24.iol.pt",
+                    "twitter": "tvi24pt"
+                },
+                {
+                    "name": "Expresso",
+                    "domain": "expresso.sapo.pt",
+                    "twitter": "expresso"
+                },
+                {
+                    "name": "Record",
+                    "domain": "www.record.pt",
+                    "twitter": "Jornal_Record"
+                },
+                {
+                    "name": "A Bola",
+                    "domain": "www.abola.pt",
+                    "twitter": "abolapt"
+                },
+                {
+                    "name": "Mais Futebol",
+                    "domain": "www.maisfutebol.iol.pt",
+                    "twitter": ""
+                },
+                {
+                    "name": "O Jogo",
+                    "domain": "www.ojogo.pt",
+                    "twitter": "ojogo"
+                },
+                {
+                    "name": "Diário Económico",
+                    "domain": "economico.sapo.pt",
+                    "twitter": "diarioeconomico"
+                },
+                {
+                    "name": "Jornal Fiscal",
+                    "domain": "www.jornalfiscal.pt",
+                    "twitter": "vidaeconomica"
+                },
+                {
+                    "name": "Jornal de Negócios",
+                    "domain": "www.jornaldenegocios.pt",
+                    "twitter": "JNegocios"
+                },
+                {
+                    "name": "Observador",
+                    "domain": "observador.pt",
+                    "twitter": "observadorpt"
+                }
+            ]
+        },
+        {
+            "name": "Bancos",
+            "linkname": "bancos",
+            "sites": [
+                {
+                    "name": "Banco Comercial Português (Millennium BCP)",
+                    "domain": "ind.millenniumbcp.pt",
+                    "twitter": "Millennium_Comm"
+                },
+                {
+                    "name": "Banco Espírito Santo (BES)",
+                    "domain": "www.bes.pt",
+                    "twitter": ""
+                },
+                {
+                    "name": "Novo Banco",
+                    "domain": "www.novobanco.pt",
+                    "twitter": "novobanco"
+                },
+                {
+                    "name": "Banco Internacional do Funchal (BANIF)",
+                    "domain": "www.banif.pt",
+                    "twitter": ""
+                },
+                {
+                    "name": "Bankinter",
+                    "domain": "www.banif.pt",
+                    "twitter": ""
+                },
+                {
+                    "name": "Banco Popular",
+                    "domain": "www.bancopopular.pt",
+                    "twitter": ""
+                },
+                {
+                    "name": "Montepio Geral",
+                    "domain": "www.montepio.pt",
+                    "twitter": ""
+                },
+                {
+                    "name": "Banco Bilbao Vizcaya e Argentaria (BBVA)",
+                    "domain": "www.bbva.pt",
+                    "twitter": ""
+                },
+                {
+                    "name": "Banco BPI",
+                    "domain": "www.bancobpi.pt",
+                    "twitter": ""
+                },
+                {
+                    "name": "Banco de Portugal",
+                    "domain": "www.bportugal.pt",
+                    "twitter": ""
+                },
+                {
+                    "name": "Caixa Geral de Depósitos (CGD)",
+                    "domain": "www.cgd.pt",
+                    "twitter": ""
+                },
+                {
+                    "name": "Banco Santander Totta (Totta)",
+                    "domain": "www.santandertotta.pt",
+                    "twitter": ""
+                },
+                {
+                    "name": "ActivoBank",
+                    "domain": "www.activobank.pt",
+                    "twitter": ""
+                },
+                {
+                    "name": "Banco Best",
+                    "domain": "www.bancobest.pt",
+                    "twitter": ""
+                },
+                {
+                    "name": "Banco Bigonline",
+                    "domain": "big.pt",
+                    "twitter": ""
+                },
+                {
+                    "name": "Banco Invest",
+                    "domain": "www.bancoinvest.pt",
+                    "twitter": ""
+                },
+                {
+                    "name": "Banco Santander Consumer Portugal",
+                    "domain": "www.santanderconsumer.pt",
+                    "twitter": ""
+                },
+                {
+                    "name": "Crédito Agrícola",
+                    "domain": "www.credito-agricola.pt",
+                    "twitter": ""
+                },
+                {
+                    "name": "Crédito Agrícola",
+                    "domain": "www.credito-agricola.pt",
+                    "twitter": ""
+                }
+            ]
+        },
+        {
+            "name": "Governo Português",
+            "linkname": "governo",
+            "sites": [
+                {
+                    "name": "Governo Portugês",
+                    "domain": "www.portugal.gov.pt",
+                    "twitter": "govpt"
+                },
+                {
+                    "name": "Assembleia da República",
+                    "domain": "www.parlamento.pt",
+                    "twitter": ""
+                },
+                {
+                    "name": "Diário da República",
+                    "domain": "www.dre.pt",
+                    "twitter": ""
+                }
+            ]
+        }
+    ]
+}
