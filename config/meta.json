@@ -30,6 +30,10 @@
             "external": "https://httpswatch.ca/"
         },
         {
+            "name": "Portugal",
+            "external": "pt"
+        },
+        {
             "name": "Programming",
             "shortname": "programming"
         }
