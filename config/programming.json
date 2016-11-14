@@ -17,10 +17,6 @@
                     "domain": "about.gitlab.com"
                 },
                 {
-                    "name": "Gitorious",
-                    "domain": "gitorious.org"
-                },
-                {
                     "name": "StackOverflow",
                     "domain": "stackoverflow.com"
                 },
