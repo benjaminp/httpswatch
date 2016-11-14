@@ -77,55 +77,68 @@
             "sites": [
                 {
                     "name": "ABC News",
-                    "domain": "abcnews.go.com"
+                    "domain": "abcnews.go.com",
+                    "twitter": "abcnews"
                 },
                 {
                     "name": "BBC",
-                    "domain": "www.bbc.com"
+                    "domain": "www.bbc.com",
+                    "twitter": "bbcworld"
                 },
                 {
                     "name": "Buzzfeed",
-                    "domain": "www.buzzfeed.com"
+                    "domain": "www.buzzfeed.com",
+                    "twitter": "buzzfeed"
                 },
                 {
                     "name": "CBS Sports",
-                    "domain": "www.cbssports.com"
+                    "domain": "www.cbssports.com",
+                    "twitter": "CBSSports"
                 },
                 {
                     "name": "CNN",
-                    "domain": "www.cnn.com"
+                    "domain": "www.cnn.com",
+                    "twitter": "cnn"
                 },
                 {
                     "name": "Daily Mail",
-                    "domain": "www.dailymail.co.uk"
+                    "domain": "www.dailymail.co.uk",
+                    "twitter": "MailOnline"
                 },
                 {
                     "name": "ESPN",
-                    "domain": "espn.go.com"
+                    "domain": "espn.go.com",
+                    "twitter": "espn"
                 },
                 {
                     "name": "Forbes",
-                    "domain": "www.forbes.com"
+                    "domain": "www.forbes.com",
+                    "twitter": "Forbes"
                 },
                 {
                     "name": "Fox News",
-                    "domain": "www.foxnews.com"
+                    "domain": "www.foxnews.com",
+                    "twitter": "FoxNews"
                 },
                 {
                     "name": "NBC News",
-                    "domain": "www.nbcnews.com"
+                    "domain": "www.nbcnews.com",
+                    "twitter": "NBCNews"
                 },
                 {
                     "name": "NPR",
-                    "domain": "www.npr.org"
+                    "domain": "www.npr.org",
+                    "twitter": "npr"
                 },
                 {
                     "name": "Time Magazine",
-                    "domain": "time.com"
+                    "domain": "time.com",
+                    "twitter": "time"
                 },
                 {
                     "name": "TMZ",
-                    "domain": "www.tmz.com"
+                    "domain": "www.tmz.com",
+                    "twitter": "tmz"
                 }
             ]
         },
