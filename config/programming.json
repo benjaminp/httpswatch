@@ -55,6 +55,10 @@
                     "domain": "www.gentoo.org"
                 },
                 {
+                    "name": "openSUSE",
+                    "domain": "www.opensuse.org"
+                },
+                {
                     "name": "Slackware",
                     "domain": "www.slackware.com"
                 },
