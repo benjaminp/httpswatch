@@ -198,7 +198,7 @@ def check_https_page(info):
                 else:
                     good_sts.fail("<code>Strict-Transport-Security</code> header is set but the <code>max-age</code> is less than 30 days.")
             else:
-                good_sts.fail("<code>Strict-Transport-Security</code> header doesn't contain a <code>max-age</code> directive.")
+                good_sts.fail("<code>Strict-Transport-Security</code> header doesn&rsquo;t contain a <code>max-age</code> directive.")
         else:
             good_sts.fail("<code>Strict-Transport-Security</code> header is not set.")
         info.mixed_content = tree is not None and has_mixed_content(tree)
@@ -225,7 +225,7 @@ def check_http_page(info):
         if info.http_redirects_to_https:
             http_redirect.succeed("HTTP site redirects to HTTPS.")
         else:
-            http_redirect.fail("HTTP site doesn't redirect to HTTPS.")
+            http_redirect.fail("HTTP site doesn&rsquo;t redirect to HTTPS.")
     except requests.Timeout:
         http_redirect.fail("The HTTP site times out.")
         return
