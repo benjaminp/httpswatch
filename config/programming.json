@@ -135,6 +135,10 @@
                 {
                     "name": "Schemers",
                     "domain": "schemers.org"
+                },
+                {
+                    "name": "TypeScript",
+                    "domain": "www.typescriptlang.org"
                 }
             ]
         }
