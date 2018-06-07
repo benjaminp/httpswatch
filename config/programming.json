@@ -141,6 +141,24 @@
                     "domain": "www.typescriptlang.org"
                 }
             ]
+        },
+        {
+            "name": "Version Control Systems",
+            "linkname": "vcs",
+            "sites": [
+                {
+                    "name": "Git",
+                    "domain": "git-scm.com"
+                },
+                {
+                    "name": "Mercurial",
+                    "domain": "www.mercurial-scm.org"
+                },
+                {
+                    "name": "Subversion",
+                    "domain": "subversion.apache.org"
+                }
+            ]
         }
     ]
 }
