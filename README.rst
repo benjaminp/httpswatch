@@ -1,6 +1,9 @@
 HTTPSWatch
 ==========
 
+.. image:: https://travis-ci.org/benjaminp/httpswatch.svg?branch=master
+    :target: https://travis-ci.org/benjaminp/httpswatch
+
 This is the `HTTPSWatch project`_, a website that tracks the HTTPS support of
 prominent websites.
 
