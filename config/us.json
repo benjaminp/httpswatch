@@ -335,6 +335,67 @@
                     "twitter": "WHWeb"
                 }
             ]
+        },
+        {
+            "name": "2020 Democratic Presidential Candidates",
+            "linkname": "democratic-candidates-2020",
+            "sites": [
+                {
+                    "name": "Cory Booker",
+                    "domain": "corybooker.com",
+                    "twitter": "CoryBooker"
+                },
+                {
+                    "name": "Pete Buttigieg",
+                    "domain": "www.peteforamerica.com",
+                    "twitter": "petebuttigieg"
+                },
+                {
+                    "name": "Julian Castro",
+                    "domain": "www.julianforthefuture.com",
+                    "twitter": "juliancastro"
+                },
+                {
+                    "name": "John Delaney",
+                    "domain": "www.johndelaney.com",
+                    "twitter": "JohnDelaney"
+                },
+                {
+                    "name": "Tulsi Gabbard",
+                    "domain": "www.tulsi2020.com",
+                    "twitter": "tulsipress"
+                },
+                {
+                    "name": "Kirsten Gillibrand",
+                    "domain": "kirstengillibrand.com",
+                    "twitter": "SenGillibrand"
+                },
+                {
+                    "name": "Kamala Harris",
+                    "domain": "kamalaharris.org",
+                    "twitter": "KamalaHarris"
+                },
+                {
+                    "name": "John Hickenlooper",
+                    "domain": "www.hickenlooper.com",
+                    "twitter": "Hickenlooper"
+                },
+                {
+                    "name": "Jay Inslee",
+                    "domain": "www.jayinslee.com",
+                    "twitter": "govinslee"
+                },
+                {
+                    "name": "Amy Klobuchar",
+                    "domain": "amyklobuchar.com",
+                    "twitter": "amyklobuchar"
+                },
+                {
+                    "name": "Bernie Sanders",
+                    "domain": "berniesanders.com",
+                    "twitter": "sensanders"
+                }
+            ]
         }
     ]
 }
