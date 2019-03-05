@@ -13,6 +13,7 @@ import socket
 import ssl
 import time
 
+import certifi
 import jinja2
 import requests
 
@@ -90,7 +91,7 @@ def fetch_through_redirects(url):
         cont = False
         resp = requests.get(
             url,
-            verify="moz-certs.pem",
+            verify=certifi.where(),
             headers={"User-Agent": USER_AGENT},
             timeout=10,
             stream=True,
@@ -138,7 +139,7 @@ def check_secure_connection(info):
     context.options |= getattr(ssl, "OP_NO_COMPRESSION", 0)
     context.verify_mode = ssl.CERT_REQUIRED
     context.check_hostname = True
-    context.load_verify_locations("moz-certs.pem")
+    context.load_verify_locations(certifi.where())
     secure_sock = context.wrap_socket(sock, server_hostname=info.domain)
     try:
         secure_sock.connect(addr_info[4])
