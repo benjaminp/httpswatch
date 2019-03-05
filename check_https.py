@@ -105,7 +105,7 @@ def fetch_through_redirects(url):
             resp.close()
         # Check for sneaky <meta> redirects.
         for meta in META_XPATH(tree):
-            m = re.match("0;\s*url=['\"](.+?)['\"]", meta.get("content"))
+            m = re.match(r"0;\s*url=['\"](.+?)['\"]", meta.get("content"))
             if m is not None:
                 url = m.groups()[0]
                 cont = True
@@ -190,7 +190,7 @@ def check_https_page(info):
         good_sts = info.new_check()
         sts = resp.headers.get("Strict-Transport-Security")
         if sts is not None:
-            m = re.search("max-age=(\d+)", sts)
+            m = re.search(r"max-age=(\d+)", sts)
             if m is not None:
                 info.sts = int(m.group(1))
                 if info.sts >= 2592000:
