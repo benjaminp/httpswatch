@@ -243,17 +243,21 @@ def check_site(site):
     info.domain = site["domain"]
     info.ssllabs_grade = site.get("ssllabs_grade")
 
-    check_secure_connection(info)
-    if not info.secure_connection_works:
-        log.info("Couldn't connect securely to {}, so aborting further checks.".format(info.domain))
-        return info
+    try:
+        check_secure_connection(info)
+        if not info.secure_connection_works:
+            log.info("Couldn't connect securely to %s, so aborting further checks.", info.domain)
+            return info
 
-    check_https_page(info)
-    if not info.can_load_https_page:
-        log.info("Couldn't load HTTPS page for {}, so aborting further checks.".format(info.domain))
-        return info
+        check_https_page(info)
+        if not info.can_load_https_page:
+            log.info("Couldn't load HTTPS page for %s, so aborting further checks.", info.domain)
+            return info
 
-    check_http_page(info)
+        check_http_page(info)
+    except Exception:
+        log.exception("unexpected failure evaluating %s", info.domain)
+        raise
 
     return info
 
