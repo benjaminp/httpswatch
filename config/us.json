@@ -394,6 +394,11 @@
                     "name": "Bernie Sanders",
                     "domain": "berniesanders.com",
                     "twitter": "sensanders"
+                },
+                {
+                    "name": "Elizabeth Warren",
+                    "domain": "elizabethwarren.com",
+                    "twitter": "ewarren"
                 }
             ]
         }
