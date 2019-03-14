@@ -399,6 +399,11 @@
                     "name": "Elizabeth Warren",
                     "domain": "elizabethwarren.com",
                     "twitter": "ewarren"
+                },
+                {
+                    "name": "Beto O'Rourke",
+                    "domain": "betoorourke.com",
+                    "twitter": "BetoORourke"
                 }
             ]
         }
