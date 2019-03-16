@@ -189,6 +189,10 @@
                 {
                     "name": "BB&T",
                     "domain": "www.bbt.com"
+                },
+                {
+                    "name": "Charles Schwab",
+                    "domain": "www.schwab.com"
                 }
             ]
         },
