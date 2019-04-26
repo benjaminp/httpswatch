@@ -408,6 +408,21 @@
                     "name": "Beto O'Rourke",
                     "domain": "betoorourke.com",
                     "twitter": "BetoORourke"
+                },
+                {
+                    "name": "Andrew Yang",
+                    "domain": "www.yang2020.com",
+                    "twitter": "andrewyang"
+                },
+                {
+                    "name": "Joe Biden",
+                    "domain": "joebiden.com",
+                    "twitter": "joebiden"
+                },
+                {
+                    "name": "Tim Ryan",
+                    "domain": "timryanforamerica.com",
+                    "twitter": "TimRyan"
                 }
             ]
         }
