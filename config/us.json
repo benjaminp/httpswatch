@@ -121,6 +121,10 @@
                     "twitter": "FoxNews"
                 },
                 {
+                    "name": "MSNBC",
+                    "domain": "www.msnbc.com"
+                },
+                {
                     "name": "NBC News",
                     "domain": "www.nbcnews.com",
                     "twitter": "NBCNews"
