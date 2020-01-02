@@ -363,11 +363,6 @@
                     "twitter": "petebuttigieg"
                 },
                 {
-                    "name": "Julian Castro",
-                    "domain": "www.julianforthefuture.com",
-                    "twitter": "juliancastro"
-                },
-                {
                     "name": "John Delaney",
                     "domain": "www.johndelaney.com",
                     "twitter": "JohnDelaney"
@@ -376,26 +371,6 @@
                     "name": "Tulsi Gabbard",
                     "domain": "www.tulsi2020.com",
                     "twitter": "tulsipress"
-                },
-                {
-                    "name": "Kirsten Gillibrand",
-                    "domain": "kirstengillibrand.com",
-                    "twitter": "SenGillibrand"
-                },
-                {
-                    "name": "Kamala Harris",
-                    "domain": "kamalaharris.org",
-                    "twitter": "KamalaHarris"
-                },
-                {
-                    "name": "John Hickenlooper",
-                    "domain": "www.hickenlooper.com",
-                    "twitter": "Hickenlooper"
-                },
-                {
-                    "name": "Jay Inslee",
-                    "domain": "www.jayinslee.com",
-                    "twitter": "govinslee"
                 },
                 {
                     "name": "Amy Klobuchar",
@@ -413,11 +388,6 @@
                     "twitter": "ewarren"
                 },
                 {
-                    "name": "Beto O'Rourke",
-                    "domain": "betoorourke.com",
-                    "twitter": "BetoORourke"
-                },
-                {
                     "name": "Andrew Yang",
                     "domain": "www.yang2020.com",
                     "twitter": "andrewyang"
@@ -426,11 +396,6 @@
                     "name": "Joe Biden",
                     "domain": "joebiden.com",
                     "twitter": "joebiden"
-                },
-                {
-                    "name": "Tim Ryan",
-                    "domain": "timryanforamerica.com",
-                    "twitter": "TimRyan"
                 }
             ]
         }
