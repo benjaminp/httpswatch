@@ -353,11 +353,6 @@
             "linkname": "democratic-candidates-2020",
             "sites": [
                 {
-                    "name": "Cory Booker",
-                    "domain": "corybooker.com",
-                    "twitter": "CoryBooker"
-                },
-                {
                     "name": "Pete Buttigieg",
                     "domain": "www.peteforamerica.com",
                     "twitter": "petebuttigieg"
