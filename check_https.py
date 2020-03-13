@@ -20,7 +20,7 @@ import requests
 from lxml import etree, html
 
 PARALLELISM = 16
-USER_AGENT = "Mozilla/5.0 compatible HTTPSWatch Bot (https://httpswatch.com) Firefox/48.0"
+USER_AGENT = "Mozilla/5.0 compatible HTTPSWatch analyzer (see httpswatch DOT com)"
 ANALYTICS = """<script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
