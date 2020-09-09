@@ -351,52 +351,6 @@
                     "twitter": "WHWeb"
                 }
             ]
-        },
-        {
-            "name": "2020 Democratic Presidential Candidates",
-            "linkname": "democratic-candidates-2020",
-            "sites": [
-                {
-                    "name": "Pete Buttigieg",
-                    "domain": "www.peteforamerica.com",
-                    "twitter": "petebuttigieg"
-                },
-                {
-                    "name": "John Delaney",
-                    "domain": "www.johndelaney.com",
-                    "twitter": "JohnDelaney"
-                },
-                {
-                    "name": "Tulsi Gabbard",
-                    "domain": "www.tulsi2020.com",
-                    "twitter": "tulsipress"
-                },
-                {
-                    "name": "Amy Klobuchar",
-                    "domain": "amyklobuchar.com",
-                    "twitter": "amyklobuchar"
-                },
-                {
-                    "name": "Bernie Sanders",
-                    "domain": "berniesanders.com",
-                    "twitter": "sensanders"
-                },
-                {
-                    "name": "Elizabeth Warren",
-                    "domain": "elizabethwarren.com",
-                    "twitter": "ewarren"
-                },
-                {
-                    "name": "Andrew Yang",
-                    "domain": "www.yang2020.com",
-                    "twitter": "andrewyang"
-                },
-                {
-                    "name": "Joe Biden",
-                    "domain": "joebiden.com",
-                    "twitter": "joebiden"
-                }
-            ]
         }
     ]
 }
